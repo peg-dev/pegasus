@@ -123,3 +123,14 @@ qa/pull-tester/test.*/*
 .idea
 CMakeLists.txt
 cmake-build-debug
+src/.vs/ProjectSettings.json
+src/.vs/VSWorkspaceState.json
+src/.vs/src/v15/Browse.VC.db
+src/.vs/src/v15/.suo
+src/.vs/slnx.sqlite
+.vs/slnx.sqlite
+.vs/pegasus/v15/Browse.VC.opendb
+.vs/pegasus/v15/Browse.VC.db
+.vs/slnx.sqlite
+.vs/slnx.sqlite
+*.sqlite
