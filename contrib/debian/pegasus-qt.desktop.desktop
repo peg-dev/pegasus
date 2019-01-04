@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Pegasus
+Comment=Pegasus P2P Cryptocurrency
+Exec=pegasus-qt %u
+Terminal=false
+Type=Application
+Icon=pegasus128
+MimeType=x-scheme-handler/pegasus;
+Categories=Office;Finance;
+Name[en_US]=pegasus-qt.desktop
