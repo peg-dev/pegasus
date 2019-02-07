@@ -62,12 +62,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi PEG per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your Pegasus addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi Pegasus per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi PEG per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your Pegasus addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi Pegasus per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -134,6 +134,10 @@
     <message>
         <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
         <translation>Serve per impedire invii accidentali nel caso in cui l'utenza del sistema operativo sia stata compromessa. Non garantisce alcuna reale sicurezza.</translation>
+    </message>
+    <message>
+        <source>For anonymization and staking only</source>
+        <translation>Esclusivamente per anonimizzazione e staking</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -235,16 +239,16 @@
         <translation>&amp;BIP 38 Criptato</translation>
     </message>
     <message>
-        <source>Enter a PEG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Inserisci un indirizzo PEG che desideri crittografare utilizzando BIP 38. Inserisci una passphrase nella casella centrale. Premi Cripta per calcolare la chiave privata crittografata.</translation>
+        <source>Enter a Pegasus Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Inserisci un indirizzo Pegasus che desideri crittografare utilizzando BIP 38. Inserisci una passphrase nella casella centrale. Premi Cripta per calcolare la chiave privata crittografata.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Indirizzo:</translation>
     </message>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>L'indirizzo PEG per firmare il messaggio con</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>L'indirizzo Pegasus per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +279,8 @@
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo PEG</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo Pegasus</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +303,12 @@
         <translation>Immettere la chiave privata codificata BIP 38. Inserire la passphrase nella casella centrale. Fare clic su Decripta Chiave per calcolare la chiave privata. Dopo che la chiave viene decrittata, cliccando su "Importa indirizzo" verrà aggiunta questa chiave privata al portafoglio.</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>L'indirizzo PEG con cui è stato firmato il messaggio</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>L'indirizzo Pegasus con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo PEG specificato</translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo Pegasus specificato </translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -586,12 +590,12 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     <message>
-        <source>Send coins to a PEG address</source>
-        <translation>Invia monete all'indirizzo PEG</translation>
+        <source>Send coins to a Pegasus address</source>
+        <translation>Invia monete all' indirizzo Pegasus</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pegasus: URIs)</source>
@@ -606,24 +610,24 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Pegasus</source>
-        <translation>&amp;Informazioni Pegasus</translation>
+        <source>&amp;About Pegasus Core</source>
+        <translation>&amp;Informazioni Pegasus Core</translation>
     </message>
     <message>
-        <source>Show information about Pegasus</source>
-        <translation>Visualizza informazioni su Pegasus</translation>
+        <source>Show information about Pegasus Core</source>
+        <translation>Visualizza informazioni su Pegasus Core</translation>
     </message>
     <message>
         <source>Modify configuration options for Pegasus</source>
         <translation>Modifica le opzioni di configurazione per Pegasus</translation>
     </message>
     <message>
-        <source>Sign messages with your PEG addresses to prove you own them</source>
-        <translation>Firma i messaggi con i tuoi indirizzi PEG per dimostrare di essere il proprietario </translation>
+        <source>Sign messages with your Pegasus addresses to prove you own them</source>
+        <translation>Firma i messaggi con i tuoi indirizzi Pegasus per dimostrare di essere il proprietario </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PEG addresses</source>
-        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi PEG specifici</translation>
+        <source>Verify messages to ensure they were signed with specified Pegasus addresses</source>
+        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi Pegasus specifici</translation>
     </message>
     <message>
         <source>Encrypt and decrypt private keys using a passphrase</source>
@@ -634,16 +638,16 @@
         <translation>Impostazioni MultiSend</translation>
     </message>
     <message>
-        <source>Open a pegasus: URI or payment request</source>
-        <translation>Apri un pegasus: URI o richiesta di pagamento</translation>
+        <source>Open a Pegasus: URI or payment request</source>
+        <translation>Apri un Pegasus: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>Block explorer window</source>
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the Pegasus help message to get a list with possible Pegasus command-line options</source>
-        <translation>Mostra il messaggio di aiuto Pegasus per ottenere un elenco con le possibili opzioni di riga di comando Pegasus</translation>
+        <source>Show the Pegasus Core help message to get a list with possible Pegasus command-line options</source>
+        <translation>Mostra il messaggio di aiuto Pegasus Core per ottenere un elenco con le possibili opzioni di riga di comando Pegasus</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -728,6 +732,10 @@ MultiSend: %1</translation>
  MultiSend: %1</source>
         <translation>Lo Staking non è attivo
 MultiSend: %1</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
+        <translation>Il portafoglio è &lt;b&gt;crittografato&lt;/b&gt; e attualmente &lt;b&gt;sbloccato&lt;/b&gt; per l'anonimizzazione e il solo stacking</translation>
     </message>
     </context>
 <context>
@@ -880,8 +888,8 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -907,8 +915,8 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -942,6 +950,9 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
+    <name>ObfuscationConfig</name>
+    </context>
+<context>
     <name>OpenURIDialog</name>
     </context>
 <context>
@@ -955,6 +966,53 @@ MultiSend: %1</translation>
     </context>
 <context>
     <name>PeerTableModel</name>
+    </context>
+<context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>Quantity:</source>
+        <translation>Quantità:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Totale:</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Scegli l'indirizzo utilizzato in precedenza</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Incolla l'indirizzo dagli appunti</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Priorità:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Tassa:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>no</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Differenza:</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Copia ammontare</translation>
+    </message>
     </context>
 <context>
     <name>QObject</name>
@@ -1053,6 +1111,10 @@ MultiSend: %1</translation>
         <translation>Copia ammontare</translation>
     </message>
     <message>
+        <source>anonymous funds</source>
+        <translation>Fondi anonimi</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(nessuna etichetta)</translation>
     </message>
@@ -1082,8 +1144,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>L'indirizzo PEG per firmare il messaggio con</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>L'indirizzo Pegasus per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1106,16 +1168,16 @@ MultiSend: %1</translation>
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo PEG</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo Pegasus</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>L'indirizzo PEG con cui è stato firmato il messaggio</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>L'indirizzo Pegasus con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo PEG specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo Pegasus specificato </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1153,8 +1215,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     </context>
 <context>
@@ -1247,6 +1309,9 @@ MultiSend: %1</translation>
         <source>Export the data in the current tab to a file</source>
         <translation>Esporta i dati della scheda corrente in un file</translation>
     </message>
+    </context>
+<context>
+    <name>ZPhrControlDialog</name>
     </context>
 <context>
     <name>pegasus-core</name>

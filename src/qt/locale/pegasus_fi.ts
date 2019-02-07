@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun PEG osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your Pegasus addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun Pegasus osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun PEG osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your Pegasus addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun Pegasus osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -130,6 +130,10 @@
     <message>
         <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
         <translation>Ottaa pois käytöstä tavallisen sendmoneyn kun käyttöjärjestelmä on kompromisoitu. Ei tarjoa todellista turvaa.</translation>
+    </message>
+    <message>
+        <source>For anonymization and staking only</source>
+        <translation>Vain anonymisointiin ja panostukseen</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -231,8 +235,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a PEG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä PEG osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a Pegasus Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä Pegasus osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -240,8 +244,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>PEG osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>Pegasus osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -272,8 +276,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän PEG osoitteen</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Pegasus osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -296,12 +300,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>PEG osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>Pegasus osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla PEG osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Pegasus osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -587,12 +591,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>Pegasus Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a PEG address</source>
-        <translation>Lähetä kolikkoja PEG osoitteeseen</translation>
+        <source>Send coins to a Pegasus address</source>
+        <translation>Lähetä kolikkoja Pegasus osoitteeseen</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pegasus: URIs)</source>
@@ -607,11 +611,11 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About Pegasus</source>
-        <translation>Pegasus &amp;ytimestä</translation>
+        <source>&amp;About Pegasus Core</source>
+        <translation>Pegasus Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about Pegasus</source>
+        <source>Show information about Pegasus Core</source>
         <translation>Näytä tietoja Pegasus Ytimestä</translation>
     </message>
     <message>
@@ -619,12 +623,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Muokkaa konfiguraatio vaihtoehtoja Pegasus:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your PEG addresses to prove you own them</source>
+        <source>Sign messages with your Pegasus addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PEG addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä PEG osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified Pegasus addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä Pegasus osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -655,8 +659,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a pegasus: URI or payment request</source>
-        <translation>Avaa pegasus: URI tai pyydä maksua</translation>
+        <source>Open a Pegasus: URI or payment request</source>
+        <translation>Avaa Pegasus: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -667,11 +671,11 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the Pegasus help message to get a list with possible Pegasus command-line options</source>
+        <source>Show the Pegasus Core help message to get a list with possible Pegasus command-line options</source>
         <translation>Näytä Pegasus Ydin apuviesti saadaksesi lista mahdollisista Pegasus komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>Pegasus client</source>
+        <source>Pegasus Core client</source>
         <translation>Pegasus Ydin asiakasohjelma</translation>
     </message>
     <message>
@@ -930,7 +934,7 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>Pegasus Ydin</translation>
     </message>
     <message>
@@ -949,11 +953,11 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to Pegasus.</source>
+        <source>Welcome to Pegasus Core.</source>
         <translation>Tervetuloa Pegasus Ytimeen.</translation>
     </message>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>Pegasus Ydin</translation>
     </message>
     <message>
@@ -1109,6 +1113,61 @@ Please check the address and try again.</source>
     </message>
 </context>
 <context>
+    <name>ObfuscationConfig</name>
+    <message>
+        <source>Configure Obfuscation</source>
+        <translation>Konfiguroi Hämäys</translation>
+    </message>
+    <message>
+        <source>Basic Privacy</source>
+        <translation>Perus Yksityisyys</translation>
+    </message>
+    <message>
+        <source>High Privacy</source>
+        <translation>Korkea Yksityisyys</translation>
+    </message>
+    <message>
+        <source>Maximum Privacy</source>
+        <translation>Maksimi Yksityisyys</translation>
+    </message>
+    <message>
+        <source>Please select a privacy level.</source>
+        <translation>Valitse yksityisyyden taso.</translation>
+    </message>
+    <message>
+        <source>Use 2 separate masternodes to mix funds up to 10000 PEG</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 Pegasus</translation>
+    </message>
+    <message>
+        <source>Use 8 separate masternodes to mix funds up to 10000 PEG</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 Pegasus</translation>
+    </message>
+    <message>
+        <source>Use 16 separate masternodes</source>
+        <translation>Käytä 16 erillistä masternodea</translation>
+    </message>
+    <message>
+        <source>This option is the quickest and will cost about ~0.025 PEG to anonymize 10000 PEG</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 PEG anonymoidaksesi 10000 Pegasus</translation>
+    </message>
+    <message>
+        <source>This option is moderately fast and will cost about 0.05 PEG to anonymize 10000 PEG</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 Pegasus anonymoidaksesi 10000 Pegasus</translation>
+    </message>
+    <message>
+        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
+        <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
+    </message>
+    <message>
+        <source>0.1 PEG per 10000 PEG you anonymize.</source>
+        <translation>0.1 per 10000 Pegasus, jotka anonymisoit.</translation>
+    </message>
+    <message>
+        <source>Obfuscation Configuration</source>
+        <translation>Hämäys konfiguraatio</translation>
+    </message>
+    </context>
+<context>
     <name>OpenURIDialog</name>
     <message>
         <source>Open URI</source>
@@ -1226,6 +1285,10 @@ Please check the address and try again.</source>
         <translation>Käyttöliittymän &amp;kieli:</translation>
     </message>
     <message>
+        <source>User Interface Theme:</source>
+        <translation>Käyttöliittymän teema:</translation>
+    </message>
+    <message>
         <source>&amp;Unit to show amounts in:</source>
         <translation>&amp;Yksikkö jossa määrä näytetään:</translation>
     </message>
@@ -1335,6 +1398,89 @@ Please check the address and try again.</source>
         <translation>Ping aika</translation>
     </message>
 </context>
+<context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Määrä:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Määrä:</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Valitse aikaisemmin käytetty osoite</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Liitä osoite leikepöydältä</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>&amp;Label:</source>
+        <translation>&amp;Nimike:</translation>
+    </message>
+    <message>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation>Syötä nimike tälle osoittelle lisätäksesi se käytettävien osoitteiden listaan</translation>
+    </message>
+    <message>
+        <source>A&amp;mount:</source>
+        <translation>M&amp;äärä:</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Tärkeys:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Taksa:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>ei</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Tavut:</translation>
+    </message>
+    <message>
+        <source>Insufficient funds!</source>
+        <translation>Puutteelliset varat!</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>kohtalainen</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Muutos:</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Kopioi määrä</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopioi määrä</translation>
+    </message>
+    <message>
+        <source>Confirm send coins</source>
+        <translation>Vahvista kolikoiden lähetys</translation>
+    </message>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -1556,7 +1702,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Pegasus network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Pegasus verkolle.</translation>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Pegasus  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1836,8 +1982,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid PEG address</source>
-        <translation>Varoitus: Virheellinen PEG osoite</translation>
+        <source>Warning: Invalid Pegasus address</source>
+        <translation>Varoitus: Virheellinen Pegasus osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -1864,6 +2010,14 @@ Please check the address and try again.</source>
         <translation>Maksun luonti epäonnistui!</translation>
     </message>
     <message>
+        <source>Error: The wallet was unlocked only to anonymize coins.</source>
+        <translation>Virhe: Lompakko avattiin vain kolikoiden anonymisointiin</translation>
+    </message>
+    <message>
+        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
+        <translation>Virhe: Lompakko avattiin vain kolikoiden anonymisointiin. Avaus peruutettu.</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(ei nimikettä)</translation>
     </message>
@@ -1875,8 +2029,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The PEG address to send the payment to</source>
-        <translation>PEG osoite johon maksu lähetetään</translation>
+        <source>The Pegasus address to send the payment to</source>
+        <translation>Pegasus osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1918,7 +2072,7 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Pegasus is shutting down...</source>
+        <source>Pegasus Core is shutting down...</source>
         <translation>Pegasus core sammuu...</translation>
     </message>
     <message>
@@ -1937,8 +2091,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>PEG osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>Pegasus osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1969,16 +2123,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän PEG osoitteen</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Pegasus osoitteen</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>PEG osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>Pegasus osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla PEG osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Pegasus osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2060,7 +2214,7 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>Pegasus Ydin</translation>
     </message>
     <message>
@@ -2076,11 +2230,7 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>PIVX core kehittäjät</translation>
-    </message>
-    <message>
-        <source>The Pegasus developers</source>
+        <source>The Pegasus Core developers</source>
         <translation>Pegasus core kehittäjät</translation>
     </message>
     <message>
@@ -2384,6 +2534,13 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
+    <name>ZPhrControlDialog</name>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
+<context>
     <name>pegasus-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2434,8 +2591,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Pegasus</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Pegasussta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Pegasus Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Pegasus Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

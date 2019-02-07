@@ -130,6 +130,72 @@
          </property>
         </spacer>
        </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="percentage_label">
+           <property name="toolTip">
+            <string>Percentage of incoming PEG which get automatically converted to zPEG via Zerocoin Protocol (min: 10%)</string>
+           </property>
+           <property name="text">
+            <string>Percentage of autominted zPEG</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="zeromintPercentage">
+           <property name="minimum">
+            <number>10</number>
+           </property>
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetFixedSize</enum>
+         </property>
+         <item>
+          <widget class="QLabel" name="labelPreferredDenom">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Wait with automatic conversion to Zerocoin until enough PEG for this denomination is available</string>
+           </property>
+           <property name="text">
+            <string>Preferred Automint zPEG Denomination</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="preferredDenom">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>27</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Wait with automatic conversion to Zerocoin until enough PEG for this denomination is available</string>
+           </property>
+           <property name="maxVisibleItems">
+            <number>9</number>
+           </property>
+           <property name="maxCount">
+            <number>9</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="tabWallet">
@@ -137,27 +203,6 @@
        <string>W&amp;allet</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_Wallet">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2_Wallet">
-         <item>
-          <widget class="QLabel" name="labelStakeSplitThresholdText">
-           <property name="text">
-            <string>Stake split threshold:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QSpinBox" name="spinBoxStakeSplitThreshold">
-           <property name="minimum">
-            <number>1</number>
-           </property>
-           <property name="maximum">
-            <number>999999</number>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
        <item>
         <widget class="QGroupBox" name="groupBox">
          <property name="title">
@@ -409,6 +454,49 @@
             <string>The user interface language can be set here. This setting will take effect after restarting Pegasus.</string>
            </property>
           </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="toolTip">
+          <string notr="true"/>
+         </property>
+         <property name="statusTip">
+          <string notr="true"/>
+         </property>
+         <property name="whatsThis">
+          <string notr="true"/>
+         </property>
+         <property name="accessibleName">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/pegasus-project/pegasus-project-translations</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::TextBrowserInteraction</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4_Display" stretch="0,0">
+         <item>
+          <widget class="QLabel" name="themeLabel">
+           <property name="text">
+            <string>User Interface Theme:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QValueComboBox" name="theme"/>
          </item>
         </layout>
        </item>

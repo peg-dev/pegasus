@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2016-2017 The PIVX developers
+// Copyright (c) 2017 The Pegasus developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -233,7 +234,7 @@ public:
                 e.resize(10);
             }
             BOOST_FOREACH (const CTxMemPoolEntry* entry, e) {
-                // Fees are stored and reported as PEG-per-kb:
+                // Fees are stored and reported as BTC-per-kb:
                 CFeeRate feeRate(entry->GetFee(), entry->GetTxSize());
                 double dPriority = entry->GetPriority(entry->GetHeight()); // Want priority when it went IN
                 seenTxConfirm(feeRate, minRelayFee, dPriority, i);
@@ -411,8 +412,10 @@ bool CTxMemPool::addUnchecked(const uint256& hash, const CTxMemPoolEntry& entry)
     {
         mapTx[hash] = entry;
         const CTransaction& tx = mapTx[hash].GetTx();
-        for (unsigned int i = 0; i < tx.vin.size(); i++)
-            mapNextTx[tx.vin[i].prevout] = CInPoint(&tx, i);
+        if(!tx.IsZerocoinSpend()) {
+            for (unsigned int i = 0; i < tx.vin.size(); i++)
+                mapNextTx[tx.vin[i].prevout] = CInPoint(&tx, i);
+        }
         nTransactionsUpdated++;
         totalTxSize += entry.GetTxSize();
     }

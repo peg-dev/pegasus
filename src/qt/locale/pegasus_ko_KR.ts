@@ -62,12 +62,12 @@
         <translation>받는 주소</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>이 주소들은 전송할 PEG 주소입니다. 송금하기 전 항상 금액과 전송할 주소를 확인해주세요.</translation>
+        <source>These are your Pegasus addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>이 주소들은 전송할 Pegasus 주소입니다. 송금하기 전 항상 금액과 전송할 주소를 확인해주세요.</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>이 주소들은 전송 받을 PEG 주소입니다. 각 트랜잭션별로 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
+        <source>These are your Pegasus addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>이 주소들은 전송 받을 Pegasus 주소입니다. 각 트랜잭션별로 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -136,6 +136,10 @@
         <translation>운영체제 계정이 손상되었을 때 일반적인 송금을 비활성화 합니다. 실질적인 보안을 제공하지 않습니다.</translation>
     </message>
     <message>
+        <source>For anonymization and staking only</source>
+        <translation>익명화 및 스테이킹 전용</translation>
+    </message>
+    <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>지갑에 새로운 암호를 입력해주세요. &lt;br/&gt;&lt;b&gt;10자리 이상의 임의의 문자&lt;/b&gt; 또는, &lt;b&gt;8개 이상의 단어&lt;/b&gt;로 구성된 암호를 입력해주세요.</translation>
     </message>
@@ -153,7 +157,7 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>이 작업은 지갑 암호화 해제를 위해 지갑 암호가 필요합니다.</translation>
+        <translation>이 작업은 지갑 암호화 해제를 하셔야 가능합니다.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
@@ -209,7 +213,7 @@
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>지갑 암호화 해제를 위해 입력한 지갑 암호가 올바르지 않습니다.</translation>
+        <translation>입력한 지갑 암호가 올바르지 않습니다.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
@@ -235,16 +239,16 @@
         <translation>&amp;BIP 38 암호화</translation>
     </message>
     <message>
-        <source>Enter a PEG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>BIP 38을 사용하여 암호화 할 PEG 주소를 입력하십시오. 중간 입력창에 암호를 입력하십시오. 암호화를 누르면 암호화된 개인 키가 계산됩니다.</translation>
+        <source>Enter a Pegasus Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>BIP 38을 사용하여 암호화 할 Pegasus 주소를 입력하십시오. 중간 입력창에 암호를 입력하십시오. 암호화를 누르면 암호화된 개인 키가 계산됩니다.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>주소:</translation>
     </message>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>메세지를 서명하기 위한 PEG 주소</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>메세지를 서명하기 위한 Pegasus 주소</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +279,8 @@
         <translation>현재 서명을 시스템 클립 보드에 복사</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>이 PEG 주소를 소유하고 있다는 것을 증명하기 위해 메세지에 서명하십시오</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>이 Pegasus 주소를 소유하고 있다는 것을 증명하기 위해 메세지에 서명하십시오</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +303,12 @@
         <translation>BIP 38 암호화 된 개인 키를 입력하십시오. 중간 입력창에 암호를 입력하십시오. 키를 암호해제 후 '주소 가져오기'를 클릭하면 개인 키가 지갑에 추가됩니다.</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>메세지에 서명된 PEG 주소</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>메세지에 서명된 Pegasus 주소</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>메세지가 지정된 PEG 주소로 서명되었는지 확인해주세요</translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>메세지가 지정된 Pegasus 주소로 서명되었는지 확인해주세요</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -539,7 +543,7 @@
     </message>
     <message>
         <source>Show Automatic &amp;Backups</source>
-        <translation>자동 &amp;백업 표시</translation>
+        <translation>자동 &amp;백업 폴더 열기</translation>
     </message>
     <message>
         <source>Show automatically created wallet backups</source>
@@ -569,6 +573,10 @@
         <source>&amp;Command-line options</source>
         <translation>&amp;명령행 옵션</translation>
     </message>
+    <message numerus="yes">
+        <source>Processed %n blocks of transaction history.</source>
+        <translation><numerusform>트랜잭션 기록의 %n 블록을 처리함</numerusform></translation>
+    </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>추가 데이터 동기화: %p%</translation>
@@ -594,16 +602,24 @@
         <translation>탭 도구 모음</translation>
     </message>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     <message>
-        <source>Send coins to a PEG address</source>
-        <translation>PEG 주소로 전송하기</translation>
+        <source>Send coins to a Pegasus address</source>
+        <translation>Pegasus 주소로 전송하기</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pegasus: URIs)</source>
         <translation>결제 요청 (QR 코드 및 pegasus: URI 생성)</translation>
+    </message>
+    <message>
+        <source>&amp;Privacy</source>
+        <translation>&amp;프라이버시</translation>
+    </message>
+    <message>
+        <source>Privacy Action for zPEG and Obfuscation</source>
+        <translation>zPEG와 난독화를 위한 프라이버스 작업</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -614,24 +630,24 @@
         <translation>마스터노드 검색</translation>
     </message>
     <message>
-        <source>&amp;About Pegasus</source>
-        <translation>Pegasus &amp;정보</translation>
+        <source>&amp;About Pegasus Core</source>
+        <translation>Pegasus Core &amp;정보</translation>
     </message>
     <message>
-        <source>Show information about Pegasus</source>
-        <translation>Pegasus에 대한 정보 표시</translation>
+        <source>Show information about Pegasus Core</source>
+        <translation>Pegasus Core에 대한 정보 표시</translation>
     </message>
     <message>
         <source>Modify configuration options for Pegasus</source>
         <translation>Pegasus에 대한 구성 옵션 수정</translation>
     </message>
     <message>
-        <source>Sign messages with your PEG addresses to prove you own them</source>
-        <translation>PEG 주소로 메시지에 서명하여 소유하고 있음을 증명하십시오.</translation>
+        <source>Sign messages with your Pegasus addresses to prove you own them</source>
+        <translation>Pegasus 주소로 메시지에 서명하여 소유하고 있음을 증명하십시오.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PEG addresses</source>
-        <translation>메시지가 지정된 PEG 주소로 서명되었는지 확인합니다.</translation>
+        <source>Verify messages to ensure they were signed with specified Pegasus addresses</source>
+        <translation>메시지가 지정된 Pegasus 주소로 서명되었는지 확인합니다.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -662,8 +678,8 @@
         <translation>마스터노드 구성 파일 열기</translation>
     </message>
     <message>
-        <source>Open a pegasus: URI or payment request</source>
-        <translation>pegasus: URI 또는 ​​결제 요청 열기</translation>
+        <source>Open a Pegasus: URI or payment request</source>
+        <translation>Pegasus: URI 또는 ​​결제 요청 열기</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -674,12 +690,16 @@
         <translation>블록 탐색 창</translation>
     </message>
     <message>
-        <source>Show the Pegasus help message to get a list with possible Pegasus command-line options</source>
-        <translation>Pegasus 도움말 메세지를 표시하여 사용 가능한 Pegasus 명령행 옵션 목록 표시</translation>
+        <source>Show the Pegasus Core help message to get a list with possible Pegasus command-line options</source>
+        <translation>Pegasus Core 도움말 메세지를 표시하여 사용 가능한 Pegasus 명령행 옵션 목록 표시</translation>
     </message>
     <message>
-        <source>Pegasus client</source>
-        <translation>Pegasus 클라이언트</translation>
+        <source>Pegasus Core client</source>
+        <translation>Pegasus Core 클라이언트</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n active connection(s) to Pegasus network</source>
+        <translation><numerusform>%n 개 Pegasus 네트웍에 연결</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -701,9 +721,25 @@
         <source>Up to date</source>
         <translation>최신</translation>
     </message>
+    <message numerus="yes">
+        <source>%n hour(s)</source>
+        <translation><numerusform>%n 시간</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation><numerusform>%n 일</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n week(s)</source>
+        <translation><numerusform>%n 주</numerusform></translation>
+    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 그리고 %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n year(s)</source>
+        <translation><numerusform>%n 년</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -711,7 +747,7 @@
     </message>
     <message>
         <source>Catching up...</source>
-        <translation>동기화중...</translation>
+        <translation>동기화 중...</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
@@ -735,7 +771,7 @@
     </message>
     <message>
         <source>Sent transaction</source>
-        <translation>트랜잭션 전송</translation>
+        <translation>보낸 트랜잭션</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
@@ -779,7 +815,11 @@ Address: %4
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>지갑은 &lt;b&gt;암호화&lt;/ b&gt;되어 있으며 현재 &lt;b&gt;잠금해제&lt;/ b&gt;되었습니다.</translation>
+        <translation>현재 지갑은 &lt;b&gt;암호화되어 &lt;b&gt;잠금해제되었습니다.</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
+        <translation>지갑은 &lt;b&gt;암호화&lt;/b&gt;되어 있으며 현재 익명화 및 스테이킹만을 위해 &lt;b&gt;잠금해제&lt;/b&gt; 되었습니다.</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
@@ -791,6 +831,14 @@ Address: %4
     <message>
         <source>Blockchain Explorer</source>
         <translation>블록체인 탐색기</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>뒤로</translation>
+    </message>
+    <message>
+        <source>Forward</source>
+        <translation>앞으로</translation>
     </message>
     <message>
         <source>Address / Block / Transaction</source>
@@ -812,8 +860,8 @@ Address: %4
 <context>
     <name>ClientModel</name>
     <message>
-        <source>Total: %1 (OBF compatible: %2 / Enabled: %3)</source>
-        <translation>총: %1 (OBF 호환: %2 / 사용됨: %3)</translation>
+        <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
+        <translation>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</translation>
     </message>
     <message>
         <source>Network Alert</source>
@@ -856,7 +904,7 @@ Address: %4
     </message>
     <message>
         <source>Change:</source>
-        <translation>변경:</translation>
+        <translation>잔돈:</translation>
     </message>
     <message>
         <source>(un)select all</source>
@@ -944,7 +992,7 @@ Address: %4
     </message>
     <message>
         <source>Copy bytes</source>
-        <translation>bytes 복사</translation>
+        <translation>Bytes 복사</translation>
     </message>
     <message>
         <source>Copy priority</source>
@@ -979,8 +1027,8 @@ Address: %4
         <translation>중간 높음</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 uPEG per input.</source>
-        <translation>입력당 +/- %1 uPEG을 변경할 수 있습니다.</translation>
+        <source>Can vary +/- %1 duff(s) per input.</source>
+        <translation>입력당 +/- %1 금액(s)을 변경할 수 있습니다.</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1052,7 +1100,7 @@ Address: %4
     </message>
     <message>
         <source>(change)</source>
-        <translation>(변경)</translation>
+        <translation>(잔돈)</translation>
     </message>
 </context>
 <context>
@@ -1075,7 +1123,7 @@ Address: %4
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>이 주소 목록과 관련된 주소입니다. 주소를 보낼때만 수정할 수 있습니다.</translation>
+        <translation>이 주소 목록과 관련된 주소입니다. 주소를 보낼 때만 수정할 수 있습니다.</translation>
     </message>
     <message>
         <source>New receiving address</source>
@@ -1094,8 +1142,8 @@ Address: %4
         <translation>보내는 주소 수정</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PEG address.</source>
-        <translation>입력된 주소 "%1"는 올바른 PEG 주소가 아닙니다.</translation>
+        <source>The entered address "%1" is not a valid Pegasus address.</source>
+        <translation>입력된 주소 "%1"는 올바른 Pegasus 주소가 아닙니다.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1140,16 +1188,16 @@ Address: %4
         <translation>버전</translation>
     </message>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Pegasus</source>
-        <translation>Pegasus 정보</translation>
+        <source>About Pegasus Core</source>
+        <translation>Pegasus Core 정보</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1195,16 +1243,16 @@ Address: %4
         <translation>환영합니다</translation>
     </message>
     <message>
-        <source>Welcome to Pegasus.</source>
-        <translation>Pegasus 환영합니다.</translation>
+        <source>Welcome to Pegasus Core.</source>
+        <translation>Pegasus Core에 오신 것을 환영합니다.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Pegasus will store its data.</source>
-        <translation>이 프로그램이 처음 실행되었으므로 Pegasus가 데이터를 저장할 위치를 선택할 수 있습니다.</translation>
+        <source>As this is the first time the program is launched, you can choose where Pegasus Core will store its data.</source>
+        <translation>이 프로그램이 처음 실행되었으므로 Pegasus Core가 데이터를 저장할 위치를 선택할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Pegasus will download and store a copy of the Pegasus block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Pegasus는 Pegasus 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
+        <source>Pegasus Core will download and store a copy of the Pegasus block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Pegasus Core는 Pegasus 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1215,8 +1263,8 @@ Address: %4
         <translation>사용자 지정 데이터 디렉토리 사용:</translation>
     </message>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1357,12 +1405,12 @@ Address: %4
         <translation>보낼 주소 입력</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PEG addresses after it matures.
-To Add: enter percentage to give and PEG address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Pegasus addresses after it matures.
+To Add: enter percentage to give and Pegasus address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>다중전송을 사용하면 성취 한 뒤 다른 PEG 주소 목록에 최대 100% 스테이크 또는 마스터노드 보상을 자동으로 보낼 수 있습니다.
-추가하려면 : 부여 할 백분율과 다중전송 벡터에 추가 할 PEG 주소를 입력하십시오.
+        <translation>다중전송을 사용하면 성취 한 뒤 다른 Pegasus 주소 목록에 최대 100% 스테이크 또는 마스터노드 보상을 자동으로 보낼 수 있습니다.
+추가하려면 : 부여 할 백분율과 다중전송 벡터에 추가 할 Pegasus 주소를 입력하십시오.
 삭제하려면 삭제할 주소를 입력하고 삭제를 누릅니다.
 활성화를 클릭하지 않으면 다중전송이 활성화되지 않습니다.</translation>
     </message>
@@ -1475,6 +1523,73 @@ Please check the address and try again.</source>
 </source>
         <translation>주소를 찾을 수 없습니다
 </translation>
+    </message>
+</context>
+<context>
+    <name>ObfuscationConfig</name>
+    <message>
+        <source>Configure Obfuscation</source>
+        <translation>난독화 구성</translation>
+    </message>
+    <message>
+        <source>Basic Privacy</source>
+        <translation>기본 익명</translation>
+    </message>
+    <message>
+        <source>High Privacy</source>
+        <translation>높은 익명</translation>
+    </message>
+    <message>
+        <source>Maximum Privacy</source>
+        <translation>최고 익명</translation>
+    </message>
+    <message>
+        <source>Please select a privacy level.</source>
+        <translation>익명화 레벨을 선택해주세요.</translation>
+    </message>
+    <message>
+        <source>Use 2 separate masternodes to mix funds up to 10000 PEG</source>
+        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 PEG 를 섞을 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Use 8 separate masternodes to mix funds up to 10000 PEG</source>
+        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 PEG 를 섞을 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Use 16 separate masternodes</source>
+        <translation>16개의 개별 마스터노드를 사용</translation>
+    </message>
+    <message>
+        <source>This option is the quickest and will cost about ~0.025 PEG to anonymize 10000 PEG</source>
+        <translation>이 옵션은 가장 빠르게 전송되며 10000 PEG 익명화에 약 ~0.025 PEG의 비용이 들어갑니다.</translation>
+    </message>
+    <message>
+        <source>This option is moderately fast and will cost about 0.05 PEG to anonymize 10000 PEG</source>
+        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 PEG 익명화에 약 0.05 PEG의 비용이 들어갑니다.</translation>
+    </message>
+    <message>
+        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
+        <translation>이것은 가장 느리고 안전한 옵션입니다. 최고 익명성을 사용하면 비용이 발생합니다.</translation>
+    </message>
+    <message>
+        <source>0.1 PEG per 10000 PEG you anonymize.</source>
+        <translation>10000 PEG 익명화에 0.1 PEG 가 듭니다.</translation>
+    </message>
+    <message>
+        <source>Obfuscation Configuration</source>
+        <translation>난독화 구성</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Pegasus's configuration screen.</source>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 2 rounds) Pegasus의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Pegasus's configuration screen.</source>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 8 rounds) Pegasus의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Pegasus's configuration screen.</source>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 16 rounds) Pegasus의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
 </context>
 <context>
@@ -1591,8 +1706,30 @@ Please check the address and try again.</source>
         <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 Pegasus을 다시 시작한 후에 적용됩니다.</translation>
     </message>
     <message>
+        <source>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/pegasus-project/pegasus-project-translations</source>
+        <translation>지원 언어가 없거나 번역이 불완전한가요? 번역을 도와주세요 :
+https://www.transifex.com/pegasus-project/pegasus-project-translations</translation>
+    </message>
+    <message>
         <source>Map port using &amp;UPnP</source>
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
+    </message>
+    <message>
+        <source>Percentage of incoming PEG which get automatically converted to zPEG via Zerocoin Protocol (min: 10%)</source>
+        <translation>PEG수신시 자동변환 zPEG 퍼센트 (최소값:10%)</translation>
+    </message>
+    <message>
+        <source>Percentage of autominted zPEG</source>
+        <translation>자동 변환되는 zPEG 퍼센트</translation>
+    </message>
+    <message>
+        <source>Wait with automatic conversion to Zerocoin until enough PEG for this denomination is available</source>
+        <translation>이 디노미네이션의 PEG가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
+    </message>
+    <message>
+        <source>Preferred Automint zPEG Denomination</source>
+        <translation>선호하는 자동생성 zPEG 디노미네이션 </translation>
     </message>
     <message>
         <source>Connect to the Pegasus network through a SOCKS5 proxy.</source>
@@ -1643,6 +1780,10 @@ Please check the address and try again.</source>
         <translation>사용자 인터페이스 &amp;언어:</translation>
     </message>
     <message>
+        <source>User Interface Theme:</source>
+        <translation>사용자 인터페이스 테마:</translation>
+    </message>
+    <message>
         <source>&amp;Unit to show amounts in:</source>
         <translation>&amp;금액을 표시 할 단위:</translation>
     </message>
@@ -1683,6 +1824,10 @@ Please check the address and try again.</source>
         <translation>&amp;취소</translation>
     </message>
     <message>
+        <source>I don't care</source>
+        <translation>없음</translation>
+    </message>
+    <message>
         <source>default</source>
         <translation>기본값</translation>
     </message>
@@ -1716,6 +1861,10 @@ Please check the address and try again.</source>
     <message>
         <source>Form</source>
         <translation>Form</translation>
+    </message>
+    <message>
+        <source>PEG Balances</source>
+        <translation>PEG 잔액</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1778,6 +1927,26 @@ Please check the address and try again.</source>
         <translation>출금 가능 액수:</translation>
     </message>
     <message>
+        <source>Combined Balances (including immature coins)</source>
+        <translation>전체 잔액 (대기중 코인 포함)</translation>
+    </message>
+    <message>
+        <source>PEG:</source>
+        <translation>PEG:</translation>
+    </message>
+    <message>
+        <source>zPEG:</source>
+        <translation>zPEG:</translation>
+    </message>
+    <message>
+        <source>0 %</source>
+        <translation>0 %</translation>
+    </message>
+    <message>
+        <source>Zerocoin Balance</source>
+        <translation>제로코인 잔액</translation>
+    </message>
+    <message>
         <source>Recent transactions</source>
         <translation>최근 트랜잭션</translation>
     </message>
@@ -1810,11 +1979,11 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Cannot start pegasus: click-to-pay handler</source>
-        <translation>pegasus을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
+        <translation>Pegasus을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PEG address or malformed URI parameters.</source>
-        <translation>URI를 분석할 수 없습니다! 이는 잘못된 PEG 주소 또는 URI 매개변수 손상으로 인해 발생할 수 있습니다.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Pegasus address or malformed URI parameters.</source>
+        <translation>URI를 분석할 수 없습니다! 이는 잘못된 Pegasus 주소 또는 URI 매개변수 손상으로 인해 발생할 수 있습니다.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1893,14 +2062,471 @@ Please check the address and try again.</source>
     </message>
 </context>
 <context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>PEG which were anonymized via Zerocin Protocol</source>
+        <translation>제로코인 프로토콜을 통해 익명화된 PEG</translation>
+    </message>
+    <message>
+        <source>Zerocoin PEG (zPEG)</source>
+        <translation>제로코인 PEG (zPEG)</translation>
+    </message>
+    <message>
+        <source>Zerocoin Actions:</source>
+        <translation>제로코인 관리:</translation>
+    </message>
+    <message>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pegasus network after a connection is established, but this process has not completed yet.</source>
+        <translation>표시된 정보가 오래되었을 수 있습니다. 연결이 완료되면 지갑이 Pegasus 네트워크와 자동으로 동기화될 예정이지만, 아직 해당 프로세스가 완료되지 않았습니다.</translation>
+    </message>
+    <message>
+        <source>Enter an amount of Phr to convert to zPhr</source>
+        <translation>zPEG로 변환할 PEG 수량을 입력하세요.</translation>
+    </message>
+    <message>
+        <source>Mint Zerocoin</source>
+        <translation>제로코인 생성</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>zPEG</source>
+        <translation>zPEG</translation>
+    </message>
+    <message>
+        <source>Available for Minting:</source>
+        <translation>생성 가능한 수량 :</translation>
+    </message>
+    <message>
+        <source>0.000 000 00 PEG</source>
+        <translation>0.000 000 00 PEG</translation>
+    </message>
+    <message>
+        <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
+        <translation>제로코인 지갑 DB 재설정. 블록 체인에 포함시키지 않은 트랜잭션을 삭제합니다.</translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation>초기화</translation>
+    </message>
+    <message>
+        <source>Coin Control...</source>
+        <translation>코인 컨트롤...</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>수량:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>금액:</translation>
+    </message>
+    <message>
+        <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
+        <translation>제로코인 생성과 메타데이타를 위해 블록체인을 다시 스캔합니다.</translation>
+    </message>
+    <message>
+        <source>ReScan</source>
+        <translation>다시 스캔</translation>
+    </message>
+    <message>
+        <source>Status and/or Mesages from the last Mint Action.</source>
+        <translation>마지막 발행 이후 상태나 메세지</translation>
+    </message>
+    <message>
+        <source>zPhr Control</source>
+        <translation>zPEG 설정</translation>
+    </message>
+    <message>
+        <source>zPhr Selected:</source>
+        <translation>선택한 zPEG : </translation>
+    </message>
+    <message>
+        <source>Quantity Selected:</source>
+        <translation>선택된 수량 :</translation>
+    </message>
+    <message>
+        <source>Spend Zerocoin. Without 'Pay To:' address creates payments to yourself.</source>
+        <translation>제로코인 전송 'Pay To :' 주소가 없으면 자신에게 지불합니다.</translation>
+    </message>
+    <message>
+        <source>Spend Zerocoin</source>
+        <translation>제로코인 보내기</translation>
+    </message>
+    <message>
+        <source>Available Balance:</source>
+        <translation>가능한 잔액:</translation>
+    </message>
+    <message>
+        <source>0 zPEG</source>
+        <translation>0 zPEG</translation>
+    </message>
+    <message>
+        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
+        <translation>제로코인 전송 시큐리티 레벨.  높을수록 좋지만, 시간과 많은 자원이 필요합니다.</translation>
+    </message>
+    <message>
+        <source>Security Level:</source>
+        <translation>시큐리티 레벨:</translation>
+    </message>
+    <message>
+        <source>Security Level 1 - 100 (default: 42)</source>
+        <translation>시큐리티 레벨 1 - 100 (기본값: 42)</translation>
+    </message>
+    <message>
+        <source>Pay &amp;To:</source>
+        <translation>지불 &amp;대상:</translation>
+    </message>
+    <message>
+        <source>The Pegasus address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>PEG를 전송할 Pegasus 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>이전에 사용한 주소 선택</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>클립보드에서 주소 붙여 넣기</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>&amp;Label:</source>
+        <translation>&amp;라벨:</translation>
+    </message>
+    <message>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation>이 주소의 라벨을 입력하여 사용된 주소 목록에 추가하십시오</translation>
+    </message>
+    <message>
+        <source>A&amp;mount:</source>
+        <translation>금&amp;액:</translation>
+    </message>
+    <message>
+        <source>Convert Change to Zerocoin (might cost additional fees)</source>
+        <translation>잔돈을 제로코인으로 변환 (추가 요금이 부과될 수 있음)</translation>
+    </message>
+    <message>
+        <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
+        <translation>이 옵션을 선택하면, 사용한 디노미네이션의 수를 최소화하는 대신 남는 잔돈을 최소화합니다.</translation>
+    </message>
+    <message>
+        <source>Minimize Change</source>
+        <translation>잔돈 최소화하기</translation>
+    </message>
+    <message>
+        <source>Information about the available Zerocoin funds.</source>
+        <translation>사용가능한 제로코인 정보</translation>
+    </message>
+    <message>
+        <source>Zerocoin Stats:</source>
+        <translation>제로코인 상태 :</translation>
+    </message>
+    <message>
+        <source>Available Funds</source>
+        <translation>사용가는한 펀드</translation>
+    </message>
+    <message>
+        <source>Available Zerocoin  Balance:</source>
+        <translation>사용가능한 제로코인 잔액:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 1:</source>
+        <translation>디노미네이션 값 1:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 1:</source>
+        <translation>Denom. 값 1:</translation>
+    </message>
+    <message>
+        <source>0 x</source>
+        <translation>0 x</translation>
+    </message>
+    <message>
+        <source>Denominations with value 5:</source>
+        <translation>디노미네이션 값 5:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 5:</source>
+        <translation>Denom. 값 5:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 10:</source>
+        <translation>디노미네이션  값 10:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 10:</source>
+        <translation>Denom. 값 10:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 50:</source>
+        <translation>디노미네이션 값 50:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 50:</source>
+        <translation>Denom. 값 50:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 100:</source>
+        <translation>디노미네이션 값 100:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 100:</source>
+        <translation>Denom. 값 100:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 500:</source>
+        <translation>디노미네이션 값 500:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 500:</source>
+        <translation>Denom. 값 500:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 1000:</source>
+        <translation>디노미네이션 값 1000:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 1000:</source>
+        <translation>Denom. 값 1000:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 5000:</source>
+        <translation>디노미네이션 값 5000:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 5000:</source>
+        <translation>Denom. 값 5000:</translation>
+    </message>
+    <message>
+        <source>Note: This hidden objects are used for communication between the 'Coin Control' dialog and its parent objects. We don't want to change/reimplement the existing Coin Control, so this objects must be here, even when we don't use them. No, we don't like this approach, either.</source>
+        <translation>Note: This hidden objects are used for communication between the 'Coin Control' dialog and its parent objects. We don't want to change/reimplement the existing Coin Control, so this objects must be here, even when we don't use them. No, we don't like this approach, either.</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>우선 순위:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>수수료:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>현금:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>아니오</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>Insufficient funds!</source>
+        <translation>자금이 충분하지 않습니다!</translation>
+    </message>
+    <message>
+        <source>Coins automatically selected</source>
+        <translation>코인 자동으로 선택됨</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>중간</translation>
+    </message>
+    <message>
+        <source>Coin Control Features</source>
+        <translation>코인 제어 기능</translation>
+    </message>
+    <message>
+        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
+        <translation>이 옵션이 활성화되었지만, 변경 주소가 비어있거나 유효하지 않은 경우 변경사항은 새로 생성된 주소로 전송됩니다.</translation>
+    </message>
+    <message>
+        <source>Custom change address</source>
+        <translation>커스텀 주소 변경</translation>
+    </message>
+    <message>
+        <source>Amount After Fee:</source>
+        <translation>수수료 차감 금액:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>변경:</translation>
+    </message>
+    <message>
+        <source>out of sync</source>
+        <translation>동기화되지 않음</translation>
+    </message>
+    <message>
+        <source>Mint Status: Okay</source>
+        <translation>생성 상태 : Okay</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>수량 복사</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>금액 복사</translation>
+    </message>
+    <message>
+        <source>Zerocoin functionality is not enabled on the Pegasus network yet.</source>
+        <translation>제로 코인 기능 상태가 Pegasus 네트워크 상에서 이루어지지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
+        <translation>Error : 지갑이 잠겨있습니다. 먼저 지갑을 열어주세요.</translation>
+    </message>
+    <message>
+        <source>Message: Enter an amount &gt; 0.</source>
+        <translation>Message: 0 이상의 수량을 입력하세요.</translation>
+    </message>
+    <message>
+        <source>Minting </source>
+        <translation>생성중입니다.</translation>
+    </message>
+    <message>
+        <source>Successfully minted </source>
+        <translation>성공적으로 발행됨</translation>
+    </message>
+    <message>
+        <source> zPEG in </source>
+        <translation> zPEG in </translation>
+    </message>
+    <message>
+        <source> sec. Used denominations:
+</source>
+        <translation> 초. 사용된 디노미네이션:
+</translation>
+    </message>
+    <message>
+        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware. 
+Please be patient...</source>
+        <translation>제로코인 생성 초기화 진행중... : 전체 블록체인을 다시 검색합니다. 하드웨어에 따라 최대 30분이 걸릴수 있습니다.
+기다려주세요...</translation>
+    </message>
+    <message>
+        <source>Duration: </source>
+        <translation>경과시간:</translation>
+    </message>
+    <message>
+        <source> sec.
+</source>
+        <translation>초.
+</translation>
+    </message>
+    <message>
+        <source>Starting ResetSpentZerocoin: </source>
+        <translation>전송된 제로코인 리셋 시작중...</translation>
+    </message>
+    <message>
+        <source>No 'Pay To' address provided, creating local payment</source>
+        <translation>주소를 입력하지 않아, 신규 주소를 생성합니다.</translation>
+    </message>
+    <message>
+        <source>Invalid Pegasus Address</source>
+        <translation>잘못된 Pegasus 주소</translation>
+    </message>
+    <message>
+        <source>Invalid Send Amount</source>
+        <translation>잘못된 전송 수량</translation>
+    </message>
+    <message>
+        <source>Confirm additional Fees</source>
+        <translation>추가 수수료 확인</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to send?&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>정말로 보내시겠습니까?&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source> to address </source>
+        <translation>주소로</translation>
+    </message>
+    <message>
+        <source> to a newly generated (unused and therefor anonymous) local address &lt;br /&gt;</source>
+        <translation>새로 생성된 개인 지갑 주소(미사용된 익명의) &lt;br /&gt; 로</translation>
+    </message>
+    <message>
+        <source>with Security Level </source>
+        <translation>시큐리티 레벨</translation>
+    </message>
+    <message>
+        <source>Confirm send coins</source>
+        <translation>코인 전송 확인</translation>
+    </message>
+    <message>
+        <source>Spending Zerocoin.
+Computationally expensive, might need several minutes depending on the selected Security Level and your hardware. 
+Please be patient...</source>
+        <translation>제로코인 전송중입니다.
+시큐리티 레벨과 여러분의 하드웨어에 따라 수 분이 걸립니다.
+조금만 기다려주세요...</translation>
+    </message>
+    <message>
+        <source>Spend Zerocoin failed with status = </source>
+        <translation>제로코인 송금 실패 상태 =</translation>
+    </message>
+    <message>
+        <source>zPhr Spend #: </source>
+        <translation>zPhr 송금 #: </translation>
+    </message>
+    <message>
+        <source>denomination: </source>
+        <translation>디노미네이션: </translation>
+    </message>
+    <message>
+        <source>serial: </source>
+        <translation>시리얼:</translation>
+    </message>
+    <message>
+        <source>Spend is 1 of : </source>
+        <translation>Spend is 1 of : </translation>
+    </message>
+    <message>
+        <source>value out: </source>
+        <translation>출력 값:</translation>
+    </message>
+    <message>
+        <source>address: </source>
+        <translation>주소:</translation>
+    </message>
+    <message>
+        <source>zPhr Mint</source>
+        <translation>zPEG 생성</translation>
+    </message>
+    <message>
+        <source>Sending successful, return code: </source>
+        <translation>성공 완료, 리턴 코드 :</translation>
+    </message>
+    <message>
+        <source>txid: </source>
+        <translation>txid:</translation>
+    </message>
+    <message>
+        <source>fee: </source>
+        <translation>수수료:</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
         <translation>금액</translation>
     </message>
     <message>
-        <source>Enter a PEG address (e.g. %1)</source>
-        <translation>PEG 주소를 입력하세요 (예 %1)</translation>
+        <source>Enter a Pegasus address (e.g. %1)</source>
+        <translation>Pegasus 주소를 입력하세요 (예 %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2550,6 +3176,14 @@ Please check the address and try again.</source>
         <translation>승인 시간:</translation>
     </message>
     <message>
+        <source>Open Coin Control...</source>
+        <translation>코인 설정 열기...</translation>
+    </message>
+    <message>
+        <source>Coins automatically selected</source>
+        <translation>코인 자동으로 선택됨</translation>
+    </message>
+    <message>
         <source>If the custom fee is set to 1000 uPEGs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPEGs in fee,&lt;br /&gt;while "at least" pays 1000 uPEGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uPEGs로 설정되고,&lt;br /&gt;1000 uPEGs 안에는 최소 "킬로바이트당" 250 uPEGs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
@@ -2606,6 +3240,10 @@ Please check the address and try again.</source>
         <translation>&amp;받는 사람 추가</translation>
     </message>
     <message>
+        <source>Anonymized PEG</source>
+        <translation>익명화 PEG</translation>
+    </message>
+    <message>
         <source>SwiftTX</source>
         <translation>SwiftTX</translation>
     </message>
@@ -2658,8 +3296,12 @@ Please check the address and try again.</source>
         <translation>사용</translation>
     </message>
     <message>
-        <source>Warning: Invalid PEG address</source>
-        <translation>경고: 잘못된 PEG 주소</translation>
+        <source>anonymous funds</source>
+        <translation>익명 자금</translation>
+    </message>
+    <message>
+        <source>Warning: Invalid Pegasus address</source>
+        <translation>경고: 잘못된 Pegasus 주소</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2692,6 +3334,10 @@ Please check the address and try again.</source>
     <message>
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
         <translation>KB당 %1보다 %2배 많은 수수료는 너무 높은 수수료입니다.</translation>
+    </message>
+    <message numerus="yes">
+        <source>Estimated to begin confirmation within %n block(s).</source>
+        <translation><numerusform>%n 블록이내에서 컨펌이 시작될것 같습니다.</numerusform></translation>
     </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
@@ -2730,6 +3376,14 @@ Please check the address and try again.</source>
         <translation>트랜잭션이 거부되었습니다! 지갑에 있는 코인 중 일부가 이미 사용된 경우일 수 있습니다. wallet.dat 사본을 사용하고 코인을 이미 사용하고 현재 여기에 표시되지 않은 경우에 이런 현상이 발생할 수 있습니다.</translation>
     </message>
     <message>
+        <source>Error: The wallet was unlocked only to anonymize coins.</source>
+        <translation>오류: 현재 지갑이 익명 처리를 위해 잠금해제 되어 있습니다. 익명화 및 스테이킹 전용을 해제하시고 다시 시도하세요.</translation>
+    </message>
+    <message>
+        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
+        <translation>에러 : 현재 지갑은 코인 익명화를 위해서만 잠금해제되었습니다. 잠금해제가 취소됩니다.</translation>
+    </message>
+    <message>
         <source>Pay only the minimum fee of %1</source>
         <translation>%1의 최소 수수료만 지불하십시오</translation>
     </message>
@@ -2753,8 +3407,8 @@ Please check the address and try again.</source>
         <translation>지불 &amp;대상:</translation>
     </message>
     <message>
-        <source>The PEG address to send the payment to</source>
-        <translation>전송할 PEG 주소</translation>
+        <source>The Pegasus address to send the payment to</source>
+        <translation>전송할 Pegasus 주소</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2793,8 +3447,8 @@ Please check the address and try again.</source>
         <translation>메세지:</translation>
     </message>
     <message>
-        <source>A message that was attached to the pegasus: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Pegasus network.</source>
-        <translation>참조용으로 트랜잭션과 함께 기록되는 pegasus: URI에 첨부된 메세지입니다. 참고: 이 메세지는 Pegasus 네트워크를 통해 전송되지 않습니다.</translation>
+        <source>A message that was attached to the Pegasus: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Pegasus network.</source>
+        <translation>참조용으로 트랜잭션과 함께 기록되는 Pegasus : URI에 첨부된 메세지입니다. 참고: 이 메세지는 Pegasus 네트워크를 통해 전송되지 않습니다.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2820,8 +3474,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Pegasus is shutting down...</source>
-        <translation>Pegasus가 종료됩니다...</translation>
+        <source>Pegasus Core is shutting down...</source>
+        <translation>Pegasus Core가 종료됩니다...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2843,8 +3497,8 @@ Please check the address and try again.</source>
         <translation>자신의 주소로 메세지에 서명할 수 있습니다. 피싱 공격으로 사용자를 속일 수 있으므로 서명에 주의해주세요. 동의하는 바에 한하여 서명하십시오.</translation>
     </message>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>메세지를 서명하기 위한 PEG 주소</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>메세지를 서명하기 위한 Pegasus 주소</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2875,16 +3529,16 @@ Please check the address and try again.</source>
         <translation>현재 서명을 시스템 클립 보드에 복사</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>이 PEG 주소를 소유하고 있다는 것을 증명하기 위해 메세지에 서명하십시오</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>이 Pegasus 주소를 소유하고 있다는 것을 증명하기 위해 메세지에 서명하십시오</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>메세지에 서명된 PEG 주소</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>메세지에 서명된 Pegasus 주소</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>메세지가 지정된 PEG 주소로 서명되었는지 확인해주세요</translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>메세지가 지정된 Pegasus 주소로 서명되었는지 확인해주세요</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2970,8 +3624,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2986,12 +3640,8 @@ Please check the address and try again.</source>
         <translation>Dash Core 개발자</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>PIVX Core 개발자</translation>
-    </message>
-    <message>
-        <source>The Pegasus developers</source>
-        <translation>Pegasus 개발자</translation>
+        <source>The Pegasus Core developers</source>
+        <translation>Pegasus Core 개발자</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3007,6 +3657,10 @@ Please check the address and try again.</source>
 </context>
 <context>
     <name>TransactionDesc</name>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>%n 이상의 블록 열기</numerusform></translation>
+    </message>
     <message>
         <source>Open until %1</source>
         <translation>%1까지 열기</translation>
@@ -3068,6 +3722,10 @@ Please check the address and try again.</source>
         <source>, has not been successfully broadcast yet</source>
         <translation>, 아직 성공적으로 브로드캐스트되지 않았습니다</translation>
     </message>
+    <message numerus="yes">
+        <source>, broadcast through %n node(s)</source>
+        <translation><numerusform>, %n 개 노드를 통해 브로드캐스트됩니다.</numerusform></translation>
+    </message>
     <message>
         <source>Date</source>
         <translation>날짜</translation>
@@ -3107,6 +3765,10 @@ Please check the address and try again.</source>
     <message>
         <source>Credit</source>
         <translation>크레딧</translation>
+    </message>
+    <message numerus="yes">
+        <source>matures in %n more block(s)</source>
+        <translation><numerusform>%n 개 이상의 블록에서 생성됩니다.</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -3206,6 +3868,10 @@ Please check the address and try again.</source>
         <source>Address</source>
         <translation>주소</translation>
     </message>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>%n 이상의 블록 열기</numerusform></translation>
+    </message>
     <message>
         <source>Open until %1</source>
         <translation>%1까지 열기</translation>
@@ -3248,7 +3914,27 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Received from</source>
-        <translation>발신원</translation>
+        <translation>수신됨</translation>
+    </message>
+    <message>
+        <source>Received via Obfuscation</source>
+        <translation>난독화를 통해 수신 됨</translation>
+    </message>
+    <message>
+        <source>Obfuscation Denominate</source>
+        <translation>난독화 표시</translation>
+    </message>
+    <message>
+        <source>Obfuscation Collateral Payment</source>
+        <translation>난독화 보증 결제 </translation>
+    </message>
+    <message>
+        <source>Obfuscation Make Collateral Inputs</source>
+        <translation>난독화로 보증 입력</translation>
+    </message>
+    <message>
+        <source>Obfuscation Create Denominations</source>
+        <translation>난독화 표시 만들기</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3271,8 +3957,36 @@ Please check the address and try again.</source>
         <translation>채굴</translation>
     </message>
     <message>
+        <source>Obfuscated</source>
+        <translation>난독화</translation>
+    </message>
+    <message>
+        <source>Converted Phr to zPhr</source>
+        <translation>zPEG로 변환된 PEG</translation>
+    </message>
+    <message>
+        <source>Spent zPhr</source>
+        <translation>전송된 zPEG</translation>
+    </message>
+    <message>
+        <source>Received Phr from zPhr</source>
+        <translation>zPEG로 전송받은 PEG</translation>
+    </message>
+    <message>
+        <source>Minted Change as zPhr from zPhr Spend</source>
+        <translation>zPEG 전송후 남은 잔돈 zPEG 생성됨</translation>
+    </message>
+    <message>
+        <source>Converted zPhr to Phr</source>
+        <translation>zPhr에서 Phr로 변환됨</translation>
+    </message>
+    <message>
         <source>watch-only</source>
         <translation>읽기 전용</translation>
+    </message>
+    <message>
+        <source>zPhr Accumulator</source>
+        <translation>zPhr 누산기</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -3346,6 +4060,26 @@ Please check the address and try again.</source>
         <translation>대상 전송</translation>
     </message>
     <message>
+        <source>Obfuscated</source>
+        <translation>난독화</translation>
+    </message>
+    <message>
+        <source>Obfuscation Make Collateral Inputs</source>
+        <translation>난독화로 보증 입력</translation>
+    </message>
+    <message>
+        <source>Obfuscation Create Denominations</source>
+        <translation>난독화 표시 만들기</translation>
+    </message>
+    <message>
+        <source>Obfuscation Denominate</source>
+        <translation>난독화 표시</translation>
+    </message>
+    <message>
+        <source>Obfuscation Collateral Payment</source>
+        <translation>난독화 보증 결제 </translation>
+    </message>
+    <message>
         <source>To yourself</source>
         <translation>자신에게</translation>
     </message>
@@ -3360,6 +4094,26 @@ Please check the address and try again.</source>
     <message>
         <source>Masternode Reward</source>
         <translation>마스터노드 보상 </translation>
+    </message>
+    <message>
+        <source>Received Phr from zPhr</source>
+        <translation>zPEG로 전송받은 PEG</translation>
+    </message>
+    <message>
+        <source>Zerocoin Mint</source>
+        <translation>제로코인 생성</translation>
+    </message>
+    <message>
+        <source>Zerocoin Spend</source>
+        <translation>제로코인 전송</translation>
+    </message>
+    <message>
+        <source>Zerocoin Spend, Change in zPhr</source>
+        <translation>제로코인 전송, 잔돈은 zPEG</translation>
+    </message>
+    <message>
+        <source>Zerocoin Spend to Self</source>
+        <translation>자신에게 제로코인 전송</translation>
     </message>
     <message>
         <source>Other</source>
@@ -3523,6 +4277,33 @@ Please check the address and try again.</source>
     </message>
 </context>
 <context>
+    <name>ZPhrControlDialog</name>
+    <message>
+        <source>Select zPhr to Spend</source>
+        <translation>전송할 zPEG 선택</translation>
+    </message>
+    <message>
+        <source>Quantity</source>
+        <translation>수량</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>zPhr</source>
+        <translation>zPhr</translation>
+    </message>
+    <message>
+        <source>Select/Deselect All</source>
+        <translation>전체 선택 / 해제</translation>
+    </message>
+    <message>
+        <source>Is Spendable</source>
+        <translation>전송가능합니다.</translation>
+    </message>
+</context>
+<context>
     <name>pegasus-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
@@ -3549,8 +4330,12 @@ Please check the address and try again.</source>
         <translation>JSON-RPC연결 수신을 위해 주어진 주소를 지정합니다. [host]: IPv6 포트 표기법 사용. 이 옵션은 여러번 지정할 수 있습니다. (기본값 : 모든 인터페이스에 지정)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Pegasus is probably already running.</source>
-        <translation>        &lt;translation&gt;잠겨진 데이터 디렉토리 %s 를 가져올 수 없습니다. Pegasus는 이미 실행 중입니다.</translation>
+        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
+        <translation>계산된 누산기 체크포인트는 블록 인덱스에 의해 기록되는 것이 아닙니다.</translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. Pegasus Core is probably already running.</source>
+        <translation>        &lt;translation&gt;잠겨진 데이터 디렉토리 %s 를 가져올 수 없습니다. Pegasus Core는 이미 실행 중입니다.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -3569,8 +4354,8 @@ Please check the address and try again.</source>
         <translation>지갑의 모든 트랜잭션들을 삭제하고 오직 블록체인을 통한 트랜잭션 부분들만 복구합니다 -시작 시 다시 스캔</translation>
     </message>
     <message>
-        <source>Disable all Pegasus specific functionality (Masternodes, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Pegasus의 모든 특정 기능들을 비활성화합니다(마스터노드, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
+        <source>Disable all Pegasus specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Pegasus의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3621,8 +4406,8 @@ Please check the address and try again.</source>
         <translation>메모리 풀에서 디스크로 매 &lt;n&gt; 메가바이트만큼 데이터베이스 활동 플러쉬를 기록합니다 (기본값: %u)</translation>
     </message>
     <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
-        <translation>-checkblocks의 블록 검증이 얼마나 철저한 정도 (0-4, 기본값: %u)</translation>
+        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
+        <translation>미확인 표시된 출력들을 찾고 계속하기 위한 확인을 받기 전까지 기다립니다.</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -3659,6 +4444,10 @@ Please check the address and try again.</source>
     <message>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
         <translation>재연결로 인해 피어가 오작동을 유지하는 초 단위 시간 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <translation>난독화는 정확한 금액을 사용하여 자금을 송금하기 때문에 더 많은 코인을 익명화해야 할 수도 있습니다.</translation>
     </message>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
@@ -3716,10 +4505,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "Pegasus Alert" admin@foo.com
 </source>
-        <translation>pegasusd 또는 pegasus-qt에 대한 -server 옵션 파일을 사용하려면 configuration 파일에서 rpcpassword를 설정해야 합니다:
+        <translation>Pegasusd 또는 Pegasus-qt에 대한 -server 옵션 파일을 사용하려면 configuration 파일에서 rpcpassword를 설정해야 합니다:
 %s
 다음 무작위 암호를 사용하는 것을 추천합니다:
-rpcuser=pegasusrpc
+rpcuser=Pegasuspc
 rpcpassword=%s
 (이 비밀번호는 기억할 필요가 없습니다)
 유저 이름과 비밀번호는 반드시 달라야 합니다.
@@ -3729,8 +4518,16 @@ rpcpassword=%s
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Pegasus is probably already running.</source>
-        <translation>이 컴퓨터를 %s 로 지정하는것은 불가능합니다. Pegasus는 이미 실행 중입니다.</translation>
+        <source>Unable to bind to %s on this computer. Pegasus Core is probably already running.</source>
+        <translation>이 컴퓨터를 %s 로 지정하는것은 불가능합니다. Pegasus Core는 이미 실행 중입니다.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
+        <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PEG.</source>
+        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 PEG과 일치하지 않음.</translation>
     </message>
     <message>
         <source>Unable to locate enough funds for this transaction that are not equal 10000 PEG.</source>
@@ -3749,7 +4546,7 @@ rpcpassword=%s
         <translation>경고 : -paytxfee가 매우 높게 설정되었습니다! 이것은 전송할 경우 지불 할 트랜잭션 수수료입니다.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Pegasus will not work properly.</source>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Pegasus Core will not work properly.</source>
         <translation>경고: 컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 Pegasus 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
     </message>
     <message>
@@ -3781,8 +4578,8 @@ rpcpassword=%s
         <translation>환경설정에서 masternodeprivkey를 지정해야 합니다. 도움말을 참조하십시오.</translation>
     </message>
     <message>
-        <source>(2171 could be used only on mainnet)</source>
-        <translation>(2171 은 메인넷에서만 사용될 수 있습니다)</translation>
+        <source>(5111 could be used only on mainnet)</source>
+        <translation>(5111 은 메인넷에서만 사용될 수 있습니다)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3793,8 +4590,8 @@ rpcpassword=%s
         <translation>(기본값: 1)</translation>
     </message>
     <message>
-        <source>(must be 2171 for mainnet)</source>
-        <translation>(메인넷 일경우 2171)</translation>
+        <source>(must be 5111 for mainnet)</source>
+        <translation>(메인넷 일경우 5111)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -3833,12 +4630,28 @@ rpcpassword=%s
         <translation>손상된 wallet.dat으로 부터 개인 키 복구를 시도합니다.</translation>
     </message>
     <message>
+        <source>Automatically create Tor hidden service (default: %d)</source>
+        <translation>자동 Tor 히든 서버스 생성 (기본값: %d)</translation>
+    </message>
+    <message>
         <source>Block creation options:</source>
         <translation>블록 생성 옵션:</translation>
     </message>
     <message>
+        <source>Calculating missing accumulators...</source>
+        <translation>누락된 누산기 계산중...</translation>
+    </message>
+    <message>
+        <source>Can't denominate: no compatible inputs left.</source>
+        <translation>표시할 수 없음: 남아있는 호환된 연결이 없습니다.</translation>
+    </message>
+    <message>
         <source>Can't find random Masternode.</source>
         <translation>임의의 마스터노드를 찾을 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Can't mix while sync in progress.</source>
+        <translation>동기화가 진행 중일 때에는 믹싱을 할 수 없습니다.</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet</source>
@@ -3889,12 +4702,8 @@ rpcpassword=%s
         <translation>Copyright (C) 2014-%i The Dash Core 개발자들</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Copyright (C) 2015-%i The PIVX Core 개발자</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2017-%i The Pegasus Developers</source>
-        <translation>Copyright (C) 2017-%i The Pegasus 개발자</translation>
+        <source>Copyright (C) 2015-%i The Pegasus Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Pegasus Core 개발자</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -3911,6 +4720,10 @@ rpcpassword=%s
     <message>
         <source>Debugging/Testing options:</source>
         <translation>디버깅/테스팅 옵션:</translation>
+    </message>
+    <message>
+        <source>Disable OS notifications for incoming transactions (default: %u)</source>
+        <translation>거래시 수신 알림창 해제  (기본값: %u)</translation>
     </message>
     <message>
         <source>Disable safemode, override a real safe mode event (default: %u)</source>
@@ -3931,6 +4744,10 @@ rpcpassword=%s
     <message>
         <source>Done loading</source>
         <translation>로딩 완료</translation>
+    </message>
+    <message>
+        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
+        <translation>자동 제로코인 생성 (0-1, 기본값: %u)</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -3965,7 +4782,7 @@ rpcpassword=%s
         <translation>wallet.dat을 불러오는 중 오류가 발생했습니다: 지갑 손상됨</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Pegasus</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Pegasus Core</source>
         <translation>wallet.dat를 로드하는 중 오류가 발생했습니다. 지갑에 최신 버전의 Pegasus 코어가 필요합니다.</translation>
     </message>
     <message>
@@ -3989,6 +4806,10 @@ rpcpassword=%s
         <translation>오류 : 내부에서 치명적인 오류가 발생했습니다. 자세한 내용은 debug.log를 참조하십시오</translation>
     </message>
     <message>
+        <source>Error: Can't select current denominated inputs</source>
+        <translation>오류 : 현재 표시된 입력을 선택할 수 없습니다</translation>
+    </message>
+    <message>
         <source>Error: Disk space is low!</source>
         <translation>오류 : 디스크 공간이 부족합니다!</translation>
     </message>
@@ -3999,6 +4820,10 @@ rpcpassword=%s
     <message>
         <source>Error: Wallet locked, unable to create transaction!</source>
         <translation>오류 : 지갑이 잠겼습니다, 트랜잭션을 생성할 수 없습니다!</translation>
+    </message>
+    <message>
+        <source>Error: You already have pending entries in the Obfuscation pool</source>
+        <translation>오류 : 이미 난독화 그룹에 보류중인 항목들이 있습니다.</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
@@ -4069,24 +4894,28 @@ rpcpassword=%s
         <translation>정보</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Pegasus is shutting down.</source>
-        <translation>초기화 정확성 검사에 실패 했습니다. Pegasus가 종료됩니다.</translation>
+        <source>Initialization sanity check failed. Pegasus Core is shutting down.</source>
+        <translation>초기화 정확성 검사에 실패 했습니다. Pegasus Core가 종료됩니다.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
         <translation>입력이 올바르지 않습니다.</translation>
     </message>
     <message>
+        <source>Insufficient funds</source>
+        <translation>잔액이 충분하지 않음</translation>
+    </message>
+    <message>
         <source>Insufficient funds.</source>
         <translation>충분하지 않은 금액.</translation>
     </message>
     <message>
-        <source>Invalid -onion address: '%s'</source>
-        <translation>유효하지 않은 -onion 주소: '%s'</translation>
+        <source>Invalid -onion address or hostname: '%s'</source>
+        <translation>잘못된 -onion 주소거나 호스트네임 : '%s'</translation>
     </message>
     <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>유효하지 않은 -proxy 주소: '%s'</translation>
+        <source>Invalid -proxy address or hostname: '%s'</source>
+        <translation>잘못된 -proxy 주소거나 호스트네입 : '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -4113,6 +4942,10 @@ rpcpassword=%s
         <translation>-reservebalance=&lt;amount&gt;에 대한 금액이 유효하지 않은 값</translation>
     </message>
     <message>
+        <source>Invalid amount</source>
+        <translation>잘못된 수량</translation>
+    </message>
+    <message>
         <source>Invalid masternodeprivkey. Please see documenation.</source>
         <translation>마스터노드 개인 키가 잘못되었습니다. 설명서를 참조하십시오.</translation>
     </message>
@@ -4135,6 +4968,38 @@ rpcpassword=%s
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
         <translation>이것은 사전 릴리스 테스트 빌드입니다 - 사용상 책임은 귀하에게 있습니다. - staking이나 상업적인 용도로는 절대 사용하지 마십시오!</translation>
+    </message>
+    <message>
+        <source> mints deleted
+</source>
+        <translation>생성 삭제
+</translation>
+    </message>
+    <message>
+        <source> mints updated, </source>
+        <translation>생성 업데이드</translation>
+    </message>
+    <message>
+        <source> unconfirmed transactions removed
+</source>
+        <translation>미확인된 거래 삭제됨
+</translation>
+    </message>
+    <message>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>에러 : 거래가 거부되었습니다. 예를 들어 다른 사본 wallet.dat에서 코인을 사용했다면 2중 사용으로 인식될수 있습니다. 혹은, 일부가 이미 소비 된 경우에 이런 일이 발생할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>에러 :이 거래에는 전송량, 복잡성 또는 최근에 받은 자금의 사용등으로 인해 적어도 %s의 거래 수수료가 필요합니다!</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
+        <translation>에러 : 지원하지않는 argument -checklevel 발견된.  Checklevel는 레벨 4이어야 합니다.</translation>
+    </message>
+    <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>자동생성 제로코인 선호 디노미네이션 (1/5/10/50/100/500/1000/5000) 0사용안됨, 기본값 : %u)</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
@@ -4185,6 +5050,18 @@ rpcpassword=%s
         <translation>메모리에서 연결 불가능한 트랜잭션을 &lt;n&gt;개까지 유지하십시오. (기본값: %u)</translation>
     </message>
     <message>
+        <source>Last Obfuscation was too recent.</source>
+        <translation>최근에 마지막으로 난독화를 진행했습니다.</translation>
+    </message>
+    <message>
+        <source>Last successful Obfuscation action was too recent.</source>
+        <translation>최근에 마지막으로 성공한 난독화 작업이 있습니다.</translation>
+    </message>
+    <message>
+        <source>Less than 3 mints added, unable to create spend</source>
+        <translation>3 미만 추가, 송금 불가능함</translation>
+    </message>
+    <message>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
         <translation>시그니처 캐시의 크기 제한을 &lt;n&gt; 항목으로 합니다 (기본값: %u)</translation>
     </message>
@@ -4219,6 +5096,10 @@ rpcpassword=%s
     <message>
         <source>Loading masternode payment cache...</source>
         <translation>마스터노드 결제 캐시를 불러오는 중...</translation>
+    </message>
+    <message>
+        <source>Loading sporks...</source>
+        <translation>sporks 로딩중...</translation>
     </message>
     <message>
         <source>Loading wallet... (%3.2f %%)</source>
@@ -4265,6 +5146,10 @@ rpcpassword=%s
         <translation>트랜잭션 정보 입력에 누락된 부분이 있습니다.</translation>
     </message>
     <message>
+        <source>Mixing in progress...</source>
+        <translation>믹싱이 진행 중입니다...</translation>
+    </message>
+    <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>-whitebind: '%s' 의 포트를 지정해야 합니다</translation>
     </message>
@@ -4275,6 +5160,14 @@ rpcpassword=%s
     <message>
         <source>No compatible Masternode found.</source>
         <translation>호환되는 마스터노드가 발견되지 않았습니다.</translation>
+    </message>
+    <message>
+        <source>No funds detected in need of denominating.</source>
+        <translation>분류가 필요한 자금이 발견되지 않았습니다.</translation>
+    </message>
+    <message>
+        <source>No matching denominations found for mixing.</source>
+        <translation>믹싱에 대한 일치하는 표기를 찾을 수 없습니다.</translation>
     </message>
     <message>
         <source>Node relay options:</source>
@@ -4301,6 +5194,18 @@ rpcpassword=%s
         <translation>자동 지갑 백업 횟수 (기본값: 10)</translation>
     </message>
     <message>
+        <source>Obfuscation is idle.</source>
+        <translation>난독화는 유휴상태입니다.</translation>
+    </message>
+    <message>
+        <source>Obfuscation request complete:</source>
+        <translation>난독화 요청 완료:</translation>
+    </message>
+    <message>
+        <source>Obfuscation request incomplete:</source>
+        <translation>난독화 요청 미완료:</translation>
+    </message>
+    <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
         <translation>내장된 체크 포인트와 일치하는 블록체인만 허용 (기본값: %u)</translation>
     </message>
@@ -4315,6 +5220,10 @@ rpcpassword=%s
     <message>
         <source>Password for JSON-RPC connections</source>
         <translation>JSON-RPC 연결 비밀번호</translation>
+    </message>
+    <message>
+        <source>Percentage of automatically minted Zerocoin  (10-100, default: %u)</source>
+        <translation>자동 생성 제로코인 퍼센트 (10-100, 기본값: %u)</translation>
     </message>
     <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
@@ -4367,6 +5276,14 @@ rpcpassword=%s
     <message>
         <source>Rescanning...</source>
         <translation>다시 스캔하는 중...</translation>
+    </message>
+    <message>
+        <source>ResetMintZerocoin finished: </source>
+        <translation>생성된 제로코인 초기화 완료:</translation>
+    </message>
+    <message>
+        <source>ResetSpentZerocoin finished: </source>
+        <translation>사용된 제로코인 초기화 완료:</translation>
     </message>
     <message>
         <source>Run a thread to flush wallet periodically (default: %u)</source>
@@ -4553,6 +5470,14 @@ rpcpassword=%s
         <translation>제대로 동작하지 않는 피어와 연결을 끊을 임계값 (기본값: %u)</translation>
     </message>
     <message>
+        <source>Tor control port password (default: empty)</source>
+        <translation>Tor 컨트롤 포트 암호 (기본값: 공백)</translation>
+    </message>
+    <message>
+        <source>Tor control port to use if onion listening enabled (default: %s)</source>
+        <translation>onion 활성화되었을 경우 사용할 Tor 코트롤 포트 (기본값: %s)</translation>
+    </message>
+    <message>
         <source>Transaction amount too small</source>
         <translation>트랜잭션 금액이 너무 적습니다</translation>
     </message>
@@ -4625,6 +5550,10 @@ rpcpassword=%s
         <translation>JSON-RPC 연결 사용자 이름</translation>
     </message>
     <message>
+        <source>Value more than Obfuscation pool maximum allows.</source>
+        <translation>난독화 풀의 최대 허용 값보다 높습니다.</translation>
+    </message>
+    <message>
         <source>Verifying blocks...</source>
         <translation>블록 인증 중...</translation>
     </message>
@@ -4641,7 +5570,7 @@ rpcpassword=%s
         <translation>지갑이 잠겼습니다.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Pegasus to complete</source>
+        <source>Wallet needed to be rewritten: restart Pegasus Core to complete</source>
         <translation>지갑을 다시 작성해야 합니다: 완료하려면 Pegasus 코어를 재시작해야 합니다</translation>
     </message>
     <message>
@@ -4691,6 +5620,14 @@ rpcpassword=%s
     <message>
         <source>ZeroMQ notification options:</source>
         <translation>ZeroMQ 알림 옵션:</translation>
+    </message>
+    <message>
+        <source>Zerocoin options:</source>
+        <translation>제로코인 옵션:</translation>
+    </message>
+    <message>
+        <source>failed to validate zerocoin</source>
+        <translation>제로코인 검증을 못했습니다.</translation>
     </message>
     <message>
         <source>on startup</source>

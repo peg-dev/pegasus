@@ -1,7 +1,7 @@
 Expectations for DNS Seed operators
 ====================================
 
-Pegasus attempts to minimize the level of trust in DNS seeds,
+Pegasus Core attempts to minimize the level of trust in DNS seeds,
 but DNS seeds still pose a small amount of risk for the network.
 As such, DNS seeds must be run by entities which have some minimum
 level of trust within the Pegasus community.
@@ -45,7 +45,7 @@ related to the DNS seed operation.
 
 If these expectations cannot be satisfied the operator should
 discontinue providing services and contact the active Pegasus
-Core development team.
+Core development team on the [Pegasus Discord Group](https://discord.gg/8tbvMQM).
 
 Behavior outside of these expectations may be reasonable in some
 situations but should be discussed in public in advance.

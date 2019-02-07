@@ -38,7 +38,7 @@ namespace GUIUtil
 QString dateTimeStr(const QDateTime& datetime);
 QString dateTimeStr(qint64 nTime);
 
-// Render PEG addresses in monospace font
+// Render Pegasus addresses in monospace font
 QFont bitcoinAddressFont();
 
 // Set up widgets for address and amounts
@@ -195,8 +195,11 @@ void saveWindowGeometry(const QString& strSetting, QWidget* parent);
 /** Restore window size and position */
 void restoreWindowGeometry(const QString& strSetting, const QSize& defaultSizeIn, QWidget* parent);
 
-/** Load global CSS */
+/** Load global CSS theme */
 QString loadStyleSheet();
+
+/** Check whether a theme is not build-in */
+bool isExternal(QString theme);
 
 /* Convert QString to OS specific boost path through UTF-8 */
 boost::filesystem::path qstringToBoostPath(const QString& path);

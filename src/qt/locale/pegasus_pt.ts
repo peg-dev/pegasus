@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços PEG para enviar pagamentos. Sempre confira a quantidade e os endereços de destino antes de enviar moedas.</translation>
+        <source>These are your Pegasus addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços Pegasus para enviar pagamentos. Sempre confira a quantidade e os endereços de destino antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços PEG para receber pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your Pegasus addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços Pegasus para receber pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -134,6 +134,10 @@
     <message>
         <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
         <translation>Serve para desabilitar envio trivial de dinheiro quando a conta do SO for comprometida, mas não provê segurança real.</translation>
+    </message>
+    <message>
+        <source>For anonymization and staking only</source>
+        <translation>Apenas para anonimização e staking</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -235,16 +239,16 @@
         <translation>Encriptar com &amp;BIP 38</translation>
     </message>
     <message>
-        <source>Enter a PEG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Digite um endereço PEG que você gostaria de criptografar usando BIP 38. Digite uma frase secreta na caixa do meio. Pressione criptografar para calcular a chave privada criptografada.</translation>
+        <source>Enter a Pegasus Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Digite um endereço Pegasus que você gostaria de criptografar usando BIP 38. Digite uma frase secreta na caixa do meio. Pressione criptografar para calcular a chave privada criptografada.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Endereço:</translation>
     </message>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>Um endereço PEG para assinar a mensagem</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>Um endereço Pegasus para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +279,8 @@
         <translation>Copiar a assinatura para a area de trabalho</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço PEG.</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço Pegasus.</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -295,8 +299,8 @@
         <translation>Criptografia BIP 38</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>O endereço PEG que foi assinado com</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>O endereço Pegasus que foi assinado com</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -430,6 +434,9 @@
     </message>
     </context>
 <context>
+    <name>ObfuscationConfig</name>
+    </context>
+<context>
     <name>OpenURIDialog</name>
     </context>
 <context>
@@ -443,6 +450,41 @@
     </context>
 <context>
     <name>PeerTableModel</name>
+    </context>
+<context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>Amount:</source>
+        <translation>Quantidade:</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Escolha o endereço usado anteriormente.</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Cole o endereço da areá de trabalho. </translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Prioridade:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Taxa:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>não</translation>
+    </message>
     </context>
 <context>
     <name>QObject</name>
@@ -626,8 +668,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>Um endereço PEG para assinar a mensagem</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>Um endereço Pegasus para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -658,12 +700,12 @@
         <translation>Copiar a assinatura para a area de trabalho</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço PEG.</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço Pegasus.</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>O endereço PEG que foi assinado com</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>O endereço Pegasus que foi assinado com</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -861,14 +903,17 @@
     </message>
     </context>
 <context>
+    <name>ZPhrControlDialog</name>
+    </context>
+<context>
     <name>pegasus-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes do blockchain através de -rescan na inicialização</translation>
     </message>
     <message>
-        <source>Disable all Pegasus specific functionality (Masternodes, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar todas as funcionacilidades específicas da Pegasus (Masternodes, SwiftTX, Budgeting) (0-1, default %u)</translation>
+        <source>Disable all Pegasus specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar todas as funcionacilidades específicas da Pegasus (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, default %u)</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
@@ -921,6 +966,14 @@
     <message>
         <source>No compatible Masternode found.</source>
         <translation>Nenhum Masternode compatível encontrado.</translation>
+    </message>
+    <message>
+        <source>Obfuscation request complete:</source>
+        <translation>Requisição de ofuscação completa:</translation>
+    </message>
+    <message>
+        <source>Obfuscation request incomplete:</source>
+        <translation>Requisição de ofuscação incompleta:</translation>
     </message>
     <message>
         <source>Options:</source>
@@ -1199,6 +1252,10 @@
         <translation>Nome de usuário para conexões JSON-RPC</translation>
     </message>
     <message>
+        <source>Value more than Obfuscation pool maximum allows.</source>
+        <translation>Valor maior do que o máximo permitido pela pool.</translation>
+    </message>
+    <message>
         <source>Verifying blocks...</source>
         <translation>verificando blocos...</translation>
     </message>
@@ -1215,8 +1272,8 @@
         <translation>Carteira esta bloqueada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Pegasus to complete</source>
-        <translation>Carteira precisa ser reescrita: reinicie o Pegasus para completar.</translation>
+        <source>Wallet needed to be rewritten: restart Pegasus Core to complete</source>
+        <translation>Carteira precisa ser reescrita: reinicie o Pegasus Core para completar.</translation>
     </message>
     <message>
         <source>Wallet options:</source>

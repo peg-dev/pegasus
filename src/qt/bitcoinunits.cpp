@@ -1,7 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Pegasus developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -42,11 +41,11 @@ QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
     case PEG:
-        return QString("PEG");
+        return QString("pegasus");
     case mPEG:
-        return QString("mxfe");
+        return QString("mpegasus");
     case uPEG:
-        return QString::fromUtf8("uxfe");
+        return QString::fromUtf8("upegasus");
     default:
         return QString("???");
     }

@@ -10,6 +10,7 @@
         <file alias="es">locale/pegasus_es.qm</file>
         <file alias="fi">locale/pegasus_fi.qm</file>
         <file alias="fr_FR">locale/pegasus_fr_FR.qm</file>
+        <file alias="hr">locale/pegasus_hr.qm</file>
         <file alias="it">locale/pegasus_it.qm</file>
         <file alias="ja">locale/pegasus_ja.qm</file>
         <file alias="ko_KR">locale/pegasus_ko_KR.qm</file>

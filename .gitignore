@@ -1,6 +1,5 @@
 *.sublime-project
 *.sublime-workspace
-.vscode
 todo.txt
 reset-files.bash
 
@@ -13,6 +12,7 @@ src/pegasus-cli
 src/pegasus-tx
 src/test/test_pegasus
 src/qt/test/test_pegasus-qt
+src/leveldb/build_config.mk
 
 # autoreconf
 Makefile.in
@@ -44,6 +44,8 @@ src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
 contrib/devtools/split-debug.sh
+
+src/univalue/gen
 
 src/qt/*.moc
 src/qt/moc_*.cpp
@@ -115,6 +117,8 @@ qa/pull-tester/tests-config.sh
 qa/pull-tester/cache/*
 qa/pull-tester/test.*/*
 
+!src/leveldb*/Makefile
+
 .cproject
 .project
 /doc/doxygen/
@@ -123,14 +127,5 @@ qa/pull-tester/test.*/*
 .idea
 CMakeLists.txt
 cmake-build-debug
-src/.vs/ProjectSettings.json
-src/.vs/VSWorkspaceState.json
-src/.vs/src/v15/Browse.VC.db
-src/.vs/src/v15/.suo
-src/.vs/slnx.sqlite
-.vs/slnx.sqlite
-.vs/pegasus/v15/Browse.VC.opendb
-.vs/pegasus/v15/Browse.VC.db
-.vs/slnx.sqlite
-.vs/slnx.sqlite
-*.sqlite
+config.log
+config.status

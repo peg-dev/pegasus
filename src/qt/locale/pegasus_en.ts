@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your PEG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Pegasus addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your PEG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Pegasus addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -168,6 +168,11 @@
         <location line="+33"/>
         <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
         <translation>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>For anonymization and staking only</source>
+        <translation>For anonymization and staking only</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="+44"/>
@@ -302,7 +307,7 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>Enter a PEG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Pegasus Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -313,7 +318,7 @@
     </message>
     <message>
         <location line="-355"/>
-        <source>The PEG address to sign the message with</source>
+        <source>The Pegasus address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -355,7 +360,7 @@
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this PEG address</source>
+        <source>Sign the message to prove you own this Pegasus address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -386,12 +391,12 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>The PEG address the message was signed with</source>
+        <source>The Pegasus address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+29"/>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -500,7 +505,7 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+127"/>
+        <location filename="../bitcoingui.cpp" line="+124"/>
         <source>Wallet</source>
         <translation>Wallet</translation>
     </message>
@@ -538,6 +543,11 @@
         <location line="+1"/>
         <source>Browse transaction history</source>
         <translation>Browse transaction history</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Privacy Actions for zPEG</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+42"/>
@@ -717,36 +727,6 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>&amp;Multisignature creation...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Create a new multisignature address and add it to this wallet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>&amp;Multisignature spending...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Spend from a multisignature address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>&amp;Multisignature signing...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Sign with a multisignature address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
         <source>Open &amp;URI...</source>
         <translation>Open &amp;URI...</translation>
     </message>
@@ -756,7 +736,7 @@
         <translation>&amp;Command-line options</translation>
     </message>
     <message numerus="yes">
-        <location line="+463"/>
+        <location line="+438"/>
         <source>Processed %n blocks of transaction history.</source>
         <translation>
             <numerusform>Processed %n block of transaction history.</numerusform>
@@ -769,17 +749,12 @@
         <translation>Synchronizing additional data: %p%</translation>
     </message>
     <message>
-        <location line="+27"/>
-        <source>%1 behind. Scanning block %2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-480"/>
+        <location line="-431"/>
         <source>&amp;File</source>
         <translation>&amp;File</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+13"/>
         <source>&amp;Settings</source>
         <translation>&amp;Settings</translation>
     </message>
@@ -799,14 +774,14 @@
         <translation>Tabs toolbar</translation>
     </message>
     <message>
-        <location line="-427"/>
-        <location line="+890"/>
-        <source>Pegasus</source>
+        <location line="-413"/>
+        <location line="+858"/>
+        <source>Pegasus Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-707"/>
-        <source>Send coins to a PEG address</source>
+        <location line="-675"/>
+        <source>Send coins to a Pegasus address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -831,12 +806,12 @@
     </message>
     <message>
         <location line="+31"/>
-        <source>&amp;About Pegasus</source>
+        <source>&amp;About Pegasus Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about Pegasus</source>
+        <source>Show information about Pegasus Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -846,12 +821,12 @@
     </message>
     <message>
         <location line="+16"/>
-        <source>Sign messages with your PEG addresses to prove you own them</source>
+        <source>Sign messages with your Pegasus addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified PEG addresses</source>
+        <source>Verify messages to ensure they were signed with specified Pegasus addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -890,8 +865,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+17"/>
-        <source>Open a pegasus: URI or payment request</source>
+        <location line="+10"/>
+        <source>Open a Pegasus: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -906,16 +881,16 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the Pegasus help message to get a list with possible Pegasus command-line options</source>
+        <source>Show the Pegasus Core help message to get a list with possible Pegasus command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+214"/>
-        <source>Pegasus client</source>
+        <location line="+204"/>
+        <source>Pegasus Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location line="+212"/>
+        <location line="+197"/>
         <source>%n active connection(s) to Pegasus network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
@@ -986,7 +961,12 @@
         </translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+4"/>
+        <source>%1 behind</source>
+        <translation>%1 behind</translation>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>Catching up...</source>
         <translation>Catching up...</translation>
     </message>
@@ -1071,6 +1051,11 @@ Address: %4
         <location line="+30"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1218,11 +1203,6 @@ Address: %4
     </message>
     <message>
         <location line="+5"/>
-        <source>Type</source>
-        <translation type="unfinished">Type</translation>
-    </message>
-    <message>
-        <location line="+5"/>
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -1242,7 +1222,7 @@ Address: %4
         <translation>Priority</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="+52"/>
+        <location filename="../coincontroldialog.cpp" line="+50"/>
         <source>Copy address</source>
         <translation>Copy address</translation>
     </message>
@@ -1308,12 +1288,12 @@ Address: %4
         <translation>Copy change</translation>
     </message>
     <message>
-        <location line="+163"/>
+        <location line="+156"/>
         <source>Please switch to &quot;List mode&quot; to use this function.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+220"/>
+        <location line="+218"/>
         <source>highest</source>
         <translation>highest</translation>
     </message>
@@ -1333,13 +1313,13 @@ Address: %4
         <translation>medium-high</translation>
     </message>
     <message>
-        <location line="+238"/>
-        <source>Can vary +/- %1 uPEG per input.</source>
-        <translation>Can vary +/- %1 uPEG per input.</translation>
+        <location line="+202"/>
+        <source>Can vary +/- %1 duff(s) per input.</source>
+        <translation>Can vary +/- %1 duff(s) per input.</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="-334"/>
-        <location filename="../coincontroldialog.cpp" line="-236"/>
+        <location filename="../forms/coincontroldialog.ui" line="-329"/>
+        <location filename="../coincontroldialog.cpp" line="-200"/>
         <source>medium</source>
         <translation>medium</translation>
     </message>
@@ -1369,7 +1349,7 @@ Address: %4
         <translation>(%1 locked)</translation>
     </message>
     <message>
-        <location line="+62"/>
+        <location line="+26"/>
         <source>none</source>
         <translation>none</translation>
     </message>
@@ -1417,7 +1397,7 @@ Address: %4
     </message>
     <message>
         <location line="+54"/>
-        <location line="+81"/>
+        <location line="+62"/>
         <source>(no label)</source>
         <translation>(no label)</translation>
     </message>
@@ -1481,7 +1461,7 @@ Address: %4
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid PEG address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Pegasus address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1537,7 +1517,7 @@ Address: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1548,7 +1528,7 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>About Pegasus</source>
+        <source>About Pegasus Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1606,17 +1586,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Pegasus.</source>
+        <source>Welcome to Pegasus Core.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Pegasus will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Pegasus Core will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Pegasus will download and store a copy of the Pegasus block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Pegasus Core will download and store a copy of the Pegasus block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1631,7 +1611,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+77"/>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1807,8 +1787,8 @@ Address: %4
     </message>
     <message>
         <location line="+16"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PEG addresses after it matures.
-To Add: enter percentage to give and PEG address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Pegasus addresses after it matures.
+To Add: enter percentage to give and Pegasus address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
@@ -1945,224 +1925,87 @@ Please check the address and try again.</source>
     </message>
 </context>
 <context>
-    <name>MultisigDialog</name>
+    <name>ObfuscationConfig</name>
     <message>
-        <location filename="../forms/multisigdialog.ui" line="+20"/>
-        <source>Multisignature Address Interactions</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+22"/>
-        <source>Create MultiSignature &amp;Address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <source>How many people must sign to verify a transaction</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>Enter the minimum number of signatures required to sign transactions</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Address Label:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <source>Add another address that could sign to verify a transaction from the multisig address.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>&amp;Add Address / Key</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+20"/>
-        <source>Local addresses or public keys that can sign:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+71"/>
-        <source>Create a new multisig address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>C&amp;reate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <location line="+345"/>
-        <location line="+183"/>
-        <source>Status:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-491"/>
-        <source>Use below to quickly import an address by its redeem. Don&apos;t forget to add a label before clicking import!
-Keep in mind, the wallet will rescan the blockchain to find transactions containing the new address.
-Please be patient after clicking import.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+23"/>
-        <source>&amp;Import Redeem</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+24"/>
-        <source>&amp;Create MultiSignature Tx</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+18"/>
-        <source>Inputs:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>Coin Control</source>
+        <location filename="../forms/obfuscationconfig.ui" line="+14"/>
+        <source>Configure Obfuscation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+12"/>
-        <source>Quantity Selected:</source>
-        <translation type="unfinished"></translation>
+        <source>Basic Privacy</source>
+        <translation type="unfinished">Basic Privacy</translation>
     </message>
     <message>
-        <location line="+7"/>
-        <location line="+14"/>
-        <source>0</source>
-        <translation type="unfinished"></translation>
+        <location line="+13"/>
+        <source>High Privacy</source>
+        <translation type="unfinished">High Privacy</translation>
     </message>
     <message>
-        <location line="-7"/>
-        <source>Amount:</source>
-        <translation type="unfinished">Amount:</translation>
+        <location line="+13"/>
+        <source>Maximum Privacy</source>
+        <translation type="unfinished">Maximum Privacy</translation>
     </message>
     <message>
-        <location line="+22"/>
-        <source>Add an input to fund the outputs</source>
-        <translation type="unfinished"></translation>
+        <location line="+13"/>
+        <source>Please select a privacy level.</source>
+        <translation type="unfinished">Please select a privacy level.</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Add a Raw Input</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+56"/>
-        <source>Address / Amount:</source>
+        <location line="+13"/>
+        <source>Use 2 separate masternodes to mix funds up to 10000 PEG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Add destinations to send PEG to</source>
+        <source>Use 8 separate masternodes to mix funds up to 10000 PEG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Add &amp;Destination</source>
+        <location line="+13"/>
+        <source>Use 16 separate masternodes</source>
+        <translation type="unfinished">Use 16 separate masternodes</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>This option is the quickest and will cost about ~0.025 PEG to anonymize 10000 PEG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+81"/>
-        <source>Create a transaction object using the given inputs to the given outputs</source>
+        <location line="+13"/>
+        <source>This option is moderately fast and will cost about 0.05 PEG to anonymize 10000 PEG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Cr&amp;eate</source>
+        <location line="+13"/>
+        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
+        <translation type="unfinished">This is the slowest and most secure option. Using maximum anonymity will cost</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>0.1 PEG per 10000 PEG you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../obfuscationconfig.cpp" line="+42"/>
+        <location line="+14"/>
+        <location line="+14"/>
+        <source>Obfuscation Configuration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+32"/>
-        <source>&amp;Sign MultiSignature Tx</source>
+        <location line="-27"/>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Pegasus&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
-        <source>Transaction Hex:</source>
+        <location line="+14"/>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Pegasus&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+34"/>
-        <source>Sign the transaction from this wallet or from provided private keys</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>S&amp;ign</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+26"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DISABLED until transaction has been signed enough times.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Co&amp;mmit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+22"/>
-        <source>Add private keys to sign the transaction with</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Add Private &amp;Key</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Sign with only private keys (Not Recommened)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../multisigdialog.cpp" line="+250"/>
-        <source>Invalid Tx Hash.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>Vout position must be positive.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+535"/>
-        <source>Maximum possible addresses reached. (16)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+112"/>
-        <source>Vout Position: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+58"/>
-        <source>Amount: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+27"/>
-        <source>Maximum (15)</source>
+        <location line="+14"/>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Pegasus&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2307,9 +2150,36 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+21"/>
+        <source>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/pegasus-project/pegasus-project-translations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="-204"/>
         <source>Map port using &amp;UPnP</source>
         <translation>Map port using &amp;UPnP</translation>
+    </message>
+    <message>
+        <location line="-133"/>
+        <source>Percentage of incoming PEG which get automatically converted to zPEG via Zerocoin Protocol (min: 10%)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Percentage of autominted zPEG</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <location line="+16"/>
+        <source>Wait with automatic conversion to Zerocoin until enough PEG for this denomination is available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-13"/>
+        <source>Preferred Automint zPEG Denomination</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+114"/>
@@ -2370,6 +2240,11 @@ p, li { white-space: pre-wrap; }
         <location line="+8"/>
         <source>User Interface &amp;language:</source>
         <translation>User Interface &amp;language:</translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>User Interface Theme:</source>
+        <translation>User Interface Theme:</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -2578,9 +2453,26 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+35"/>
+        <source>zPEG:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Current percentage of zPEG.
+If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+4"/>
         <location line="+66"/>
         <source>0 %</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-46"/>
+        <location line="+13"/>
+        <source>Locked PEG or Masternode collaterals. These are excluded from zPEG minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2598,6 +2490,54 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+7"/>
+        <location line="+10"/>
+        <source>Unlocked PEGs. These can be used for zPEG minting.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-7"/>
+        <source>Unlocked:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+77"/>
+        <source>Zerocoin Balance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <location line="+104"/>
+        <source>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
+These zPEG are spendable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-100"/>
+        <source>Mature:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <location line="+35"/>
+        <source>All available zPEG, unconfirmed and immature zPEG included.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <location line="+17"/>
+        <location line="+27"/>
+        <location line="+17"/>
+        <source>Unconfirmed: less than 20 confirmations
+Immature: confirmed, but less than 3 mints of the same denomination after it was minted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-57"/>
+        <source>Unconfirmed:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+127"/>
         <source>Recent transactions</source>
         <translation>Recent transactions</translation>
@@ -2607,6 +2547,29 @@ p, li { white-space: pre-wrap; }
         <location line="+1"/>
         <source>out of sync</source>
         <translation>out of sync</translation>
+    </message>
+    <message>
+        <location line="+93"/>
+        <source>Current percentage of zPEG.
+If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>AutoMint is currently enabled and set to </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in pegasus.conf.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>AutoMint is currently disabled.
+To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in pegasus.conf</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2650,7 +2613,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+114"/>
-        <source>URI cannot be parsed! This can be caused by an invalid PEG address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Pegasus address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2750,6 +2713,647 @@ p, li { white-space: pre-wrap; }
     </message>
 </context>
 <context>
+    <name>PrivacyDialog</name>
+    <message>
+        <location filename="../forms/privacydialog.ui" line="+55"/>
+        <source>PEG which were anonymized via Zerocin Protocol</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Zerocoin PEG (zPEG)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Zerocoin Actions:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pegasus network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <location line="+46"/>
+        <source>Enter an amount of Phr to convert to zPhr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-43"/>
+        <location filename="../privacydialog.cpp" line="+140"/>
+        <source>Mint Zerocoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <location line="+329"/>
+        <location line="+30"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-349"/>
+        <location line="+629"/>
+        <source>zPEG</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-622"/>
+        <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Available for Minting:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>0.000 000 00 PEG</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Reset</source>
+        <translation type="unfinished">Reset</translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Coin Control...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Quantity:</source>
+        <translation type="unfinished">Quantity:</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Amount:</source>
+        <translation type="unfinished">Amount:</translation>
+    </message>
+    <message>
+        <location line="+91"/>
+        <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>ReScan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Status and/or Mesages from the last Mint Action.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>zPhr Control</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>zPhr Selected:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Quantity Selected:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>Spend Zerocoin. Without &apos;Pay To:&apos; address creates payments to yourself.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location filename="../privacydialog.cpp" line="+111"/>
+        <location line="+45"/>
+        <location line="+4"/>
+        <location line="+12"/>
+        <location line="+100"/>
+        <location line="+4"/>
+        <source>Spend Zerocoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Available (mature and spendable) zPEG for spending</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Available Balance:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Available (mature and spendable) zPEG for spending
+
+zPEG are mature when they have more than 20 confirmations AND more than 3 mints of the same denomination after them were minted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <location line="+417"/>
+        <source>0 zPEG</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-394"/>
+        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Security Level:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Security Level 1 - 100 (default: 42)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>Pay &amp;To:</source>
+        <translation type="unfinished">Pay &amp;To:</translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>The Pegasus address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Choose previously used address</source>
+        <translation type="unfinished">Choose previously used address</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Alt+A</source>
+        <translation type="unfinished">Alt+A</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Paste address from clipboard</source>
+        <translation type="unfinished">Paste address from clipboard</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Alt+P</source>
+        <translation type="unfinished">Alt+P</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>&amp;Label:</source>
+        <translation type="unfinished">&amp;Label:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation type="unfinished">Enter a label for this address to add it to the list of used addresses</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>A&amp;mount:</source>
+        <translation type="unfinished">A&amp;mount:</translation>
+    </message>
+    <message>
+        <location line="+55"/>
+        <source>Convert Change to Zerocoin (might cost additional fees)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Minimize Change</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>Information about the available Zerocoin funds.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Zerocoin Stats:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+62"/>
+        <location line="+38"/>
+        <source>Total Balance including unconfirmed and immature zPEG</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-35"/>
+        <source>Total Zerocoin  Balance:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>Denominations with value 1:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 1:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <source>Unconfirmed: less than 20 confirmations
+Immature: confirmed, but less than 3 mints of the same denomination after it was minted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-367"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <source>0 x</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-354"/>
+        <source>Denominations with value 5:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 5:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Denominations with value 10:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 10:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Denominations with value 50:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 50:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Denominations with value 100:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 100:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Denominations with value 500:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 500:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Denominations with value 1000:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 1000:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Denominations with value 5000:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 5000:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+106"/>
+        <source>Note: This hidden objects are used for communication between the &apos;Coin Control&apos; dialog and its parent objects. We don&apos;t want to change/reimplement the existing Coin Control, so this objects must be here, even when we don&apos;t use them. No, we don&apos;t like this approach, either.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+100"/>
+        <source>Priority:</source>
+        <translation type="unfinished">Priority:</translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Fee:</source>
+        <translation type="unfinished">Fee:</translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Dust:</source>
+        <translation type="unfinished">Dust:</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>no</source>
+        <translation type="unfinished">no</translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Bytes:</source>
+        <translation type="unfinished">Bytes:</translation>
+    </message>
+    <message>
+        <location line="+54"/>
+        <source>Insufficient funds!</source>
+        <translation type="unfinished">Insufficient funds!</translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <location filename="../privacydialog.cpp" line="-379"/>
+        <location line="+1"/>
+        <location line="+469"/>
+        <location line="+1"/>
+        <source>Coins automatically selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>medium</source>
+        <translation type="unfinished">medium</translation>
+    </message>
+    <message>
+        <location line="+80"/>
+        <source>Coin Control Features</source>
+        <translation type="unfinished">Coin Control Features</translation>
+    </message>
+    <message>
+        <location line="+72"/>
+        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
+        <translation type="unfinished">If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Custom change address</source>
+        <translation type="unfinished">Custom change address</translation>
+    </message>
+    <message>
+        <location line="+83"/>
+        <source>Amount After Fee:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <source>Change:</source>
+        <translation type="unfinished">Change:</translation>
+    </message>
+    <message>
+        <location filename="../privacydialog.cpp" line="-469"/>
+        <source>out of sync</source>
+        <translation type="unfinished">out of sync</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <location line="+100"/>
+        <source>Mint Status: Okay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-94"/>
+        <source>Copy quantity</source>
+        <translation type="unfinished">Copy quantity</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy amount</source>
+        <translation type="unfinished">Copy amount</translation>
+    </message>
+    <message>
+        <location line="+88"/>
+        <location line="+111"/>
+        <source>Zerocoin functionality is not enabled on the Pegasus network yet.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-98"/>
+        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Message: Enter an amount &gt; 0.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Minting </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Successfully minted </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source> zPEG in </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source> sec. Used denominations:
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware. 
+Please be patient...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <location line="+16"/>
+        <location line="+215"/>
+        <source>Duration: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-231"/>
+        <location line="+16"/>
+        <location line="+215"/>
+        <source> sec.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-220"/>
+        <source>Starting ResetSpentZerocoin: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+63"/>
+        <source>No &apos;Pay To&apos; address provided, creating local payment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Invalid Pegasus Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Invalid Send Amount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Confirm additional Fees</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Are you sure you want to send?&lt;br /&gt;&lt;br /&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source> to address </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source> to a newly generated (unused and therefore anonymous) local address &lt;br /&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>with Security Level </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Confirm send coins</source>
+        <translation type="unfinished">Confirm send coins</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Spending Zerocoin.
+Computationally expensive, might need several minutes depending on the selected Security Level and your hardware. 
+Please be patient...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Too much inputs (</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>) needed. 
+Maximum allowed: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>
+Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <location line="+4"/>
+        <source>Spend Zerocoin failed with status = </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>zPhr Spend #: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>denomination: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>serial: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Spend is 1 of : </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>value out: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>address: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>zPhr Mint</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Sending successful, return code: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>txid: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>fee: </source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
         <location filename="../bitcoinunits.cpp" line="+252"/>
@@ -2758,7 +3362,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+113"/>
-        <source>Enter a PEG address (e.g. %1)</source>
+        <source>Enter a Pegasus address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3633,12 +4237,7 @@ p, li { white-space: pre-wrap; }
         <translation>(Smart fee not initialized yet. This usually takes a few blocks...)</translation>
     </message>
     <message>
-        <location line="+197"/>
-        <source>SwiftTX</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-352"/>
+        <location line="-155"/>
         <source>Confirmation time:</source>
         <translation>Confirmation time:</translation>
     </message>
@@ -3724,7 +4323,17 @@ p, li { white-space: pre-wrap; }
         <translation>Add &amp;Recipient</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+35"/>
+        <source>Anonymized PEG</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>SwiftTX</source>
+        <translation>SwiftTX</translation>
+    </message>
+    <message>
+        <location line="+7"/>
         <source>Balance:</source>
         <translation>Balance:</translation>
     </message>
@@ -3785,8 +4394,13 @@ p, li { white-space: pre-wrap; }
         <translation>using</translation>
     </message>
     <message>
+        <location line="-3"/>
+        <source>anonymous funds</source>
+        <translation>anonymous funds</translation>
+    </message>
+    <message>
         <location line="+622"/>
-        <source>Warning: Invalid PEG address</source>
+        <source>Warning: Invalid Pegasus address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3795,7 +4409,12 @@ p, li { white-space: pre-wrap; }
         <translation>any available funds (not recommended)</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+5"/>
+        <source>and SwiftTX</source>
+        <translation>and SwiftTX</translation>
+    </message>
+    <message>
+        <location line="+23"/>
         <location line="+4"/>
         <location line="+4"/>
         <location line="+3"/>
@@ -3841,12 +4460,7 @@ p, li { white-space: pre-wrap; }
         <translation>The recipient address is not valid, please recheck.</translation>
     </message>
     <message>
-        <location line="-329"/>
-        <source>and SwiftTX</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+38"/>
+        <location line="-291"/>
         <source> split into %1 outputs using the UTXO splitter.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3886,6 +4500,16 @@ p, li { white-space: pre-wrap; }
         <translation>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</translation>
     </message>
     <message>
+        <location line="+8"/>
+        <source>Error: The wallet was unlocked only to anonymize coins.</source>
+        <translation>Error: The wallet was unlocked only to anonymize coins.</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+84"/>
         <source>Pay only the minimum fee of %1</source>
         <translation>Pay only the minimum fee of %1</translation>
@@ -3915,7 +4539,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+18"/>
-        <source>The PEG address to send the payment to</source>
+        <source>The Pegasus address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3969,7 +4593,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the pegasus: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Pegasus network.</source>
+        <source>A message that was attached to the Pegasus: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Pegasus network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4004,7 +4628,7 @@ p, li { white-space: pre-wrap; }
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+75"/>
-        <source>Pegasus is shutting down...</source>
+        <source>Pegasus Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4032,7 +4656,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+18"/>
-        <source>The PEG address to sign the message with</source>
+        <source>The Pegasus address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4074,17 +4698,17 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this PEG address</source>
+        <source>Sign the message to prove you own this Pegasus address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+106"/>
-        <source>The PEG address the message was signed with</source>
+        <source>The Pegasus address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4199,7 +4823,7 @@ p, li { white-space: pre-wrap; }
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4219,12 +4843,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+1"/>
-        <source>The PIVX Core developers</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The Pegasus developers</source>
+        <source>The Pegasus Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4265,7 +4884,22 @@ p, li { white-space: pre-wrap; }
         <translation>conflicted</translation>
     </message>
     <message>
+        <location line="-31"/>
+        <source>%1/offline (verified via swifttx)</source>
+        <translation>%1/offline (verified via swifttx)</translation>
+    </message>
+    <message>
         <location line="+2"/>
+        <source>%1/confirmed (verified via swifttx)</source>
+        <translation>%1/confirmed (verified via swifttx)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 confirmations (verified via swifttx)</source>
+        <translation>%1 confirmations (verified via swifttx)</translation>
+    </message>
+    <message>
+        <location line="+29"/>
         <source>%1/offline</source>
         <translation>%1/offline</translation>
     </message>
@@ -4281,44 +4915,29 @@ p, li { white-space: pre-wrap; }
         <translation>%1 confirmations</translation>
     </message>
     <message>
-        <location line="-37"/>
-        <source>%1/offline (verified via SwiftTX)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>%1/confirmed (verified via SwiftTX)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>%1 confirmations (verified via SwiftTX)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
+        <location line="-26"/>
         <source>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
-        <translation type="unfinished"></translation>
+        <translation>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>%1/offline (SwiftTX verification failed)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1/offline (SwiftTX verification failed)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1/confirmed (SwiftTX verification failed)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1/confirmed (SwiftTX verification failed)</translation>
     </message>
     <message>
         <location line="+32"/>
@@ -4595,6 +5214,31 @@ p, li { white-space: pre-wrap; }
         <translation>Received from</translation>
     </message>
     <message>
+        <location line="+2"/>
+        <source>Received via Obfuscation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Obfuscation Denominate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Obfuscation Collateral Payment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Obfuscation Make Collateral Inputs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Obfuscation Create Denominations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="-14"/>
         <source>Sent to</source>
         <translation>Sent to</translation>
@@ -4620,9 +5264,44 @@ p, li { white-space: pre-wrap; }
         <translation>Mined</translation>
     </message>
     <message>
+        <location line="+10"/>
+        <source>Obfuscated</source>
+        <translation>Obfuscated</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Converted Phr to zPhr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Spent zPhr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Received Phr from zPhr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Minted Change as zPhr from zPhr Spend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Converted zPhr to Phr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+33"/>
         <source>watch-only</source>
         <translation>watch-only</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>zPhr Accumulator</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -4715,6 +5394,31 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+1"/>
+        <source>Obfuscated</source>
+        <translation>Obfuscated</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Obfuscation Make Collateral Inputs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Obfuscation Create Denominations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Obfuscation Denominate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Obfuscation Collateral Payment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>To yourself</source>
         <translation>To yourself</translation>
     </message>
@@ -4731,6 +5435,31 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="+1"/>
         <source>Masternode Reward</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Received Phr from zPhr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Zerocoin Mint</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Zerocoin Spend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Zerocoin Spend, Change in zPhr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Zerocoin Spend to Self</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4873,7 +5602,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+317"/>
+        <location filename="../walletmodel.cpp" line="+310"/>
         <location line="+9"/>
         <location line="+9"/>
         <source>Send Coins</source>
@@ -4889,7 +5618,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>WalletView</name>
     <message>
-        <location filename="../walletview.cpp" line="+51"/>
+        <location filename="../walletview.cpp" line="+50"/>
         <source>&amp;Export</source>
         <translation>&amp;Export</translation>
     </message>
@@ -4904,7 +5633,7 @@ p, li { white-space: pre-wrap; }
         <translation>Selected amount:</translation>
     </message>
     <message>
-        <location line="+256"/>
+        <location line="+249"/>
         <source>Backup Wallet</source>
         <translation>Backup Wallet</translation>
     </message>
@@ -4932,6 +5661,40 @@ p, li { white-space: pre-wrap; }
         <location line="+0"/>
         <source>The wallet data was successfully saved to %1.</source>
         <translation>The wallet data was successfully saved to %1.</translation>
+    </message>
+</context>
+<context>
+    <name>ZPhrControlDialog</name>
+    <message>
+        <location filename="../forms/zphrcontroldialog.ui" line="+20"/>
+        <source>Select zPhr to Spend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Quantity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location line="+14"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-7"/>
+        <source>zPhr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Select/Deselect All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Is Spendable</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4967,8 +5730,13 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished">Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</translation>
     </message>
     <message>
+        <location line="+4"/>
+        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+2"/>
-        <source>Cannot obtain a lock on data directory %s. Pegasus is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Pegasus Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4992,17 +5760,27 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished">Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+3"/>
+        <source>Disable all Pegasus specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation type="unfinished">Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+6"/>
         <source>Enable spork administration functionality with the appropriate private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
+        <source>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation type="unfinished">Enable swifttx, show confirmations for locked transactions (bool, default: %s)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
         <translation type="unfinished">Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</translation>
     </message>
@@ -5048,6 +5826,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+3"/>
+        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
+        <translation type="unfinished">Found unconfirmed denominated outputs, will wait till they confirm to continue.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
         <translation type="unfinished">If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</translation>
     </message>
@@ -5057,12 +5840,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished">In this mode -genproclimit controls how many blocks are generated immediately.</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+6"/>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
         <translation type="unfinished">Invalid amount for -maxtxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least the minrelay fee of %s to prevent stuck transactions)</translation>
     </message>
@@ -5095,6 +5873,11 @@ p, li { white-space: pre-wrap; }
         <location line="+3"/>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
         <translation type="unfinished">Number of seconds to keep misbehaving peers from reconnecting (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5147,7 +5930,12 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+2"/>
+        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation type="unfinished">SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</translation>
+    </message>
+    <message>
+        <location line="+6"/>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
         <translation type="unfinished">This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</translation>
     </message>
@@ -5168,7 +5956,17 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+13"/>
-        <source>Unable to bind to %s on this computer. Pegasus is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Pegasus Core is probably already running.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PEG.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5193,7 +5991,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Pegasus will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Pegasus Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5233,8 +6031,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>(2171 could be used only on mainnet)</source>
-        <translation type="unfinished">(2171 could be used only on mainnet)</translation>
+        <source>(5111 could be used only on mainnet)</source>
+        <translation type="unfinished">(5111 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5248,7 +6046,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 2171 for mainnet)</source>
+        <source>(must be 5111 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5308,8 +6106,23 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+        <source>Calculating missing accumulators...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Can&apos;t denominate: no compatible inputs left.</source>
+        <translation type="unfinished">Can&apos;t denominate: no compatible inputs left.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Can&apos;t find random Masternode.</source>
         <translation type="unfinished">Can&apos;t find random Masternode.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Can&apos;t mix while sync in progress.</source>
+        <translation type="unfinished">Can&apos;t mix while sync in progress.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5373,12 +6186,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copyright (C) 2017-%i The Pegasus Developers</source>
+        <source>Copyright (C) 2015-%i The Pegasus Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5402,12 +6210,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
         <translation type="unfinished">Debugging/Testing options:</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Delete blockchain folders and resync from scratch</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Disable OS notifications for incoming transactions (default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5437,17 +6240,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
         <translation type="unfinished">Done loading</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Enable publish hash transaction (locked via SwiftTX) in &lt;address&gt;</source>
+        <location line="+1"/>
+        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Enable publish raw transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+8"/>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
         <translation type="unfinished">Enable the client to act as a masternode (0-1, default: %u)</translation>
     </message>
@@ -5488,7 +6286,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Pegasus</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Pegasus Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5518,6 +6316,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+        <source>Error: Can&apos;t select current denominated inputs</source>
+        <translation type="unfinished">Error: Can&apos;t select current denominated inputs</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Error: Disk space is low!</source>
         <translation type="unfinished">Error: Disk space is low!</translation>
     </message>
@@ -5533,26 +6336,21 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+        <source>Error: You already have pending entries in the Obfuscation pool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation type="unfinished">Failed to listen on any port. Use -listen=0 if you want this.</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Failed to read block index</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Failed to read block</source>
         <translation type="unfinished">Failed to read block</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Failed to write block index</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Fee (in PEG/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5628,7 +6426,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. Pegasus is shutting down.</source>
+        <source>Initialization sanity check failed. Pegasus Core is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5717,17 +6515,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
         <translation type="unfinished">Invalid script detected.</translation>
     </message>
     <message>
-        <location line="+98"/>
-        <source>SwiftTX options:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-273"/>
+        <location line="-174"/>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-152"/>
+        <location line="-153"/>
         <source> mints deleted
 </source>
         <translation type="unfinished"></translation>
@@ -5744,17 +6537,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+38"/>
-        <source>Disable all Pegasus specific functionality (Masternodes, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <location line="+44"/>
+        <source>Enable automatic wallet backups triggered after each zPhr minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+6"/>
-        <source>Enable SwiftTX, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5769,12 +6557,17 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+26"/>
-        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <location line="+32"/>
+        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+71"/>
+        <location line="+26"/>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+97"/>
         <source>&lt;category&gt; can be:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5784,7 +6577,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+25"/>
+        <source>Delete blockchain folders and resync from scratch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>Display the stake modifier calculations in the debug.log file.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5799,7 +6597,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
+        <source>Enable publish hash transaction (locked via SwiftTX) in &lt;address&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Enable publish hash transaction in &lt;address&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5809,7 +6612,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
+        <source>Enable publish raw transaction (locked via SwiftTX) in &lt;address&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Enable publish raw transaction in &lt;address&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5819,9 +6627,34 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+58"/>
+        <location line="+21"/>
+        <source>Failed to read block index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Failed to write block index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation type="unfinished">Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Last Obfuscation was too recent.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Last successful Obfuscation action was too recent.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Less than 3 mints added, unable to create spend</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5930,6 +6763,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+        <source>Mixing in progress...</source>
+        <translation type="unfinished">Mixing in progress...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Need to specify a port with -whitebind: &apos;%s&apos;</source>
         <translation type="unfinished">Need to specify a port with -whitebind: &apos;%s&apos;</translation>
     </message>
@@ -5942,6 +6780,16 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
         <location line="+1"/>
         <source>No compatible Masternode found.</source>
         <translation type="unfinished">No compatible Masternode found.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>No funds detected in need of denominating.</source>
+        <translation type="unfinished">No funds detected in need of denominating.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>No matching denominations found for mixing.</source>
+        <translation type="unfinished">No matching denominations found for mixing.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5975,6 +6823,21 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+        <source>Obfuscation is idle.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Obfuscation request complete:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Obfuscation request incomplete:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
         <translation type="unfinished">Only accept block chain matching built-in checkpoints (default: %u)</translation>
     </message>
@@ -5992,6 +6855,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
         <location line="+1"/>
         <source>Password for JSON-RPC connections</source>
         <translation type="unfinished">Password for JSON-RPC connections</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Percentage of automatically minted Zerocoin  (10-100, default: %u)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6040,6 +6908,16 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+        <source>Recalculating coin supply may take 30-60 minutes...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Recalculating supply statistics may take 30-60 minutes...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Receive and display P2P network alerts (default: %u)</source>
         <translation type="unfinished">Receive and display P2P network alerts (default: %u)</translation>
     </message>
@@ -6062,6 +6940,16 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
         <location line="+1"/>
         <source>Rescanning...</source>
         <translation type="unfinished">Rescanning...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>ResetMintZerocoin finished: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>ResetSpentZerocoin finished: </source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6234,7 +7122,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
         <translation type="unfinished">Submitted to masternode, waiting in queue %s</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
+        <source>SwiftTX options:</source>
+        <translation type="unfinished">SwiftTX options:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Synchronization failed</source>
         <translation type="unfinished">Synchronization failed</translation>
     </message>
@@ -6400,6 +7293,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+        <source>Value more than Obfuscation pool maximum allows.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Verifying blocks...</source>
         <translation type="unfinished">Verifying blocks...</translation>
     </message>
@@ -6420,7 +7318,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Pegasus to complete</source>
+        <source>Wallet needed to be rewritten: restart Pegasus Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6481,6 +7379,16 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     <message>
         <location line="+1"/>
         <source>ZeroMQ notification options:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Zerocoin options:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>failed to validate zerocoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

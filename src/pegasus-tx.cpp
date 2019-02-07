@@ -1,6 +1,5 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Pegasus developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -14,7 +13,7 @@
 #include "script/script.h"
 #include "script/sign.h"
 #include "ui_interface.h" // for _(...)
-#include <univalue.h>
+#include "univalue/univalue.h"
 #include "util.h"
 #include "utilmoneystr.h"
 #include "utilstrencodings.h"
@@ -48,10 +47,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Pegasus pegasus-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Pegasus Core pegasus-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  pegasus-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded Pegasus transaction") + "\n" +
-                               "  pegasus-tx [options] -create [commands]   " + _("Create hex-encoded Pegasus transaction") + "\n" +
+                               "  pegasus-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded pegasus transaction") + "\n" +
+                               "  pegasus-tx [options] -create [commands]   " + _("Create hex-encoded pegasus transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
@@ -192,7 +191,7 @@ static void MutateTxAddInput(CMutableTransaction& tx, const string& strInput)
     uint256 txid(strTxid);
 
     static const unsigned int minTxOutSz = 9;
-    unsigned int nMaxSize = MAX_BLOCK_SIZE;
+    unsigned int nMaxSize = MAX_BLOCK_SIZE_LEGACY;
     static const unsigned int maxVout = nMaxSize / minTxOutSz;
 
     // extract and validate vout
@@ -352,7 +351,7 @@ static void MutateTxSign(CMutableTransaction& tx, const string& flagStr)
     UniValue keysObj = registers["privatekeys"];
     fGivenKeys = true;
 
-    for (unsigned int kidx = 0; kidx < keysObj.size(); kidx++) {
+    for (unsigned int kidx = 0; kidx < keysObj.count(); kidx++) {
         if (!keysObj[kidx].isStr())
             throw runtime_error("privatekey not a string");
         CBitcoinSecret vchSecret;
@@ -369,7 +368,7 @@ static void MutateTxSign(CMutableTransaction& tx, const string& flagStr)
         throw runtime_error("prevtxs register variable must be set.");
     UniValue prevtxsObj = registers["prevtxs"];
     {
-        for (unsigned int previdx = 0; previdx < prevtxsObj.size(); previdx++) {
+        for (unsigned int previdx = 0; previdx < prevtxsObj.count(); previdx++) {
             UniValue prevOut = prevtxsObj[previdx];
             if (!prevOut.isObject())
                 throw runtime_error("expected prevtxs internal object");
@@ -553,7 +552,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw runtime_error("too few parameters");
 
-            // param: hex-encoded Pegasus transaction
+            // param: hex-encoded pegasus transaction
             string strHexTx(argv[1]);
             if (strHexTx == "-") // "-" implies standard input
                 strHexTx = readStdin();

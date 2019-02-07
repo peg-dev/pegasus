@@ -307,7 +307,7 @@ void MultisigDialog::on_createButton_clicked()
             string fee;
             if(!createMultisigTransaction(vUserIn, vUserOut, fee, error)){
                 throw runtime_error(error);
-            }
+            }   
 
             //display status string
             ui->createButtonStatus->setStyleSheet("QTextEdit{ color: black }");
@@ -731,7 +731,7 @@ bool MultisigDialog::createRedeemScript(int m, vector<string> vKeys, CScript& re
         for(vector<string>::iterator it = vKeys.begin(); it != vKeys.end(); ++it) {
             string keyString = *it;
     #ifdef ENABLE_WALLET
-            // Case 1: PEG address and we have full public key:
+            // Case 1: Pegasus address and we have full public key:
             CBitcoinAddress address(keyString);
             if (pwalletMain && address.IsValid()) {
                 CKeyID keyID;

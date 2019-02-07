@@ -11,7 +11,7 @@
 
 #include "bitcoinunits.h"
 #include "guiutil.h"
-#include "activemasternode.h"
+#include "obfuscation.h"
 #include "optionsmodel.h"
 
 #include "main.h" // for MAX_SCRIPTCHECK_THREADS
@@ -78,6 +78,31 @@ OptionsDialog::OptionsDialog(QWidget* parent, bool enableWallet) : QDialog(paren
     for (int index = 2; index <= 8; index++) {
         digits.setNum(index);
         ui->digits->addItem(digits, digits);
+    }
+    
+    /* Theme selector static themes */
+    ui->theme->addItem(QString("Default"), QVariant("default"));
+
+    /* Preferred Zerocoin Denominations */
+    ui->preferredDenom->addItem(QString(tr("I don't care")), QVariant("0"));
+    ui->preferredDenom->addItem(QString("1"), QVariant("1"));
+    ui->preferredDenom->addItem(QString("5"), QVariant("5"));
+    ui->preferredDenom->addItem(QString("10"), QVariant("10"));
+    ui->preferredDenom->addItem(QString("50"), QVariant("50"));
+    ui->preferredDenom->addItem(QString("100"), QVariant("100"));
+    ui->preferredDenom->addItem(QString("500"), QVariant("500"));
+    ui->preferredDenom->addItem(QString("1000"), QVariant("1000"));
+    ui->preferredDenom->addItem(QString("5000"), QVariant("5000"));
+
+    /* Theme selector external themes */
+    boost::filesystem::path pathAddr = GetDataDir() / "themes";
+    QDir dir(pathAddr.string().c_str());
+    dir.setFilter(QDir::Dirs | QDir::NoSymLinks | QDir::NoDotAndDotDot);
+    QFileInfoList list = dir.entryInfoList();
+
+    for (int i = 0; i < list.size(); ++i) {
+        QFileInfo fileInfo = list.at(i);
+        ui->theme->addItem(fileInfo.fileName(), QVariant(fileInfo.fileName()));
     }
 
     /* Language selector */
@@ -157,6 +182,7 @@ void OptionsDialog::setModel(OptionsModel* model)
     connect(ui->connectSocks, SIGNAL(clicked(bool)), this, SLOT(showRestartWarning()));
     /* Display */
     connect(ui->digits, SIGNAL(valueChanged()), this, SLOT(showRestartWarning()));
+    connect(ui->theme, SIGNAL(valueChanged()), this, SLOT(showRestartWarning()));
     connect(ui->lang, SIGNAL(valueChanged()), this, SLOT(showRestartWarning()));
     connect(ui->thirdPartyTxUrls, SIGNAL(textChanged(const QString&)), this, SLOT(showRestartWarning()));
     connect(ui->showMasternodesTab, SIGNAL(clicked(bool)), this, SLOT(showRestartWarning()));
@@ -168,11 +194,14 @@ void OptionsDialog::setMapper()
     mapper->addMapping(ui->bitcoinAtStartup, OptionsModel::StartAtStartup);
     mapper->addMapping(ui->threadsScriptVerif, OptionsModel::ThreadsScriptVerif);
     mapper->addMapping(ui->databaseCache, OptionsModel::DatabaseCache);
+    // Zerocoin mint percentage
+    mapper->addMapping(ui->zeromintPercentage, OptionsModel::ZeromintPercentage);
+    // Zerocoin preferred denomination
+    mapper->addMapping(ui->preferredDenom, OptionsModel::ZeromintPrefDenom);
 
     /* Wallet */
     mapper->addMapping(ui->spendZeroConfChange, OptionsModel::SpendZeroConfChange);
     mapper->addMapping(ui->coinControlFeatures, OptionsModel::CoinControlFeatures);
-    mapper->addMapping(ui->spinBoxStakeSplitThreshold, OptionsModel::StakeSplitThreshold);
 
     /* Network */
     mapper->addMapping(ui->mapPortUpnp, OptionsModel::MapPortUPnP);
@@ -190,6 +219,8 @@ void OptionsDialog::setMapper()
 
     /* Display */
     mapper->addMapping(ui->digits, OptionsModel::Digits);
+    mapper->addMapping(ui->theme, OptionsModel::Theme);
+    mapper->addMapping(ui->theme, OptionsModel::Theme);
     mapper->addMapping(ui->lang, OptionsModel::Language);
     mapper->addMapping(ui->unit, OptionsModel::DisplayUnit);
     mapper->addMapping(ui->thirdPartyTxUrls, OptionsModel::ThirdPartyTxUrls);
@@ -235,6 +266,7 @@ void OptionsDialog::on_resetButton_clicked()
 void OptionsDialog::on_okButton_clicked()
 {
     mapper->submit();
+    obfuScationPool.cachedNumBlocks = std::numeric_limits<int>::max();
     pwalletMain->MarkDirty();
     accept();
 }

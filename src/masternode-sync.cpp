@@ -49,6 +49,11 @@ bool CMasternodeSync::IsBlockchainSynced()
     if (!lockMain) return false;
 
     CBlockIndex* pindex = chainActive.Tip();
+
+    if (chainActive.Height() == 3029) {
+        return true;
+    }
+
     if (pindex == NULL) return false;
 
 
@@ -233,6 +238,7 @@ void CMasternodeSync::ClearFulfilledRequest()
 void CMasternodeSync::Process()
 {
     static int tick = 0;
+    static int syncCount = 0;
 
     if (tick++ % MASTERNODE_SYNC_TIMEOUT != 0) return;
 
@@ -240,8 +246,11 @@ void CMasternodeSync::Process()
         /* 
             Resync if we lose all masternodes from sleep/wake or failure to sync originally
         */
-        if (mnodeman.CountEnabled() == 0) {
-            Reset();
+        if (mnodeman.CountEnabled() == 0 ) {
+			if(syncCount < 2){
+				Reset();
+				syncCount++;
+			}
         } else
             return;
     }

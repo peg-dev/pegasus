@@ -1,9 +1,9 @@
-Pegasus
+Pegasus Core
 =====================
 
 Setup
 ---------------------
-[Pegasus](https://www.pegasuscoin.online) is the original Pegasus client and it builds the backbone of the network. However, it downloads and stores the entire history of Pegasus transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Pegasus Core](https://github.com/pegasus-project/pegasus) is the original Pegasus client and it builds the backbone of the network. However, it downloads and stores the entire history of Pegasus transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -26,7 +26,10 @@ Drag Pegasus-Qt to your applications folder, and then run Pegasus-Qt.
 
 ### Need Help?
 
-* Join our Discord server [Discord Server](https://discord.pegasuscoin.online)
+* See the documentation at the [Pegasus Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+for help and more information.
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=2956408.0).
+* Join one of our Discord groups [Pegasus Discord Groups](https://discord.gg/8tbvMQM).
 
 Building
 ---------------------
@@ -38,7 +41,7 @@ The following are developer notes on how to build Pegasus on your native platfor
 
 Development
 ---------------------
-The Pegasus repo's [root README](https://github.com/pegasus/pegasus/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Pegasus repo's [root README](https://github.com/pegasus-project/pegasus/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -49,6 +52,11 @@ The Pegasus repo's [root README](https://github.com/pegasus/pegasus/blob/master/
 - [Unit Tests](unit-tests.md)
 - [Unauthenticated REST Interface](REST-interface.md)
 - [Dnsseed Policy](dnsseed-policy.md)
+
+### Resources
+
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=2956408.0) .
+* Join the [Pegasus Discord Group](https://discord.gg/8tbvMQM).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

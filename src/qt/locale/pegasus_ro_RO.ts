@@ -94,6 +94,9 @@
     <name>MultiSendDialog</name>
     </context>
 <context>
+    <name>ObfuscationConfig</name>
+    </context>
+<context>
     <name>OpenURIDialog</name>
     </context>
 <context>
@@ -107,6 +110,9 @@
     </context>
 <context>
     <name>PeerTableModel</name>
+    </context>
+<context>
+    <name>PrivacyDialog</name>
     </context>
 <context>
     <name>QObject</name>
@@ -175,6 +181,9 @@
         <source>Export the data in the current tab to a file</source>
         <translation>Exportă datele din fila curentă într-un fișier</translation>
     </message>
+    </context>
+<context>
+    <name>ZPhrControlDialog</name>
     </context>
 <context>
     <name>pegasus-core</name>

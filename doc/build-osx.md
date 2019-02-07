@@ -24,7 +24,7 @@ be re-done or updated every time Xcode is updated.
 There's also an assumption that you already have `git` installed. If
 not, it's the path of least resistance to install [Github for Mac](https://mac.github.com/)
 (OS X 10.7+) or
-[Git for OS X](https://code.google.com/p/git-osx-installer/). It is also
+[Git for OS X](https://code.google.com/p/git-osx-installer/). It is ąlso
 available via Homebrew.
 
 You will also need to install [Homebrew](http://brew.sh) in order to install library
@@ -32,7 +32,7 @@ dependencies.
 
 The installation of the actual dependencies is covered in the Instructions
 sections below.
-
+̨̨
 Instructions: Homebrew
 ----------------------
 
@@ -44,8 +44,8 @@ Instructions: Homebrew
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/pegasus/pegasus.git
-        cd pegasus
+        git clone https://github.com/pegasus-project/pegasus.git
+        cd Pegasus
 
 2.  Build pegasusd:
 
@@ -66,31 +66,108 @@ Use Qt Creator as IDE
 You can use Qt Creator as IDE, for debugging and for manipulating forms, etc.
 Download Qt Creator from http://www.qt.io/download/. Download the "community edition" and only install Qt Creator (uncheck the rest during the installation process).
 
-1. Make sure you installed everything through homebrew mentioned above
-2. Do a proper ./configure --with-gui=qt5 --enable-debug
-3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "pegasus-qt" as project name, enter src/qt as location
-5. Leave the file selection as it is
-6. Confirm the "summary page"
-7. In the "Projects" tab select "Manage Kits..."
-8. Select the default "Desktop" kit and select "Clang (x86 64bit in /usr/bin)" as compiler
-9. Select LLDB as debugger (you might need to set the path to your installtion)
-10. Start debugging with Qt Creator
+## Prerequisite
+
+Make sure you followed the Homebrew instructions before you proceed with the Qt Creator setup.
+
+Configure the project with `debug enabled`
+
+```bash
+./configure --with-gui=qt5 --enable-debug
+```
+
+## Qt Creator Project Setup
+
+Launch Qt Creator and select **New Project**
+
+Choose the **Import Project** template and then **Import Existing Project**
+
+![](img/build-osx/qt-new-project.png)
+
+Give you project a **name** and set the **location** to the root of your project.
+
+![](img/build-osx/qt-project-name.png)
+
+Leave the default file selections as is.
+
+![](img/build-osx/qt-file-selection.png)
+
+Confirm the summary page. Here you can add your project to Git version control or select `none` if you choose not to.
+
+![](img/build-osx/qt-project-summary.png)
+
+Select **Projects** in the left sidebar and then **Manage Kits**.
+
+![](img/build-osx/qt-sidebar-project.png)
+
+Select the **Desktop (default)** kit and select **Clang (x86 64bit in /usr/bin)** as compiler.
+
+![](img/build-osx/qt-manage-kits.png)
+
+
+![](img/build-osx/qt-clang-compiler.png)
+
+Select **LLDB** as debugger (you might need to set the path to your installtion)
+
+![](img/build-osx/qt-lldb.png)
+
+Select **Projects** in the left sidebar and under **Build & Run** choose  **Build**.
+
+![](img/build-osx/qt-sidebar-project.png)
+
+Select the **Qt version** and click **Ok**.
+
+![](img/build-osx/qt-version.png)
+
+Set the **Build directory** path to the `root` of the clone Pegasus project. Qt Creator needs this to locate the `Makefile`.
+
+![](img/build-osx/qt-sidebar-project.png)
+
+Under **Build & Run** select *Run* and setup a run configuration.
+
+![](img/build-osx/qt-run-configuration.png)
+
+To debug using `testnet`, set `-testnet` as the value of **Command line arguments**. You can pass any other supported wallet arguments here for example setting a custom data directory with `-datadir`.
+
+![](img/build-osx/qt-run-configuration-testnet.png)
+
+To start debugging, locate the following function in `pegasus.cpp` and set a breakpoint.
+
+```c++
+#ifndef BITCOIN_QT_TEST
+int main(int argc, char* argv[])
+{
+    SetupEnvironment();
+
+    ...
+```
+
+![](img/build-osx/qt-debugger-breakpoint.png)
+
+Start your **Debugger**.
+
+![](img/build-osx/qt-start-debugger.png)
+
+Your debugger will stop at the break breakpoint you set.
+
+![](img/build-osx/qt-stop-at-breakpoint.png)
 
 Creating a release build
 ------------------------
 You can ignore this section if you are building `pegasusd` for your own use.
 
-pegasusd/pegasus-cli binaries are not included in the Pegasus-Qt.app bundle.
+`pegasusd/pegasus-cli` binaries are not included in the `pegasus-Qt.app` bundle.
 
 If you are building `pegasusd` or `pegasus-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
 
+```
  -mmacosx-version-min=10.7
  -arch x86_64
  -isysroot $(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
+ ```
 
 Once dependencies are compiled, see release-process.md for how the Pegasus-Qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.

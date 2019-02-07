@@ -6,8 +6,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+#include "libzerocoin/Params.h"
 #include "chainparams.h"
-#include "bignum.h"
 #include "random.h"
 #include "util.h"
 #include "utilstrencodings.h"
@@ -54,19 +54,18 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000e791017e7f688e54ae1cf3f6545dbfcf11b8cf60fefcf5492d844c2d3fa"));
-
+    (0, uint256("0x001"));
+    
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1541808000, // * UNIX timestamp of last checkpoint block
-    0,          // * total number of transactions between genesis and last checkpoint
+    1526301718, // * UNIX timestamp of last checkpoint block
+    0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of(0, uint256("0x001"));
-
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1740710,
@@ -81,6 +80,15 @@ static const Checkpoints::CCheckpointData dataRegtest = {
     0,
     100};
 
+libzerocoin::ZerocoinParams* CChainParams::Zerocoin_Params() const
+{
+    assert(this);
+    static CBigNum bnTrustedModulus(zerocoinModulus);
+    static libzerocoin::ZerocoinParams ZCParams = libzerocoin::ZerocoinParams(bnTrustedModulus);
+
+    return &ZCParams;
+}
+
 class CMainParams : public CChainParams
 {
 public:
@@ -93,87 +101,74 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x3a;
-        pchMessageStart[1] = 0xfc;
-        pchMessageStart[2] = 0x1a;
-        pchMessageStart[3] = 0x5d;
-        vAlertPubKey = ParseHex("0486bce1bac0d543f104cbff2bd23680056a3b9ea05e1137d2ff90eeb5e08472eb500322593a2cb06fbf8297d7beb6cd30cb90f98153b5b7cce1493749e41e0284");
-        nDefaultPort = 2171;
-        bnProofOfWorkLimit = ~uint256(0) >> 1;
-        nSubsidyHalvingInterval = 1050000;
+        pchMessageStart[0] = 0x33;
+        pchMessageStart[1] = 0x36;
+        pchMessageStart[2] = 0x44;
+        pchMessageStart[3] = 0x74;
+        vAlertPubKey = ParseHex("040c206a48869ec1028f4e9634547d8138ef849bf36d49a1c75ec3369da77367158d42a2414a83771dc0dde3e3e023d28f6335f138648003260027d930a627fa06");
+        nDefaultPort = 5111;
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // Pegasus starting difficulty is 1 / 2^12
+        nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Pegasus: 1 day
-        nTargetSpacing = 2 * 60;  // Pegasus: 2 minutes
+        nTargetSpacing = 1 * 60;  // Pegasus: 1 minute
         nMaturity = 10;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 55000000 * COIN;
+        nMaxMoneyOut = 90000000 * COIN;
 
-        /** Height or Time Based Activations **/
-        nLastPOWBlock = 200;
-        nModifierUpdateBlock = 1; // we use the version 2 for PEG
-
-        /**
-         * Build the genesis block. Note that the output of the genesis coinbase cannot
-         * be spent as it did not originally exist in the database.
-         *
-         * python ~/genesis.py -a quark-hash -z "Pegasus Coin - PEG" -t 1519319753 -v 0 -p 0486bce1bac0d543f104cbff2bd23680056a3b9ea05e1137d2ff90eeb5e08472eb500322593a2cb06fbf8297d7beb6cd30cb90f98153b5b7cce1493749e41e0284
-         * 04ffff001d0104244275696c64696e67206120646563656e7472616c697a6564206d61726b6574706c616365
-         * algorithm: quark-hash
-         * merkle hash: 1d6ce0c42565bd2d894338b4098e0add54cd6a8b10d2deadbb48ccf3d4cab430
-         * pszTimestamp: Pegasus Coin - PEG
-         * pubkey: 0486bce1bac0d543f104cbff2bd23680056a3b9ea05e1137d2ff90eeb5e08472eb500322593a2cb06fbf8297d7beb6cd30cb90f98153b5b7cce1493749e41e0284
-         * time: 1519319753
-         * bits: 0x1e0ffff0
-         * Searching for genesis hash..
-         * 16525.0 hash/s, estimate: 72.2 hgenesis hash found!
-         * nonce: 21940438
-         * genesis_hash: 000005435e5f5832f358d617d23cb762eeb536c15caff1bf69b8aa16ade869e6
-         */
-        const char* pszTimestamp = "Pegasus Coin - PEG";
+       
+        nLastPOWBlock = 500;
+        nModifierUpdateBlock = 999999999;
+        nZerocoinStartHeight = 501;
+        nAccumulatorStartHeight = 1;
+        nZerocoinStartTime = 1518397608; // 
+        nBlockEnforceSerialRange = 1; 
+        nBlockRecalculateAccumulators = ~1; 
+        nBlockFirstFraudulent = ~1; 
+        nBlockLastGoodCheckpoint = ~1;
+        
+       
+        const char* pszTimestamp = "Pegasus gets new life - PEG";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 0 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("0486bce1bac0d543f104cbff2bd23680056a3b9ea05e1137d2ff90eeb5e08472eb500322593a2cb06fbf8297d7beb6cd30cb90f98153b5b7cce1493749e41e0284") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04c341bde4436b81213a18bd4d2c61093f2c2a746438f829e656798dc6d118dda295149b06f96da5691595156fd78328943e4571501d3b56c863ea5052ce97c01d") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1541808000;
+        genesis.nTime = 1549401294;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 21667612;
-
+        genesis.nNonce = 374553;
+      
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000e791017e7f688e54ae1cf3f6545dbfcf11b8cf60fefcf5492d844c2d3fa"));
-        assert(genesis.hashMerkleRoot == uint256("0xbcd127733791b96aa56cf3e91f37b27ae156d1416987e2e647a23d82d024d143"));
-        vFixedSeeds.clear();
-        vSeeds.clear();
-
-		 vSeeds.push_back(CDNSSeedData("0", "89.252.164.30"));
-        vSeeds.push_back(CDNSSeedData("1", "89.252.164.29"));
-        vSeeds.push_back(CDNSSeedData("2", "89.252.164.28"));
-        vSeeds.push_back(CDNSSeedData("3", "89.252.164.27"));
-       		
-        
+        assert(hashGenesisBlock == uint256("0x000003ebfc0867881b22dcb3e26de14c58e2dc9392f940d5b318984166836c5e"));
+        assert(genesis.hashMerkleRoot == uint256("0xffde5aac7c5208a7c2445e23460d238ea5b6367063c4942a02e356c714963668"));
+		
+		vSeeds.push_back(CDNSSeedData("80.211.250.30", "80.211.250.30"));         // Primary DNS Seeder 		
+		vSeeds.push_back(CDNSSeedData("94.177.251.151", "94.177.251.151"));
+		vSeeds.push_back(CDNSSeedData("94.177.229.203", "94.177.229.203"));
+		vSeeds.push_back(CDNSSeedData("94.177.232.35", "94.177.232.35"));
+		vSeeds.push_back(CDNSSeedData("45.76.228.101", "45.76.228.101"));
+		
+		
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 55);
-        
-        // Pegasus BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
-        // Pegasus BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
-        // Pegasus BIP44 coin type is '222' (0x800000de)
-        // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
-        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0xc1).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 8);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
+        // 	BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
+        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0xbc).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
+        fRequireRPCPassword = true;
         fMiningRequiresPeers = true;
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
@@ -184,10 +179,18 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "0470ec0b9dfed8560aeb84817aaea5dadd9644fef97be34b223e8f78340be3b6334f760222354234368f8b676eef32339a864ac80ada4413c7b27fcc77714e91ac";
-        strMasternodePoolDummyAddress = "PSJVWUkt6HtSCY2SaJ2akeyJUg8bg1hW3S";
-        nStartMasternodePayments = genesis.nTime + 86400; // 24 hours after genesis creation
+        strSporkKey = "040c206a48869ec1028f4e9634547d8138ef849bf36d49a1c75ec3369da77367158d42a2414a83771dc0dde3e3e023d28f6335f138648003260027d930a627fa06";
+        strObfuscationPoolDummyAddress = "7Djk6ufsEvdXt5ckKBnrRQcH5LiSVnudE5";
+        nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
 
+        /** Zerocoin */
+        zerocoinModulus = "0xc95577b6dce0049b0a20c779af38079355abadde1a1d80c353f6cb697a7ae5a087bad39caa5798478551d0f9d91e6267716506f32412de1d19d17588765eb9502b85c6a18abdb05791cfd8b734e960281193705eeece210920cc922b3af3ceb178bf12c22eb565d5767fbf19545639be8953c2c38ffad41f3371e4aac750ac2d7bd614b3faabb453081d5d88fdbb803657a980bc93707e4b14233a2358c97763bf28f7c933206071477e8b371f229bc9ce7d6ef0ed7163aa5dfe13bc15f7816348b328fa2c1e69d5c88f7b94cee7829d56d1842d77d7bb8692e9fc7b7db059836500de8d57eb43c345feb58671503b932829112941367996b03871300f25efb5";
+        nMaxZerocoinSpendsPerTransaction = 7; // Assume about 20kb each
+        nMinZerocoinMintFee = 1 * ZCENT; //high fee required for zerocoin mints
+        nMintRequiredConfirmations = 20; //the maximum amount of confirmations until accumulated in 19
+        nRequiredAccumulation = 1;
+        nDefaultSecurityLevel = 100; //full security level for accumulators
+        nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
     }
 
@@ -208,66 +211,66 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0x33;
-        pchMessageStart[1] = 0x1a;
-        pchMessageStart[2] = 0xbb;
-        pchMessageStart[3] = 0x5c;
-        vAlertPubKey = ParseHex("0486bce1bac0d543f104cbff2bd23680056a3b9ea05e1137d2ff90eeb5e08472eb500322593a2cb06fbf8297d7beb6cd30cb90f98153b5b7cce1493749e41e0284");
-        nDefaultPort = 34912;
+        pchMessageStart[0] = 0x7c;
+        pchMessageStart[1] = 0xba;
+        pchMessageStart[2] = 0x1b;
+        pchMessageStart[3] = 0x54;
+        vAlertPubKey = ParseHex("04df5320961fe6b30e995b25910eb12648b89bf927335095225aa12bf0b84f64e753e9e54f81347a3bc882b37173602388afa4e66c08101f53e1f5cbd6456cdc40");
+        nDefaultPort = 51434;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Pegasus: 1 day
-        nTargetSpacing = 2 * 60;  // Pegasus: 1 minute
+        nTargetSpacing = 1 * 60;  // Pegasus: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
-        nModifierUpdateBlock = 1;
-        nMaxMoneyOut = 100000000 * COIN;
-
+        nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
+        nMaxMoneyOut = 43199500 * COIN;
+        nZerocoinStartHeight = 201576;
+        nZerocoinStartTime = 1501776000;
+        nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
+        nBlockRecalculateAccumulators = 9908000; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = 9891737; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = 9891730; //Last valid accumulator checkpoint
+        
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1541808000;
-        genesis.nNonce = 21667612;
+        genesis.nTime = 1526304629;
+        genesis.nNonce = 0;
 
-        hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000e791017e7f688e54ae1cf3f6545dbfcf11b8cf60fefcf5492d844c2d3fa"));
+	    hashGenesisBlock = genesis.GetHash();
+        //assert(hashGenesisBlock == uint256("0x000007cff63ef602a51bf074e384b3516f0dd202f14d52f7c8c9b1af9423ab2e"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
+        
 
-        vSeeds.push_back(CDNSSeedData("0", "seed1.pegasuscoin.online"));
-        vSeeds.push_back(CDNSSeedData("1", "seed2.pegasuscoin.online"));
-        vSeeds.push_back(CDNSSeedData("2", "seed3.pegasuscoin.online"));
-        vSeeds.push_back(CDNSSeedData("3", "seed4.pegasuscoin.online"));
-        vSeeds.push_back(CDNSSeedData("4", "seed5.pegasuscoin.online"));
 
-        // Testnet Pegasus addresses start with 'g'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 98);
-        // Testnet Pegasus script addresses start with '5' or '6'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 12);
-        // Testnet private keys start with 'k'
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 108);
-        // Testnet Pegasus BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
-        // Testnet Pegasus BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
-        // Testnet Pegasus BIP44 coin type is '1' (All coin's testnet default)
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet pegasus addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet pegasus script addresses start with '8' or '9'
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
+        // Testnet pegasus BIP32 pubkeys start with 'DRKV'
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
+        // Testnet pegasus BIP32 prvkeys start with 'DRKP'
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
+        // Testnet pegasus BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
+        fRequireRPCPassword = true;
         fMiningRequiresPeers = true;
-        fAllowMinDifficultyBlocks = false;
+        fAllowMinDifficultyBlocks = true;
         fDefaultConsistencyChecks = false;
         fRequireStandard = false;
         fMineBlocksOnDemand = false;
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKey = "049c14723b948b7f4d93ef1e44f7bd9a5e42d169310a3e049824e20aee09898f7e0596cbd0b17334b1c2f51edfb61915c1b6d213d9a0d51ed4f9a53d8683f2e203";
-        strMasternodePoolDummyAddress = "gbJ4Qad4xc77PpLzMx6rUegAs6aUPWkcUq";
-        nStartMasternodePayments = genesis.nTime + 86400; // 24 hours after genesis
+        strSporkKey = "0433888dad0a73c5472244432df8f7458ca83ac634ab28bcff47bcd7588feed8b214f11d817dad4e1cf2b940ef487990ab169ce1c9c64af09a91dc8084752167ec";
+        strObfuscationPoolDummyAddress = "xp87cG8UEQgzs1Bk67Yk884C7pnQfAeo7q";
+        nStartMasternodePayments = 1420837558; //Fri, 09 Jan 2015 21:05:58 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
     }
@@ -289,29 +292,30 @@ public:
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
         strNetworkID = "regtest";
-        pchMessageStart[0] = 0x20;
-        pchMessageStart[1] = 0xee;
-        pchMessageStart[2] = 0x32;
-        pchMessageStart[3] = 0xbc;
+        pchMessageStart[0] = 0x1a;
+        pchMessageStart[1] = 0x6f;
+        pchMessageStart[2] = 0x13;
+        pchMessageStart[3] = 0x35;
         nSubsidyHalvingInterval = 150;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
         nTargetTimespan = 24 * 60 * 60; // Pegasus: 1 day
-        nTargetSpacing = 2 * 60;        // Pegasus: 1 minutes
+        nTargetSpacing = 1 * 60;        // Pegasus: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1541808000;
+        genesis.nTime = 1515524400;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 21667612;
+        genesis.nNonce = 732084;
 
         hashGenesisBlock = genesis.GetHash();
-        nDefaultPort = 81295;
-        assert(hashGenesisBlock == uint256("0x00000e791017e7f688e54ae1cf3f6545dbfcf11b8cf60fefcf5492d844c2d3fa"));
+        nDefaultPort = 51436;
+        //assert(hashGenesisBlock == uint256("0x000008415bdca132b70cf161ecc548e5d0150fd6634a381ee2e99bb8bb77dbb3"));
 
-        vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
-        vSeeds.clear();      //! Regtest mode doesn't have any DNS seeds.
+        vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
+        vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
 
+        fRequireRPCPassword = false;
         fMiningRequiresPeers = false;
         fAllowMinDifficultyBlocks = true;
         fDefaultConsistencyChecks = true;
@@ -336,10 +340,11 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 30184;
+        nDefaultPort = 51478;
         vFixedSeeds.clear(); //! Unit test mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Unit test mode doesn't have any DNS seeds.
 
+        fRequireRPCPassword = false;
         fMiningRequiresPeers = false;
         fDefaultConsistencyChecks = true;
         fAllowMinDifficultyBlocks = false;
@@ -361,17 +366,8 @@ public:
     virtual void setAllowMinDifficultyBlocks(bool afAllowMinDifficultyBlocks) { fAllowMinDifficultyBlocks = afAllowMinDifficultyBlocks; }
     virtual void setSkipProofOfWorkCheck(bool afSkipProofOfWorkCheck) { fSkipProofOfWorkCheck = afSkipProofOfWorkCheck; }
 };
-static CUnitTestParams unitTestParams;
-
 
 static CChainParams* pCurrentParams = 0;
-
-CModifiableParams* ModifiableParams()
-{
-    assert(pCurrentParams);
-    assert(pCurrentParams == &unitTestParams);
-    return (CModifiableParams*)&unitTestParams;
-}
 
 const CChainParams& Params()
 {
@@ -388,8 +384,6 @@ CChainParams& Params(CBaseChainParams::Network network)
         return testNetParams;
     case CBaseChainParams::REGTEST:
         return regTestParams;
-    case CBaseChainParams::UNITTEST:
-        return unitTestParams;
     default:
         assert(false && "Unimplemented network");
         return mainParams;

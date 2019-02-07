@@ -9,8 +9,6 @@
 #include "key.h"
 #include "main.h"
 #include "masternode.h"
-#include "clientversion.h"
-
 #include <boost/lexical_cast.hpp>
 
 using namespace std;

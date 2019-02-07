@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>選擇要匯出PEG幣的位址</translation>
+        <translation>選擇要匯出Pegasus幣的位址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>選擇要接收PEG幣的位址</translation>
+        <translation>選擇要接收Pegasus幣的位址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>接收的位址</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>這是你用來付款的 PEG 位址, 送出前, 請務必確認金額及接收位址是否正確.</translation>
+        <source>These are your Pegasus addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>這是你用來付款的 Pegasus 位址, 送出前, 請務必確認金額及接收位址是否正確.</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>這是你用來接收款項的 PEG 位址, 建議你每次付款都使用新的位址.</translation>
+        <source>These are your Pegasus addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>這是你用來接收款項的 Pegasus 位址, 建議你每次付款都使用新的位址.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -227,16 +227,16 @@
         <translation>&amp;BIP 38 加密</translation>
     </message>
     <message>
-        <source>Enter a PEG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>輸入你想 BIP 38 加密的 PEG 位址, 輸入密碼在中間欄, 按下加密按鈕來產生加密私鑰.</translation>
+        <source>Enter a Pegasus Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>輸入你想 BIP 38 加密的 Pegasus 位址, 輸入密碼在中間欄, 按下加密按鈕來產生加密私鑰.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>位址:</translation>
     </message>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>對訊息簽名的 PEG 位址</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>對訊息簽名的 Pegasus 位址</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -267,8 +267,8 @@
         <translation>拷貝目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>使用簽章來證明你是該  PEG 位址的擁有者,</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>使用簽章來證明你是該  Pegasus 位址的擁有者,</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -287,12 +287,12 @@
         <translation>&amp;BIP 38 解密</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>此訊息之 PEG 位址已簽章於</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>此訊息之 Pegasus 位址已簽章於</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>驗證訊息以確保該  PEG 位址已被簽章</translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>驗證訊息以確保該  Pegasus 位址已被簽章</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -582,12 +582,12 @@
         <translation>Tabs 工具列</translation>
     </message>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     <message>
-        <source>Send coins to a PEG address</source>
-        <translation>送出錢幣到 PEG 地址</translation>
+        <source>Send coins to a Pegasus address</source>
+        <translation>送出錢幣到 Pegasus 地址</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pegasus: URIs)</source>
@@ -602,24 +602,24 @@
         <translation>瀏覽 Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Pegasus</source>
-        <translation>&amp;關於 Pegasus</translation>
+        <source>&amp;About Pegasus Core</source>
+        <translation>&amp;關於 Pegasus Core</translation>
     </message>
     <message>
-        <source>Show information about Pegasus</source>
-        <translation>顯示 Pegasus 相關資訊</translation>
+        <source>Show information about Pegasus Core</source>
+        <translation>顯示 Pegasus Core 相關資訊</translation>
     </message>
     <message>
         <source>Modify configuration options for Pegasus</source>
         <translation>修改 Pegasus 設定</translation>
     </message>
     <message>
-        <source>Sign messages with your PEG addresses to prove you own them</source>
-        <translation>使用你的 PEG 位址對訊息簽章, 來證明你是擁有者</translation>
+        <source>Sign messages with your Pegasus addresses to prove you own them</source>
+        <translation>使用你的 Pegasus 位址對訊息簽章, 來證明你是擁有者</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PEG addresses</source>
-        <translation>驗證訊息簽章與 PEG 位址吻合</translation>
+        <source>Verify messages to ensure they were signed with specified Pegasus addresses</source>
+        <translation>驗證訊息簽章與 Pegasus 位址吻合</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -650,8 +650,8 @@
         <translation>打開Masternode設定檔</translation>
     </message>
     <message>
-        <source>Open a pegasus: URI or payment request</source>
-        <translation>打開pegasus: 位址或付款請求 </translation>
+        <source>Open a Pegasus: URI or payment request</source>
+        <translation>打開Pegasus: 位址或付款請求 </translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -662,12 +662,12 @@
         <translation>區塊鏈瀏覽視窗</translation>
     </message>
     <message>
-        <source>Show the Pegasus help message to get a list with possible Pegasus command-line options</source>
-        <translation>顯示 Pegasus 幫助訊息以取得 Pegasus 命令列表選項</translation>
+        <source>Show the Pegasus Core help message to get a list with possible Pegasus command-line options</source>
+        <translation>顯示 Pegasus Core 幫助訊息以取得 Pegasus 命令列表選項</translation>
     </message>
     <message>
-        <source>Pegasus client</source>
-        <translation>Pegasus 客戶端</translation>
+        <source>Pegasus Core client</source>
+        <translation>Pegasus Core 客戶端</translation>
     </message>
     </context>
 <context>
@@ -696,15 +696,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     </context>
 <context>
@@ -726,6 +726,9 @@
     </message>
     </context>
 <context>
+    <name>ObfuscationConfig</name>
+    </context>
+<context>
     <name>OpenURIDialog</name>
     </context>
 <context>
@@ -739,6 +742,25 @@
     </context>
 <context>
     <name>PeerTableModel</name>
+    </context>
+<context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>選擇之前用過的位址</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>從剪貼簿貼上</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
     </context>
 <context>
     <name>QObject</name>
@@ -814,8 +836,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>對訊息簽名的 PEG 位址</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>對訊息簽名的 Pegasus 位址</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -838,16 +860,16 @@
         <translation>拷貝目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>使用簽章來證明你是該  PEG 位址的擁有者,</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>使用簽章來證明你是該  Pegasus 位址的擁有者,</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>此訊息之 PEG 位址已簽章於</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>此訊息之 Pegasus 位址已簽章於</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>驗證訊息以確保該  PEG 位址已被簽章</translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>驗證訊息以確保該  Pegasus 位址已被簽章</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -885,8 +907,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     </context>
 <context>
@@ -947,6 +969,9 @@
         <source>Export the data in the current tab to a file</source>
         <translation>匯出目前面板中的資料</translation>
     </message>
+    </context>
+<context>
+    <name>ZPhrControlDialog</name>
     </context>
 <context>
     <name>pegasus-core</name>

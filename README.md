@@ -11,13 +11,14 @@ Pegasus is a cryptocurrency which offers users a one click solution for masterno
 More information at [pegasuscoin.online](https://www.pegasuscoin.online)
 
 ### Coin Specs
-| Block Time                  | 120 Seconds      |
-| Max Coin Supply (PoS Phase) | 55,000,000 PEG |
-| Premine                     | 2,000,000 PEG    |
+| Block Time                  | 60 Seconds      |
+| Max Coin Supply (PoS Phase) | 90,000,000 PEG |
+| Premine                     | 4,000,000 PEG    |
 
 ### Reward Distribution
 
-| **Block Height** | **Masternodes**  | **PoS**          | **Budget**      |
-|------------------|------------------|------------------|-----------------|
-| 201-34480        | 85% (12.75 PEG)  | 10% (1.5 PEG)    | 5% (0.75 PEG)   |
-| 34481+           | 85% (161.5 PEG)  | 10% (19 PEG)     | 5% (9.5 PEG)    |
+| **Block Height** | **Masternodes**  | **PoS**          | 
+|------------------|------------------|------------------|
+| 1-10000	       | 90% (0.9 PEG)	  | 10% (0.1 PEG)    |
+| 10001-199999     | 90% (225 PEG)	  | 10% (25 PEG)     | 
+| 200000+  		   | 90% (360 PEG)	  | 10% (40 PEG)     | 

@@ -1,6 +1,5 @@
 // Copyright (c) 2014-2016 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Pegasus developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,15 +8,11 @@
 #include "masternode.h"
 #include "masternodeconfig.h"
 #include "masternodeman.h"
-#include "masternode-helpers.h"
 #include "protocol.h"
 #include "spork.h"
 
-// Keep track of the active Masternode
-CActiveMasternode activeMasternode;
-
 //
-// Bootup the Masternode, look for a PEG collateral input and register on the network
+// Bootup the Masternode, look for a 10000 PEG input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {
@@ -72,21 +67,21 @@ void CActiveMasternode::ManageStatus()
             service = CService(strMasterNodeAddr);
         }
 
-        // if (Params().NetworkID() == CBaseChainParams::MAIN) {
-        //     if (service.GetPort() != 2171) {
-        //         notCapableReason = strprintf("Invalid port: %u - only 2171 is supported on mainnet.", service.GetPort());
-        //         LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason);
-        //         return;
-        //     }
-        // } else if (service.GetPort() == 2171) {
-        //     notCapableReason = strprintf("Invalid port: %u - 2171 is only supported on mainnet.", service.GetPort());
-        //     LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason);
-        //     return;
-        // }
+        if (Params().NetworkID() == CBaseChainParams::MAIN) {
+            if (service.GetPort() != 5111) {
+                notCapableReason = strprintf("Invalid port: %u - only 5111 is supported on mainnet.", service.GetPort());
+                LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason);
+                return;
+            }
+        } else if (service.GetPort() == 5111) {
+            notCapableReason = strprintf("Invalid port: %u - 5111 is only supported on mainnet.", service.GetPort());
+            LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason);
+            return;
+        }
 
         LogPrintf("CActiveMasternode::ManageStatus() - Checking inbound connection to '%s'\n", service.ToString());
 
-        CNode* pnode = ConnectNode((CAddress)service, NULL);
+        CNode* pnode = ConnectNode((CAddress)service, NULL, false);
         if (!pnode) {
             notCapableReason = "Could not connect to " + service.ToString();
             LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason);
@@ -113,7 +108,7 @@ void CActiveMasternode::ManageStatus()
             CPubKey pubKeyMasternode;
             CKey keyMasternode;
 
-            if (!masternodeSigner.SetKey(strMasterNodePrivKey, errorMessage, keyMasternode, pubKeyMasternode)) {
+            if (!obfuScationSigner.SetKey(strMasterNodePrivKey, errorMessage, keyMasternode, pubKeyMasternode)) {
                 notCapableReason = "Error upon calling SetKey: " + errorMessage;
                 LogPrintf("Register::ManageStatus() - %s\n", notCapableReason);
                 return;
@@ -170,7 +165,7 @@ bool CActiveMasternode::SendMasternodePing(std::string& errorMessage)
     CPubKey pubKeyMasternode;
     CKey keyMasternode;
 
-    if (!masternodeSigner.SetKey(strMasterNodePrivKey, errorMessage, keyMasternode, pubKeyMasternode)) {
+    if (!obfuScationSigner.SetKey(strMasterNodePrivKey, errorMessage, keyMasternode, pubKeyMasternode)) {
         errorMessage = strprintf("Error upon calling SetKey: %s\n", errorMessage);
         return false;
     }
@@ -201,10 +196,42 @@ bool CActiveMasternode::SendMasternodePing(std::string& errorMessage)
 
         mnp.Relay();
 
+        /*
+         * IT'S SAFE TO REMOVE THIS IN FURTHER VERSIONS
+         * AFTER MIGRATION TO V12 IS DONE
+         */
+
+        if (IsSporkActive(SPORK_10_MASTERNODE_PAY_UPDATED_NODES)) return true;
+        // for migration purposes ping our node on old masternodes network too
+        std::string retErrorMessage;
+        std::vector<unsigned char> vchMasterNodeSignature;
+        int64_t masterNodeSignatureTime = GetAdjustedTime();
+
+        std::string strMessage = service.ToString() + boost::lexical_cast<std::string>(masterNodeSignatureTime) + boost::lexical_cast<std::string>(false);
+
+        if (!obfuScationSigner.SignMessage(strMessage, retErrorMessage, vchMasterNodeSignature, keyMasternode)) {
+            errorMessage = "dseep sign message failed: " + retErrorMessage;
+            return false;
+        }
+
+        if (!obfuScationSigner.VerifyMessage(pubKeyMasternode, vchMasterNodeSignature, strMessage, retErrorMessage)) {
+            errorMessage = "dseep verify message failed: " + retErrorMessage;
+            return false;
+        }
+
+        LogPrint("masternode", "dseep - relaying from active mn, %s \n", vin.ToString().c_str());
+        LOCK(cs_vNodes);
+        BOOST_FOREACH (CNode* pnode, vNodes)
+            pnode->PushMessage("dseep", vin, vchMasterNodeSignature, masterNodeSignatureTime, false);
+
+        /*
+         * END OF "REMOVE"
+         */
+
         return true;
     } else {
         // Seems like we are trying to send a ping while the Masternode is not registered in the network
-        errorMessage = "Masternode List doesn't include our Masternode, shutting down Masternode pinging service! " + vin.ToString();
+        errorMessage = "Obfuscation Masternode List doesn't include our Masternode, shutting down Masternode pinging service! " + vin.ToString();
         status = ACTIVE_MASTERNODE_NOT_CAPABLE;
         notCapableReason = errorMessage;
         return false;
@@ -226,7 +253,7 @@ bool CActiveMasternode::Register(std::string strService, std::string strKeyMaste
         return false;
     }
 
-    if (!masternodeSigner.SetKey(strKeyMasternode, errorMessage, keyMasternode, pubKeyMasternode)) {
+    if (!obfuScationSigner.SetKey(strKeyMasternode, errorMessage, keyMasternode, pubKeyMasternode)) {
         errorMessage = strprintf("Can't find keys for masternode %s - %s", strService, errorMessage);
         LogPrintf("CActiveMasternode::Register() - %s\n", errorMessage);
         return false;
@@ -238,18 +265,18 @@ bool CActiveMasternode::Register(std::string strService, std::string strKeyMaste
         return false;
     }
 
-    // CService service = CService(strService);
-    // if (Params().NetworkID() == CBaseChainParams::MAIN) {
-    //     if (service.GetPort() != 2171) {
-    //         errorMessage = strprintf("Invalid port %u for masternode %s - only 2171 is supported on mainnet.", service.GetPort(), strService);
-    //         LogPrintf("CActiveMasternode::Register() - %s\n", errorMessage);
-    //         return false;
-    //     }
-    // } else if (service.GetPort() == 2171) {
-    //     errorMessage = strprintf("Invalid port %u for masternode %s - 2171 is only supported on mainnet.", service.GetPort(), strService);
-    //     LogPrintf("CActiveMasternode::Register() - %s\n", errorMessage);
-    //     return false;
-    // }
+    CService service = CService(strService);
+    if (Params().NetworkID() == CBaseChainParams::MAIN) {
+        if (service.GetPort() != 5111) {
+            errorMessage = strprintf("Invalid port %u for masternode %s - only 5111 is supported on mainnet.", service.GetPort(), strService);
+            LogPrintf("CActiveMasternode::Register() - %s\n", errorMessage);
+            return false;
+        }
+    } else if (service.GetPort() == 5111) {
+        errorMessage = strprintf("Invalid port %u for masternode %s - 5111 is only supported on mainnet.", service.GetPort(), strService);
+        LogPrintf("CActiveMasternode::Register() - %s\n", errorMessage);
+        return false;
+    }
 
     addrman.Add(CAddress(service), CNetAddr("127.0.0.1"), 2 * 60 * 60);
 
@@ -289,6 +316,44 @@ bool CActiveMasternode::Register(CTxIn vin, CService service, CKey keyCollateral
     //send to all peers
     LogPrintf("CActiveMasternode::Register() - RelayElectionEntry vin = %s\n", vin.ToString());
     mnb.Relay();
+
+    /*
+     * IT'S SAFE TO REMOVE THIS IN FURTHER VERSIONS
+     * AFTER MIGRATION TO V12 IS DONE
+     */
+
+    if (IsSporkActive(SPORK_10_MASTERNODE_PAY_UPDATED_NODES)) return true;
+    // for migration purposes inject our node in old masternodes' list too
+    std::string retErrorMessage;
+    std::vector<unsigned char> vchMasterNodeSignature;
+    int64_t masterNodeSignatureTime = GetAdjustedTime();
+    std::string donationAddress = "";
+    int donationPercantage = 0;
+
+    std::string vchPubKey(pubKeyCollateralAddress.begin(), pubKeyCollateralAddress.end());
+    std::string vchPubKey2(pubKeyMasternode.begin(), pubKeyMasternode.end());
+
+    std::string strMessage = service.ToString() + boost::lexical_cast<std::string>(masterNodeSignatureTime) + vchPubKey + vchPubKey2 + boost::lexical_cast<std::string>(PROTOCOL_VERSION) + donationAddress + boost::lexical_cast<std::string>(donationPercantage);
+
+    if (!obfuScationSigner.SignMessage(strMessage, retErrorMessage, vchMasterNodeSignature, keyCollateralAddress)) {
+        errorMessage = "dsee sign message failed: " + retErrorMessage;
+        LogPrintf("CActiveMasternode::Register() - Error: %s\n", errorMessage.c_str());
+        return false;
+    }
+
+    if (!obfuScationSigner.VerifyMessage(pubKeyCollateralAddress, vchMasterNodeSignature, strMessage, retErrorMessage)) {
+        errorMessage = "dsee verify message failed: " + retErrorMessage;
+        LogPrintf("CActiveMasternode::Register() - Error: %s\n", errorMessage.c_str());
+        return false;
+    }
+
+    LOCK(cs_vNodes);
+    BOOST_FOREACH (CNode* pnode, vNodes)
+        pnode->PushMessage("dsee", vin, service, vchMasterNodeSignature, masterNodeSignatureTime, pubKeyCollateralAddress, pubKeyMasternode, -1, -1, masterNodeSignatureTime, PROTOCOL_VERSION, donationAddress, donationPercantage);
+
+    /*
+     * END OF "REMOVE"
+     */
 
     return true;
 }
@@ -407,7 +472,7 @@ vector<COutput> CActiveMasternode::SelectCoinsMasternode()
 
     // Filter
     BOOST_FOREACH (const COutput& out, vCoins) {
-        if (out.tx->vout[out.i].nValue == MASTERNODE_COLLATERAL * COIN) { //exactly
+        if (out.tx->vout[out.i].nValue == 10000 * COIN) { //exactly
             filteredCoins.push_back(out);
         }
     }

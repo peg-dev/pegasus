@@ -1,5 +1,5 @@
 ---
-name: "pegasus-win-1.0"
+name: "pegasus-win-1.2"
 enable_cache: true
 suites:
 - "trusty"
@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/pegasus/pegasus.git"
+- "url": "https://github.com/eastcoastcrypto/Pegasus"
   "dir": "pegasus"
 files: []
 script: |
@@ -147,9 +147,9 @@ script: |
     make install DESTDIR=${INSTALLPATH}
     cp -f pegasus-*setup*.exe $OUTDIR/
     cd installed
-    # mv ${DISTNAME}/bin/*.dll ${DISTNAME}/lib/
-    find . -name "lib*.la" -delete
-    find . -name "lib*.a" -delete
+    # mv ${DISTNAME}/bin/*.dll ${DISTNAME}/lib/ # temporarily disabled for Zerocoin
+    # find . -name "lib*.la" -delete            # temporarily disabled for Zerocoin
+    # find . -name "lib*.a" -delete             # temporarily disabled for Zerocoin
     rm -rf ${DISTNAME}/lib/pkgconfig
     find ${DISTNAME}/bin -type f -executable -exec ${i}-objcopy --only-keep-debug {} {}.dbg \; -exec ${i}-strip -s {} \; -exec ${i}-objcopy --add-gnu-debuglink={}.dbg {} \;
     # find ${DISTNAME}/lib -type f -exec ${i}-objcopy --only-keep-debug {} {}.dbg \; -exec ${i}-strip -s {} \; -exec ${i}-objcopy --add-gnu-debuglink={}.dbg {} \;

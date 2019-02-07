@@ -8,7 +8,6 @@
 #include "ui_askpassphrasedialog.h"
 
 #include "guiconstants.h"
-#include "guiutil.h"
 #include "walletmodel.h"
 
 #include "allocators.h"
@@ -24,15 +23,14 @@ AskPassphraseDialog::AskPassphraseDialog(Mode mode, QWidget* parent, WalletModel
                                                                                            fCapsLock(false)
 {
     ui->setupUi(this);
-    this->setStyleSheet(GUIUtil::loadStyleSheet());
 
     ui->passEdit1->setMinimumSize(ui->passEdit1->sizeHint());
     ui->passEdit2->setMinimumSize(ui->passEdit2->sizeHint());
     ui->passEdit3->setMinimumSize(ui->passEdit3->sizeHint());
 
-    ui->passEdit1->setMaxLength(MAX_PASSPHRASE_SIZE);
-    ui->passEdit2->setMaxLength(MAX_PASSPHRASE_SIZE);
-    ui->passEdit3->setMaxLength(MAX_PASSPHRASE_SIZE);
+    ui->passEdit1->setMaxLength(MAX_PASSBRKSASE_SIZE);
+    ui->passEdit2->setMaxLength(MAX_PASSBRKSASE_SIZE);
+    ui->passEdit3->setMaxLength(MAX_PASSBRKSASE_SIZE);
 
     // Setup Caps Lock detection.
     ui->passEdit1->installEventFilter(this);
@@ -48,9 +46,9 @@ AskPassphraseDialog::AskPassphraseDialog(Mode mode, QWidget* parent, WalletModel
         ui->passEdit1->hide();
         setWindowTitle(tr("Encrypt wallet"));
         break;
-    case UnlockStaking:
-        ui->stakingCheckBox->setChecked(true);
-        ui->stakingCheckBox->show();
+    case UnlockAnonymize:
+        ui->anonymizationCheckBox->setChecked(true);
+        ui->anonymizationCheckBox->show();
     case Unlock: // Ask passphrase
         ui->warningLabel->setText(tr("This operation needs your wallet passphrase to unlock the wallet."));
         ui->passLabel2->hide();
@@ -73,7 +71,7 @@ AskPassphraseDialog::AskPassphraseDialog(Mode mode, QWidget* parent, WalletModel
         break;
     }
 
-    ui->stakingCheckBox->setChecked(model->isStakingOnlyUnlocked());
+    ui->anonymizationCheckBox->setChecked(model->isAnonymizeOnlyUnlocked());
 
     textChanged();
     connect(ui->passEdit1, SIGNAL(textChanged(QString)), this, SLOT(textChanged()));
@@ -95,9 +93,9 @@ void AskPassphraseDialog::accept()
     SecureString oldpass, newpass1, newpass2;
     if (!model)
         return;
-    oldpass.reserve(MAX_PASSPHRASE_SIZE);
-    newpass1.reserve(MAX_PASSPHRASE_SIZE);
-    newpass2.reserve(MAX_PASSPHRASE_SIZE);
+    oldpass.reserve(MAX_PASSBRKSASE_SIZE);
+    newpass1.reserve(MAX_PASSBRKSASE_SIZE);
+    newpass2.reserve(MAX_PASSBRKSASE_SIZE);
     // TODO: get rid of this .c_str() by implementing SecureString::operator=(std::string)
     // Alternately, find a way to make this input mlock()'d to begin with.
     oldpass.assign(ui->passEdit1->text().toStdString().c_str());
@@ -142,9 +140,9 @@ void AskPassphraseDialog::accept()
             QDialog::reject(); // Cancelled
         }
     } break;
-    case UnlockStaking:
+    case UnlockAnonymize:
     case Unlock:
-        if (!model->setWalletLocked(false, oldpass, ui->stakingCheckBox->isChecked())) {
+        if (!model->setWalletLocked(false, oldpass, ui->anonymizationCheckBox->isChecked())) {
             QMessageBox::critical(this, tr("Wallet unlock failed"),
                 tr("The passphrase entered for the wallet decryption was incorrect."));
         } else {
@@ -185,7 +183,7 @@ void AskPassphraseDialog::textChanged()
     case Encrypt: // New passphrase x2
         acceptable = !ui->passEdit2->text().isEmpty() && !ui->passEdit3->text().isEmpty();
         break;
-    case UnlockStaking:
+    case UnlockAnonymize: // Old passphrase x1
     case Unlock:          // Old passphrase x1
     case Decrypt:
         acceptable = !ui->passEdit1->text().isEmpty();

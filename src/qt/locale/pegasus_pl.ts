@@ -108,6 +108,10 @@
         <translation>Powtórz nowe hasło</translation>
     </message>
     <message>
+        <source>For anonymization and staking only</source>
+        <translation>Tylko dla anonimizacji i stakingu</translation>
+    </message>
+    <message>
         <source>Encrypt wallet</source>
         <translation>Zakoduj portfel</translation>
     </message>
@@ -223,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres PEG jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Pegasus jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -514,12 +518,12 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>&amp;Rdzeń Pegasus</translation>
     </message>
     <message>
-        <source>Send coins to a PEG address</source>
-        <translation>Wyślij monety do adresu PEG</translation>
+        <source>Send coins to a Pegasus address</source>
+        <translation>Wyślij monety do adresu Pegasus</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pegasus: URIs)</source>
@@ -534,11 +538,11 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Pegasus</source>
+        <source>&amp;About Pegasus Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about Pegasus</source>
+        <source>Show information about Pegasus Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
@@ -546,12 +550,12 @@
         <translation>Modyfikuj opcje konfiguracji Pegasus</translation>
     </message>
     <message>
-        <source>Sign messages with your PEG addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami PEG, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your Pegasus addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami Pegasus, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PEG addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu PEG</translation>
+        <source>Verify messages to ensure they were signed with specified Pegasus addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Pegasus</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -578,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a pegasus: URI or payment request</source>
-        <translation>Otwórz pegasus: URI i żądanie zapłaty</translation>
+        <source>Open a Pegasus: URI or payment request</source>
+        <translation>OtwórzPEG: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -590,11 +594,11 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the Pegasus help message to get a list with possible Pegasus command-line options</source>
+        <source>Show the Pegasus Core help message to get a list with possible Pegasus command-line options</source>
         <translation>Pokaż wiadomość pomocy rdzenia Pegasus, aby dostać listę możliwych opcji Pegasus command-line</translation>
     </message>
     <message>
-        <source>Pegasus client</source>
+        <source>Pegasus Core client</source>
         <translation>Rdzeń Pegasus klient</translation>
     </message>
     <message>
@@ -684,6 +688,10 @@ MultiWysyłlka: %1</translation>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Portfel jest 1Zakodowany1 i obecnie 2Odblokowany2</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
+        <translation>Portfel jest 1Zakodowany1 i obecnie 2Odblokowany2 tylko dla anonimizacji i stakingu</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
@@ -904,7 +912,7 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>&amp;Rdzeń Pegasus</translation>
     </message>
     </context>
@@ -919,7 +927,7 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>&amp;Rdzeń Pegasus</translation>
     </message>
     <message>
@@ -1120,6 +1128,25 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
     </message>
 </context>
 <context>
+    <name>ObfuscationConfig</name>
+    <message>
+        <source>Basic Privacy</source>
+        <translation>Podstawowa prywatność</translation>
+    </message>
+    <message>
+        <source>High Privacy</source>
+        <translation>Wysoka prywatność</translation>
+    </message>
+    <message>
+        <source>Maximum Privacy</source>
+        <translation>Maksymalna prywatność</translation>
+    </message>
+    <message>
+        <source>Please select a privacy level.</source>
+        <translation>Proszę wybrać poziom prywatności</translation>
+    </message>
+    </context>
+<context>
     <name>OpenURIDialog</name>
     <message>
         <source>Open URI</source>
@@ -1189,6 +1216,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Pegasus</translation>
     </message>
     <message>
+        <source>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/pegasus-project/pegasus-project-translations</source>
+        <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
+https://www.transifex.com/pegasus-project/pegasus-project-translations </translation>
+    </message>
+    <message>
         <source>Connect to the Pegasus network through a SOCKS5 proxy.</source>
         <translation>Połącz z siecią Pegasus poprzez SOCKS5 proxy.</translation>
     </message>
@@ -1219,6 +1252,10 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
     <message>
         <source>User Interface &amp;language:</source>
         <translation>Interfejs użytkownika &amp;Język.</translation>
+    </message>
+    <message>
+        <source>User Interface Theme:</source>
+        <translation>Motyw interfejsu użytkownika:</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1355,14 +1392,77 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
     </message>
 </context>
 <context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation>Resetuj</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Liczba:</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Wybierz poprzednio używany adres</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Wklej adres ze schowka</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Priorytet:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Opłata:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>nie</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>średni</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Zmiana:</translation>
+    </message>
+    <message>
+        <source>out of sync</source>
+        <translation>Brak synchronizacji</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Kopiuj ilość</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopiuj liczbę</translation>
+    </message>
+    </context>
+<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a PEG address (e.g. %1)</source>
-        <translation>Wprowadź adres PEG (np. %1)</translation>
+        <source>Enter a Pegasus address (e.g. %1)</source>
+        <translation>Wprowadź adres Pegasus (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1800,8 +1900,8 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres PEG jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Pegasus jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1835,7 +1935,7 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>&amp;Rdzeń Pegasus</translation>
     </message>
     </context>
@@ -1924,6 +2024,13 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
     <message>
         <source>&amp;Export</source>
         <translation>Eksportuj</translation>
+    </message>
+    </context>
+<context>
+    <name>ZPhrControlDialog</name>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
     </message>
     </context>
 <context>

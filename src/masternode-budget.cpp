@@ -1,24 +1,22 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2017-2018 The Pegasus developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "init.h"
 #include "main.h"
 
-#include "activemasternode.h"
 #include "addrman.h"
 #include "masternode-budget.h"
 #include "masternode-sync.h"
-#include "masternode-helpers.h"
-#include "masternodeconfig.h"
 #include "masternode.h"
 #include "masternodeman.h"
+#include "obfuscation.h"
 #include "util.h"
-#include "wallet.h"
-
 #include <boost/filesystem.hpp>
 #include <boost/lexical_cast.hpp>
+#include "spork.h"
 
 CBudgetManager budget;
 CCriticalSection cs_budget;
@@ -31,11 +29,15 @@ int nSubmittedFinalBudget;
 
 int GetBudgetPaymentCycleBlocks()
 {
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // DON'T CHANGE THESE BUDGET PERIODS AFTER A PROPOSAL HAS BEEN PAID
+    // NEW WALLETS WON'T RECOGNIZE THE PAID BLOCK AND WILL FORK, UNLESS YOU DO IT BASED ON HEIGHT
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
     // Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
     if (Params().NetworkID() == CBaseChainParams::MAIN) return 43200;
-    //for testing purposes
 
-    return 144; //ten times per day
+    return 720; // twice per day in testnet
 }
 
 bool IsBudgetCollateralValid(uint256 nTxCollateralHash, uint256 nExpectedHash, std::string& strError, int64_t& nTime, int& nConf)
@@ -610,7 +612,7 @@ bool CBudgetManager::IsBudgetPaymentBlock(int nBlockHeight)
         ++it;
     }
 
-    LogPrint("masternode","CBudgetManager::IsBudgetPaymentBlock() - nHighestCount: %lli, 5%% of Masternodes: %lli. Number of budgets: %lli\n",
+    LogPrint("masternode","CBudgetManager::IsBudgetPaymentBlock() - nHighestCount: %lli, 5%% of Masternodes: %lli. Number of budgets: %lli\n", 
               nHighestCount, nFivePercent, mapFinalizedBudgets.size());
 
     // If budget doesn't have 5% of the network votes, then we should pay a masternode instead
@@ -641,7 +643,7 @@ bool CBudgetManager::IsTransactionValid(const CTransaction& txNew, int nBlockHei
         ++it;
     }
 
-    LogPrint("masternode","CBudgetManager::IsTransactionValid() - nHighestCount: %lli, 5%% of Masternodes: %lli mapFinalizedBudgets.size(): %ld\n",
+    LogPrint("masternode","CBudgetManager::IsTransactionValid() - nHighestCount: %lli, 5%% of Masternodes: %lli mapFinalizedBudgets.size(): %ld\n", 
               nHighestCount, nFivePercent, mapFinalizedBudgets.size());
     /*
         If budget doesn't have 5% of the network votes, then we should pay a masternode instead
@@ -835,36 +837,18 @@ std::string CBudgetManager::GetRequiredPaymentsString(int nBlockHeight)
 
 CAmount CBudgetManager::GetTotalBudget(int nHeight)
 {
-    if (chainActive.Tip() == NULL) return 0;
-
-    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-        CAmount nSubsidy = 500 * COIN;
-        return ((nSubsidy / 100) * 10) * 146;
-    }
-
-    if (nHeight <= Params().LAST_POW_BLOCK())
-        return 0;
-
-    //get block value and calculate from that
     CAmount nSubsidy = 0;
+    CAmount totalBudget = 0;
+    if (chainActive.Tip() == NULL) return totalBudget;
 
-    if (nHeight > Params().LAST_POW_BLOCK() && nHeight <= 5000)
-        nSubsidy = 1.05 * COIN;
-    else if (nHeight > 5000 && nHeight <= 25000)
-        nSubsidy = 31.5 * COIN;
-    else if (nHeight > 25000 && nHeight <= 100000)
-        nSubsidy = 22.05 * COIN;
-    else if (nHeight > 100000 && nHeight <= 1050000)
-        nSubsidy = 10.5 * COIN;
-    else if (nHeight > 1050000 && nHeight <= 2100000)
-        nSubsidy = 5.25 * COIN;
-    else if (nHeight > 2100000 && nHeight <= 3150000)
-        nSubsidy = 2.63 * COIN;
-    else
-        nSubsidy = 1.31 * COIN;
+    nSubsidy = GetBlockValue(nHeight);
+    LogPrint("masternode","CBudgetManager::GetTotalBudget(%d): GetBlockValue(%d) returned %f COINs\n", nHeight, nHeight, nSubsidy / COIN);
 
-    // Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
-    return ((nSubsidy / 100) * 10) * 1440 * 30;
+    // Define governance budget as 20% of the block value
+    totalBudget = ((nSubsidy / 100) * 20) * GetBudgetPaymentCycleBlocks();
+
+    LogPrint("masternode","CBudgetManager::GetTotalBudget(%d) returning %f COINs\n", nHeight, totalBudget / COIN);
+    return totalBudget;
 }
 
 void CBudgetManager::NewBlock()
@@ -1240,12 +1224,9 @@ void CBudgetManager::Sync(CNode* pfrom, uint256 nProp, bool fPartial)
 
     /*
         Sync with a client on the network
-
         --
-
         This code checks each of the hash maps for all known budget proposals and finalized budget proposals, then checks them against the
         budget object to see if they're OK. If all checks pass, we'll send it to the peer.
-
     */
 
     int nInvCount = 0;
@@ -1393,10 +1374,31 @@ CBudgetProposal::CBudgetProposal(const CBudgetProposal& other)
     fValid = true;
 }
 
+unsigned long getVetoHash(const std::string& str)
+{
+    unsigned long hash = 1;
+    for (size_t i = 0; i < str.size(); ++i)
+        hash = 13 * hash + (unsigned char)str[i];
+    return hash;
+}
+
 bool CBudgetProposal::IsValid(std::string& strError, bool fCheckCollateral)
 {
     if (GetNays() - GetYeas() > mnodeman.CountEnabled(ActiveProtocol()) / 10) {
         strError = "Proposal " + strProposalName + ": Active removal";
+        return false;
+    }
+
+    CTxDestination address1;
+    ExtractDestination(address, address1);
+    CBitcoinAddress address2(address1);
+    // create a unique string for the proposal
+    std::string proposalStr = strProposalName +"/"+ strURL +"/"+ address2.ToString() +"/"+ std::to_string(nAmount) +"/"+ std::to_string(nBlockStart) +"/"+ std::to_string(nBlockEnd);
+    int vetoHash = getVetoHash(proposalStr) % 2000000000;
+
+    LogPrint("mnbudget", "CBudgetProposal::IsValid Proposal '%s' has VETO hash %d\n", proposalStr, vetoHash);
+    if (GetSporkValue(SPORK_17_PROPOSAL_VETO) == vetoHash) {
+        strError = "Proposal Veto";
         return false;
     }
 
@@ -1448,7 +1450,7 @@ bool CBudgetProposal::IsValid(std::string& strError, bool fCheckCollateral)
 
     //can only pay out 10% of the possible coins (min value of coins)
     if (nAmount > budget.GetTotalBudget(nBlockStart)) {
-        strError = "Proposal " + strProposalName + ": Payment more than max";
+        strError = "Proposal " + strProposalName + ": Payment more than max ("+std::to_string(budget.GetTotalBudget(nBlockStart) / COIN)+")";
         return false;
     }
 
@@ -1677,12 +1679,12 @@ bool CBudgetVote::Sign(CKey& keyMasternode, CPubKey& pubKeyMasternode)
     std::string errorMessage;
     std::string strMessage = vin.prevout.ToStringShort() + nProposalHash.ToString() + boost::lexical_cast<std::string>(nVote) + boost::lexical_cast<std::string>(nTime);
 
-    if (!masternodeSigner.SignMessage(strMessage, errorMessage, vchSig, keyMasternode)) {
+    if (!obfuScationSigner.SignMessage(strMessage, errorMessage, vchSig, keyMasternode)) {
         LogPrint("masternode","CBudgetVote::Sign - Error upon calling SignMessage");
         return false;
     }
 
-    if (!masternodeSigner.VerifyMessage(pubKeyMasternode, vchSig, strMessage, errorMessage)) {
+    if (!obfuScationSigner.VerifyMessage(pubKeyMasternode, vchSig, strMessage, errorMessage)) {
         LogPrint("masternode","CBudgetVote::Sign - Error upon calling VerifyMessage");
         return false;
     }
@@ -1706,7 +1708,7 @@ bool CBudgetVote::SignatureValid(bool fSignatureCheck)
 
     if (!fSignatureCheck) return true;
 
-    if (!masternodeSigner.VerifyMessage(pmn->pubKeyMasternode, vchSig, strMessage, errorMessage)) {
+    if (!obfuScationSigner.VerifyMessage(pmn->pubKeyMasternode, vchSig, strMessage, errorMessage)) {
         LogPrint("masternode","CBudgetVote::SignatureValid() - Verify message failed\n");
         return false;
     }
@@ -2028,7 +2030,7 @@ void CFinalizedBudget::SubmitVote()
     CKey keyMasternode;
     std::string errorMessage;
 
-    if (!masternodeSigner.SetKey(strMasterNodePrivKey, errorMessage, keyMasternode, pubKeyMasternode)) {
+    if (!obfuScationSigner.SetKey(strMasterNodePrivKey, errorMessage, keyMasternode, pubKeyMasternode)) {
         LogPrint("masternode","CFinalizedBudget::SubmitVote - Error upon calling SetKey\n");
         return;
     }
@@ -2121,12 +2123,12 @@ bool CFinalizedBudgetVote::Sign(CKey& keyMasternode, CPubKey& pubKeyMasternode)
     std::string errorMessage;
     std::string strMessage = vin.prevout.ToStringShort() + nBudgetHash.ToString() + boost::lexical_cast<std::string>(nTime);
 
-    if (!masternodeSigner.SignMessage(strMessage, errorMessage, vchSig, keyMasternode)) {
+    if (!obfuScationSigner.SignMessage(strMessage, errorMessage, vchSig, keyMasternode)) {
         LogPrint("masternode","CFinalizedBudgetVote::Sign - Error upon calling SignMessage");
         return false;
     }
 
-    if (!masternodeSigner.VerifyMessage(pubKeyMasternode, vchSig, strMessage, errorMessage)) {
+    if (!obfuScationSigner.VerifyMessage(pubKeyMasternode, vchSig, strMessage, errorMessage)) {
         LogPrint("masternode","CFinalizedBudgetVote::Sign - Error upon calling VerifyMessage");
         return false;
     }
@@ -2149,7 +2151,7 @@ bool CFinalizedBudgetVote::SignatureValid(bool fSignatureCheck)
 
     if (!fSignatureCheck) return true;
 
-    if (!masternodeSigner.VerifyMessage(pmn->pubKeyMasternode, vchSig, strMessage, errorMessage)) {
+    if (!obfuScationSigner.VerifyMessage(pmn->pubKeyMasternode, vchSig, strMessage, errorMessage)) {
         LogPrint("masternode","CFinalizedBudgetVote::SignatureValid() - Verify message failed %s %s\n", strMessage, errorMessage);
         return false;
     }

@@ -11,9 +11,9 @@ rpcpass = ""
 
 
 if rpcpass == "":
-    access = ServiceProxy("http://127.0.0.1:2170")
+    access = ServiceProxy("http://127.0.0.1:6111")
 else:
-    access = ServiceProxy("http://"+rpcuser+":"+rpcpass+"@127.0.0.1:2170")
+    access = ServiceProxy("http://"+rpcuser+":"+rpcpass+"@127.0.0.1:6111")
 cmd = sys.argv[1].lower()
 
 if cmd == "backupwallet":
@@ -211,9 +211,9 @@ elif cmd == "listtransactions":
     try:
         acct = raw_input("Account (optional): ")
         count = raw_input("Number of transactions (optional): ")
-        PEG = raw_input("Skip (optional):")
+        frm = raw_input("Skip (optional):")
         try:
-            print access.listtransactions(acct, count, PEG)
+            print access.listtransactions(acct, count, frm)
         except:
             print access.listtransactions()
     except:
@@ -221,43 +221,43 @@ elif cmd == "listtransactions":
 
 elif cmd == "move":
     try:
-        PEG = raw_input("From: ")
+        frm = raw_input("From: ")
         to = raw_input("To: ")
         amt = raw_input("Amount:")
         mc = raw_input("Minimum confirmations (optional): ")
         comment = raw_input("Comment (optional): ")
         try:
-            print access.move(PEG, to, amt, mc, comment)
+            print access.move(frm, to, amt, mc, comment)
         except:
-            print access.move(PEG, to, amt)
+            print access.move(frm, to, amt)
     except:
         print "\n---An error occurred---\n"
 
 elif cmd == "sendfrom":
     try:
-        PEG = raw_input("From: ")
+        frm = raw_input("From: ")
         to = raw_input("To: ")
         amt = raw_input("Amount:")
         mc = raw_input("Minimum confirmations (optional): ")
         comment = raw_input("Comment (optional): ")
         commentto = raw_input("Comment-to (optional): ")
         try:
-            print access.sendfrom(PEG, to, amt, mc, comment, commentto)
+            print access.sendfrom(frm, to, amt, mc, comment, commentto)
         except:
-            print access.sendfrom(PEG, to, amt)
+            print access.sendfrom(frm, to, amt)
     except:
         print "\n---An error occurred---\n"
 
 elif cmd == "sendmany":
     try:
-        PEG = raw_input("From: ")
+        frm = raw_input("From: ")
         to = raw_input("To (in format address1:amount1,address2:amount2,...): ")
         mc = raw_input("Minimum confirmations (optional): ")
         comment = raw_input("Comment (optional): ")
         try:
-            print access.sendmany(PEG,to,mc,comment)
+            print access.sendmany(frm,to,mc,comment)
         except:
-            print access.sendmany(PEG,to)
+            print access.sendmany(frm,to)
     except:
         print "\n---An error occurred---\n"
 

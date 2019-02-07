@@ -211,16 +211,16 @@
         <translation>BIP 38 crypter</translation>
     </message>
     <message>
-        <source>Enter a PEG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Entrez une adresse PEG que vous voulez crypter en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur crypter pour calculer la clé de cryptage privée.</translation>
+        <source>Enter a Pegasus Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Entrez une adresse Pegasus que vous voulez crypter en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur crypter pour calculer la clé de cryptage privée.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse :</translation>
     </message>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>L'adresse PEG avec laquelle signer le message</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>L'adresse Pegasus avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -251,8 +251,8 @@
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse PEG</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse Pegasus</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -271,12 +271,12 @@
         <translation>BIP 38 Décrypter</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>L'adresse PEG avec laquelle le message a été signé</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>L'adresse Pegasus avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse PEG renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Pegasus renseignée</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -534,8 +534,8 @@
         <translation>&amp;Aide</translation>
     </message>
     <message>
-        <source>Send coins to a PEG address</source>
-        <translation>Envoyer des pièces à une adresse PEG</translation>
+        <source>Send coins to a Pegasus address</source>
+        <translation>Envoyer des pièces à une adresse Pegasus</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -546,16 +546,16 @@
         <translation>Afficher les masternodes</translation>
     </message>
     <message>
-        <source>Modify configuration options for PEG</source>
-        <translation>Modifier les options de configuration pour PEG</translation>
+        <source>Modify configuration options for Pegasus</source>
+        <translation>Modifier les options de configuration pour Pegasus</translation>
     </message>
     <message>
-        <source>Sign messages with your PEG addresses to prove you own them</source>
-        <translation>Signer les messages avec votre adresse PEG pour prouver qu'elles sont bien à vous.</translation>
+        <source>Sign messages with your Pegasus addresses to prove you own them</source>
+        <translation>Signer les messages avec votre adresse Pegasus pour prouver qu'elles sont bien à vous.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PEG addresses</source>
-        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse PEG spécifié</translation>
+        <source>Verify messages to ensure they were signed with specified Pegasus addresses</source>
+        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse Pegasus spécifié</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -854,8 +854,8 @@ Adresse : %4
         <translation>Modifier l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PEG address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse PEG valide</translation>
+        <source>The entered address "%1" is not a valid Pegasus address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse Pegasus valide</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1020,6 +1020,53 @@ Veuillez vérifier l'adresse et réessayer.</translation>
     </message>
 </context>
 <context>
+    <name>ObfuscationConfig</name>
+    <message>
+        <source>Basic Privacy</source>
+        <translation>Confidentialité de base</translation>
+    </message>
+    <message>
+        <source>High Privacy</source>
+        <translation>Haute confidentialité</translation>
+    </message>
+    <message>
+        <source>Maximum Privacy</source>
+        <translation>Confidentialité maximum</translation>
+    </message>
+    <message>
+        <source>Please select a privacy level.</source>
+        <translation>Veuillez sélectionner un niveau de confidentialité.</translation>
+    </message>
+    <message>
+        <source>Use 2 separate masternodes to mix funds up to 10000 PEG</source>
+        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 PEG</translation>
+    </message>
+    <message>
+        <source>Use 8 separate masternodes to mix funds up to 10000 PEG</source>
+        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 PEG</translation>
+    </message>
+    <message>
+        <source>Use 16 separate masternodes</source>
+        <translation>Utiliser 16 masternodes différentes</translation>
+    </message>
+    <message>
+        <source>This option is the quickest and will cost about ~0.025 PEG to anonymize 10000 PEG</source>
+        <translation>Cette option est la plus rapide, et coutera ~0.025 PEG pour anonymiser 10000 PEG</translation>
+    </message>
+    <message>
+        <source>This option is moderately fast and will cost about 0.05 PEG to anonymize 10000 PEG</source>
+        <translation>Cette option est moyennement rapide, et coutera 0.05 PEG pour anonymiser 10000 PEG</translation>
+    </message>
+    <message>
+        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
+        <translation>Il s'agit de l'option la plus lente est la plus sécurisé. Utiliser l'anonymat maximum coutera</translation>
+    </message>
+    <message>
+        <source>0.1 PEG per 10000 PEG you anonymize.</source>
+        <translation>0.1 PEG par 10000 PEG vous anonymisez.</translation>
+    </message>
+    </context>
+<context>
     <name>OpenURIDialog</name>
     <message>
         <source>URI:</source>
@@ -1056,6 +1103,73 @@ Veuillez vérifier l'adresse et réessayer.</translation>
     <message>
         <source>Version</source>
         <translation>Version</translation>
+    </message>
+    </context>
+<context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Quantité :</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Montant :</translation>
+    </message>
+    <message>
+        <source>Pay &amp;To:</source>
+        <translation>Payer à :</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Choisir l'adresse précédemment utilisée</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Copier l'adresse depuis le presse-papier</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Priorité :</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Commission :</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>non</translation>
+    </message>
+    <message>
+        <source>Insufficient funds!</source>
+        <translation>Fonds insuffisants!</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>moyen</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Copier la quantité</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Copier le montant</translation>
+    </message>
+    <message>
+        <source>Confirm send coins</source>
+        <translation>Confirmer l'envoi des pièces</translation>
     </message>
     </context>
 <context>
@@ -1379,6 +1493,10 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Copier la priorité</translation>
     </message>
     <message>
+        <source>anonymous funds</source>
+        <translation>fonds anonymes</translation>
+    </message>
+    <message>
         <source>Are you sure you want to send?</source>
         <translation>Êtes vous sûr de vouloir envoyer?</translation>
     </message>
@@ -1389,6 +1507,10 @@ Veuillez vérifier l'adresse et réessayer.</translation>
     <message>
         <source>Transaction creation failed!</source>
         <translation>La création de la transaction a échoué</translation>
+    </message>
+    <message>
+        <source>Error: The wallet was unlocked only to anonymize coins.</source>
+        <translation>Erreur : Le portefeuille n'a été déverrouillé que pour anonymiser les pièces.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1402,8 +1524,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The PEG address to send the payment to</source>
-        <translation>L'adresse PEG à laquelle envoyer le paiement</translation>
+        <source>The Pegasus address to send the payment to</source>
+        <translation>L'adresse Pegasus à laquelle envoyer le paiement</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1448,8 +1570,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Signer le message</translation>
     </message>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>L'adresse PEG avec laquelle signer le message</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>L'adresse Pegasus avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1476,16 +1598,16 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse PEG</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse Pegasus</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>L'adresse PEG avec laquelle le message a été signé</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>L'adresse Pegasus avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse PEG renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Pegasus renseignée</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1676,6 +1798,13 @@ Veuillez vérifier l'adresse et réessayer.</translation>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exporter l</translation>
+    </message>
+    </context>
+<context>
+    <name>ZPhrControlDialog</name>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
     </message>
     </context>
 <context>

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Pegasus
+Comment=Pegasus P2P Cryptocurrency
+Comment[fr]=Pegasus, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Pegasus, eşten eşe kriptografik sanal para birimi
+Exec=pegasus-qt %u
+Terminal=false
+Type=Application
+Icon=pegasus128
+MimeType=x-scheme-handler/pegasus;
+Categories=Office;Finance;

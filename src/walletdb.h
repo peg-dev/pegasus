@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2013 The Bitcoin developers
 // Copyright (c) 2016-2017 The PIVX developers
+// Copyright (c) 2017 The Pegasus developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,6 +12,9 @@
 #include "db.h"
 #include "key.h"
 #include "keystore.h"
+#include "primitives/zerocoin.h"
+#include "libzerocoin/Accumulator.h"
+#include "libzerocoin/Denominations.h"
 
 #include <list>
 #include <stdint.h>
@@ -26,13 +30,15 @@ class CMasterKey;
 class CScript;
 class CWallet;
 class CWalletTx;
+class CZerocoinMint;
+class CZerocoinSpend;
 class uint160;
 class uint256;
 
 /** Error statuses for the wallet database */
 enum DBErrors {
     DB_LOAD_OK,
-    DB_CORRUPT,
+    DB_CORPEGT,
     DB_NONCRITICAL_ERROR,
     DB_TOO_NEW,
     DB_LOAD_FAIL,
@@ -142,6 +148,20 @@ public:
     DBErrors ZapWalletTx(CWallet* pwallet, std::vector<CWalletTx>& vWtx);
     static bool Recover(CDBEnv& dbenv, std::string filename, bool fOnlyKeys);
     static bool Recover(CDBEnv& dbenv, std::string filename);
+
+    bool WriteZerocoinMint(const CZerocoinMint& zerocoinMint);
+    bool EraseZerocoinMint(const CZerocoinMint& zerocoinMint);
+    bool ReadZerocoinMint(const CBigNum &bnSerial, CZerocoinMint& zerocoinMint);
+    bool ArchiveMintOrphan(const CZerocoinMint& zerocoinMint);
+    bool UnarchiveZerocoin(const CZerocoinMint& mint);
+    std::list<CZerocoinMint> ListMintedCoins(bool fUnusedOnly, bool fMaturedOnly, bool fUpdateStatus);
+    std::list<CZerocoinSpend> ListSpentCoins();
+    std::list<CBigNum> ListMintedCoinsSerial();
+    std::list<CBigNum> ListSpentCoinsSerial();
+    std::list<CZerocoinMint> ListArchivedZerocoins();
+    bool WriteZerocoinSpendSerialEntry(const CZerocoinSpend& zerocoinSpend);
+    bool EraseZerocoinSpendSerialEntry(const CBigNum& serialEntry);
+    bool ReadZerocoinSpendSerialEntry(const CBigNum& bnSerial);
 
 private:
     CWalletDB(const CWalletDB&);

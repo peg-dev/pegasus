@@ -58,12 +58,12 @@
         <translation>Mottagar adresser</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Det här är dina PEG adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
+        <source>These are your Pegasus addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Det här är dina Pegasus adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Det här är dina PEG adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
+        <source>These are your Pegasus addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Det här är dina Pegasus adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -223,8 +223,8 @@
         <translation>BIP 38 Kryptering</translation>
     </message>
     <message>
-        <source>Enter a PEG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Ange en PEG adress som du vill kryptera med BIP 38.
+        <source>Enter a Pegasus Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Ange en Pegasus adress som du vill kryptera med BIP 38.
 Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den krypterade privata nyckeln.</translation>
     </message>
     <message>
@@ -232,8 +232,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Adress:</translation>
     </message>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>PEG adressen för signera meddelandet med</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>Pegasus adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -264,8 +264,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna PEG adress</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna Pegasus adress</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -288,12 +288,12 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Ange BIP 38 krypterade privata nyckeln. Ange lösenfrasen i med mittersta boxen. Tryck på krypetra nyckel för att beräkna den privata nyckeln. Efter att nyckeln är avkrypterad, Tryck på 'Importera Adress' kommer att lägga till denna privata nyckel till plånboken.</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>PEG adressen meddelandet blev signerat med</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>Pegasus adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika PEG adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Pegasus adressen.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -583,12 +583,12 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>flik vertygsrad</translation>
     </message>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>Pegasus Kärna</translation>
     </message>
     <message>
-        <source>Send coins to a PEG address</source>
-        <translation>Skicka mynt till en PEG adress</translation>
+        <source>Send coins to a Pegasus address</source>
+        <translation>Skicka mynt till en Pegasus adress</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pegasus: URIs)</source>
@@ -603,11 +603,11 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Utforska masternoder</translation>
     </message>
     <message>
-        <source>&amp;About Pegasus</source>
+        <source>&amp;About Pegasus Core</source>
         <translation>Om Pegasus Kärnan</translation>
     </message>
     <message>
-        <source>Show information about Pegasus</source>
+        <source>Show information about Pegasus Core</source>
         <translation>Visa information om Pegasus Kärnan</translation>
     </message>
     <message>
@@ -615,12 +615,12 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Ändra konfigurationsval för Pegasus</translation>
     </message>
     <message>
-        <source>Sign messages with your PEG addresses to prove you own them</source>
-        <translation>Signera meddelanden med din PEG adress för att visa att du äger dem</translation>
+        <source>Sign messages with your Pegasus addresses to prove you own them</source>
+        <translation>Signera meddelanden med din Pegasus adress för att visa att du äger dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PEG addresses</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika PEG adressen.</translation>
+        <source>Verify messages to ensure they were signed with specified Pegasus addresses</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Pegasus adressen.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -631,7 +631,7 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kryptera och avkryptera privata nycklar genom användning av lösenfras</translation>
     </message>
     <message>
-        <source>Pegasus client</source>
+        <source>Pegasus Core client</source>
         <translation>Pegasus kärn klient</translation>
     </message>
     <message>
@@ -837,14 +837,14 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>Pegasus Kärna</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>Pegasus Kärna</translation>
     </message>
     <message>
@@ -879,6 +879,9 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
     </message>
     </context>
 <context>
+    <name>ObfuscationConfig</name>
+    </context>
+<context>
     <name>OpenURIDialog</name>
     </context>
 <context>
@@ -896,6 +899,65 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
     </context>
 <context>
     <name>PeerTableModel</name>
+    </context>
+<context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>Quantity:</source>
+        <translation>Kvantitet:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Antal:</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Använd den föregående använda adressen</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Limma in adress från urklipp</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>&amp;Label:</source>
+        <translation>Etikett:</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Prioritet:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Avgift:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>nej</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>medel</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Kopiera kvantitet</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopiera antal</translation>
+    </message>
     </context>
 <context>
     <name>QObject</name>
@@ -1095,8 +1157,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>PEG adressen för signera meddelandet med</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>Pegasus adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1119,16 +1181,16 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna PEG adress</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna Pegasus adress</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>PEG adressen meddelandet blev signerat med</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>Pegasus adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika PEG adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Pegasus adressen.</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1170,7 +1232,7 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>Pegasus Kärna</translation>
     </message>
     </context>
@@ -1352,6 +1414,9 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <source>Export the data in the current tab to a file</source>
         <translation>Exportera data in den nuvarande fliken till en fil</translation>
     </message>
+    </context>
+<context>
+    <name>ZPhrControlDialog</name>
     </context>
 <context>
     <name>pegasus-core</name>

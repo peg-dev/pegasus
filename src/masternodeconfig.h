@@ -14,7 +14,6 @@
 
 class CMasternodeConfig;
 extern CMasternodeConfig masternodeConfig;
-extern std::string strMasterNodePrivKey;
 
 class CMasternodeConfig
 {

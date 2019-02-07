@@ -10,6 +10,7 @@
 #include "key.h"
 #include "masternode.h"
 #include "net.h"
+#include "obfuscation.h"
 #include "sync.h"
 #include "wallet.h"
 
@@ -32,7 +33,7 @@ private:
     /// Register any Masternode
     bool Register(CTxIn vin, CService service, CKey key, CPubKey pubKey, CKey keyMasternode, CPubKey pubKeyMasternode, std::string& errorMessage);
 
-    /// Get PEG collateral input that can be used for the Masternode
+    /// Get 10000 PEG input that can be used for the Masternode
     bool GetMasterNodeVin(CTxIn& vin, CPubKey& pubkey, CKey& secretKey, std::string strTxHash, std::string strOutputIndex);
     bool GetVinFromOutput(COutput out, CTxIn& vin, CPubKey& pubkey, CKey& secretKey);
 
@@ -60,14 +61,12 @@ public:
     /// Register remote Masternode
     bool Register(std::string strService, std::string strKey, std::string strTxHash, std::string strOutputIndex, std::string& errorMessage);
 
-    /// Get PEG collateral input that can be used for the Masternode
+    /// Get 10000 PEG input that can be used for the Masternode
     bool GetMasterNodeVin(CTxIn& vin, CPubKey& pubkey, CKey& secretKey);
     vector<COutput> SelectCoinsMasternode();
 
     /// Enable cold wallet mode (run a Masternode with no funds)
     bool EnableHotColdMasterNode(CTxIn& vin, CService& addr);
 };
-
-extern CActiveMasternode activeMasternode;
 
 #endif

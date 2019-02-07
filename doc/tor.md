@@ -1,5 +1,5 @@
 TOR SUPPORT IN Pegasus
-============================
+=======================
 
 It is possible to run Pegasus as a Tor hidden service, and connect to such services.
 
@@ -11,7 +11,7 @@ for how to properly configure Tor.
 
 
 Run Pegasus behind a Tor proxy
-------------------------------------
+----------------------------------
 
 The first step is running Pegasus behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
@@ -38,7 +38,7 @@ outgoing connections be anonymized, but more is possible.
 An example how to start the client if the Tor proxy is running on local host on
 port 9050 and only allows .onion nodes to connect:
 ```
-./pegasusd -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=dnetzj6l4cvo2fxy.onion:989
+./pegasusd -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=dnetzj6l4cvo2fxy.onion:888
 ```
 
 In a typical situation, this suffices to run behind a Tor proxy:
@@ -47,7 +47,7 @@ In a typical situation, this suffices to run behind a Tor proxy:
 ```
 
 Run a Pegasus hidden server
-----------------------------------
+-------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
 reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equivalent
@@ -59,17 +59,17 @@ SOCKSPolicy accept 127.0.0.1/8
 Log notice file /var/log/tor/notices.log
 ControlPort 9051
 HiddenServiceDir /var/lib/tor/dnet/
-HiddenServicePort 989 127.0.0.1:2171
+HiddenServicePort 989 127.0.0.1:5111
 HiddenServiceStatistics 0
 ORPort 9001
-LongLivedPorts 989
+LongLivedPorts 888
 ExitPolicy reject *:*
 DisableDebuggerAttachment 0
 NumEntryGuards 8
 ```
 
 The directory can be different of course, but (both) port numbers should be equal to
-your pegasusd's P2P listen port (2171 by default).
+your pegasusd's P2P listen port (5111 by default).
 ```
 -externalip=X   You can tell pegasus about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
@@ -92,7 +92,7 @@ your pegasusd's P2P listen port (2171 by default).
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 ```
-./pegasusd -proxy=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -listen
+./pegasusd -proxy=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:888 -listen
 ```
 
 (obviously, replace the Onion address with your own). If you don't care too much
@@ -102,16 +102,16 @@ specify:
 ./pegasusd ... -discover
 ```
 
-and open port 2171 on your firewall (or use -upnp).
+and open port 5111 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 ```
-./pegasusd -onion=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -discover
+./pegasusd -onion=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:888 -discover
 ```
 
 List of known Pegasus Tor relays
 ------------------------------------
 ```
-***TODO***
+onion:
 ```

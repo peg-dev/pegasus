@@ -16,7 +16,7 @@ BITCOIND_USER=${BITCOIND_USER:-pegasus}
 BITCOIND_GROUP=${BITCOIND_GROUP:-pegasus}
 BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/pegasusd}
 
-name="Pegasus Daemon"
+name="Pegasus Core Daemon"
 description="Pegasus crypto-currency p2p network daemon"
 
 command="/usr/bin/pegasusd"

@@ -1,11 +1,11 @@
 ---
-name: "pegasus-osx-1.0"
+name: "pegasus-osx-1.2"
 enable_cache: true
 suites:
-- "xenial"
+- "trusty"
 architectures:
 - "amd64"
-packages:
+packages: 
 - "ca-certificates"
 - "curl"
 - "g++"
@@ -28,7 +28,7 @@ packages:
 - "python-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/pegasus/pegasus.git"
+- "url": "https://github.com/eastcoastcrypto/Pegasus"
   "dir": "pegasus"
 files:
 - "MacOSX10.11.sdk.tar.gz"

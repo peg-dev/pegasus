@@ -11,7 +11,7 @@ the same, tested dependencies are used and statically built into the executable.
 Multiple developers build the source code by following a specific descriptor
 ("recipe"), cryptographically sign the result, and upload the resulting signature.
 These results are compared and only if they match, the build is accepted and uploaded
-to pegasuscoin.online.
+to pegasus-crypto.com.
 
 More independent gitian builders are needed, which is why I wrote this
 guide. It is preferred to follow these steps yourself instead of using someone else's
@@ -29,7 +29,7 @@ Table of Contents
 - [Building Pegasus](#building-pegasus)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
-- [Uploading signatures](#uploading-signatures)
+- [Uploading signatures](#uploading-signatures-not-yet-implemented)
 
 Preparing the Gitian builder host
 ---------------------------------
@@ -60,18 +60,18 @@ In the VirtualBox GUI click "Create" and choose the following parameters in the 
 ![](gitian-building/create_vm_hard_drive.png)
 
 - Hard Drive: Create a virtual hard drive now
-
+    
 ![](gitian-building/create_vm_hard_drive_file_type.png)
 
-- Hard Drive file type: Use the default, VDI (VirtualBox Disk Image)
+- Hard Drive file type: Use the default, VDI (VirtualBox Disk Image) 
 
 ![](gitian-building/create_vm_storage_physical_hard_drive.png)
-
-- Storage on Physical hard drive: Dynamically Allocated
-
+    
+- Storage on Physical hard drive: Dynamically Allocated 
+    
 ![](gitian-building/create_vm_file_location_size.png)
 
-- Disk size: at least 40GB; as low as 20GB *may* be possible, but better to err on the safe side
+- Disk size: at least 40GB; as low as 20GB *may* be possible, but better to err on the safe side 
 - Push the `Create` button
 
 Get the [Debian 7.8 net installer](http://cdimage.debian.org/cdimage/archive/7.8.0/amd64/iso-cd/debian-7.8.0-amd64-netinst.iso) (a more recent minor version should also work, see also [Debian Network installation](https://www.debian.org/CD/netinst/)).
@@ -81,7 +81,7 @@ Unixy OSes by entering the following in a terminal:
     echo "b712a141bc60269db217d3b3e456179bd6b181645f90e4aac9c42ed63de492e9  debian-7.4.0-amd64-netinst.iso" | sha256sum -c
     # (must return OK)
 
-After creating the VM, we need to configure it.
+After creating the VM, we need to configure it. 
 
 - Click the `Settings` button, then go to the `Network` tab. Adapter 1 should be attacked to `NAT`.
 
@@ -125,50 +125,50 @@ and proceed, just press `Enter`. To select a different button, press `Tab`.
 ![](gitian-building/debian_install_4_configure_keyboard.png)
 
 - The VM will detect network settings using DHCP, this should all proceed automatically
-- Configure the network:
+- Configure the network: 
   - System name `debian`.
   - Leave domain name empty.
 
 ![](gitian-building/debian_install_5_configure_the_network.png)
 
-- Choose a root password and enter it twice (remember it for later)
+- Choose a root password and enter it twice (remember it for later) 
 
 ![](gitian-building/debian_install_6a_set_up_root_password.png)
 
-- Name the new user `debian` (the full name doesn't matter, you can leave it empty)
+- Name the new user `debian` (the full name doesn't matter, you can leave it empty) 
 
 ![](gitian-building/debian_install_7_set_up_user_fullname.png)
 ![](gitian-building/debian_install_8_set_up_username.png)
 
-- Choose a user password and enter it twice (remember it for later)
+- Choose a user password and enter it twice (remember it for later) 
 
 ![](gitian-building/debian_install_9_user_password.png)
 
 - The installer will set up the clock using a time server, this process should be automatic
-- Set up the clock: choose a time zone (depends on the locale settings that you picked earlier; specifics don't matter)
+- Set up the clock: choose a time zone (depends on the locale settings that you picked earlier; specifics don't matter)  
 
 ![](gitian-building/debian_install_10_configure_clock.png)
 
 - Disk setup
-  - Partitioning method: Guided - Use the entire disk
-
+  - Partitioning method: Guided - Use the entire disk 
+  
 ![](gitian-building/debian_install_11_partition_disks.png)
 
-  - Select disk to partition: SCSI1 (0,0,0)
+  - Select disk to partition: SCSI1 (0,0,0) 
 
 ![](gitian-building/debian_install_12_choose_disk.png)
 
-  - Partitioning scheme: All files in one partition
-
+  - Partitioning scheme: All files in one partition 
+  
 ![](gitian-building/debian_install_13_partition_scheme.png)
 
   - Finish partitioning and write changes to disk -> *Yes* (`Tab`, `Enter` to select the `Yes` button)
 
-![](gitian-building/debian_install_14_finish.png)
+![](gitian-building/debian_install_14_finish.png) 
 ![](gitian-building/debian_install_15_write_changes.png)
 
 - The base system will be installed, this will take a minute or so
-- Choose a mirror (any will do)
+- Choose a mirror (any will do) 
 
 ![](gitian-building/debian_install_16_choose_a_mirror.png)
 
@@ -178,7 +178,7 @@ and proceed, just press `Enter`. To select a different button, press `Tab`.
 
 - Wait a bit while 'Select and install software' runs
 - Participate in popularity contest -> *No*
-- Choose software to install. We need just the base system.
+- Choose software to install. We need just the base system. 
 
 ![](gitian-building/debian_install_19_software_selection.png)
 
@@ -187,7 +187,7 @@ and proceed, just press `Enter`. To select a different button, press `Tab`.
 
 ![](gitian-building/debian_install_20_install_grub.png)
 
-- Install the GRUB boot loader to the master boot record? -> Yes
+- Install the GRUB boot loader to the master boot record? -> Yes 
 
 ![](gitian-building/debian_install_21_finish_installation.png)
 
@@ -266,11 +266,11 @@ The rest of the steps in this guide will be performed as that user.
 There is no `python-vm-builder` package in Debian, so we need to install it from source ourselves,
 
 ```bash
-wget http://archive.ubuntu.com/ubuntu/pool/universe/v/vm-builder/vm-builder_0.12.4+bzr494.orig.tar.gz
-echo "76cbf8c52c391160b2641e7120dbade5afded713afaa6032f733a261f13e6a8e  vm-builder_0.12.4+bzr494.orig.tar.gz" | sha256sum -c
+wget http://archive.ubuntu.com/ubuntu/pool/universe/v/vm-builder/vm-builder_0.12.4+bzr489.orig.tar.gz
+echo "ec12e0070a007989561bfee5862c89a32c301992dd2771c4d5078ef1b3014f03  vm-builder_0.12.4+bzr489.orig.tar.gz" | sha256sum -c
 # (verification -- must return OK)
-tar -zxvf vm-builder_0.12.4+bzr494.orig.tar.gz
-cd vm-builder-0.12.4+bzr494
+tar -zxvf vm-builder_0.12.4+bzr489.orig.tar.gz
+cd vm-builder-0.12.4+bzr489
 sudo python setup.py install
 cd ..
 ```
@@ -281,7 +281,7 @@ Clone the git repositories for pegasus and gitian and then checkout the pegasus 
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/pegasus/pegasus.git
+git clone https://github.com/pegasus-project/pegasus.git
 cd pegasus
 git checkout v${VERSION}
 cd ..
@@ -294,7 +294,7 @@ Setting up gitian images
 -------------------------
 
 Gitian needs virtual images of the operating system to build in.
-Currently this is Ubuntu Trusty for x86_64.
+Currently this is Ubuntu Precise for x86_64.
 These images will be copied and used every time that a build is started to
 make sure that the build is deterministic.
 Creating the images will take a while, but only has to be done once.
@@ -303,7 +303,7 @@ Execute the following as user `debian`:
 
 ```bash
 cd gitian-builder
-bin/make-base-vm --lxc --arch amd64 --suite trusty
+bin/make-base-vm --lxc --arch amd64 --suite precise
 ```
 
 There will be a lot of warnings printed during build of the images. These can be ignored.
@@ -327,7 +327,7 @@ the next step: 'Seed the Gitian sources cache', which will fetch all necessary s
 for gitian to work offline.
 
 Building Pegasus
-----------------------
+----------------
 
 To build Pegasus (for Linux, OSX and Windows) just follow the steps under 'perform
 gitian builds' in [doc/release-process.md](release-process.md) in the pegasus repository.
@@ -350,9 +350,9 @@ Output from `gbuild` will look something like
     remote: Total 35606 (delta 0), reused 0 (delta 0)
     Receiving objects: 100% (35606/35606), 26.52 MiB | 4.28 MiB/s, done.
     Resolving deltas: 100% (25724/25724), done.
-    From https://github.com/pegasus/pegasus
+    From https://github.com/pegasus-project/pegasus.git
     ... (new tags, new branch etc)
-    --- Building for trusty x86_64 ---
+    --- Building for precise x86_64 ---
     Stopping target if it is up
     Making a new image copy
     stdin: is not a tty
@@ -377,11 +377,11 @@ and inputs.
 
 For example:
 ```bash
-URL=https://github.com/konez2k/pegasus.git
+URL=https://github.com/pegasus-project/pegasus.git
 COMMIT=b616fb8ef0d49a919b72b0388b091aaec5849b96
-./bin/gbuild --commit pegasus=${COMMIT} --url pegasus=${URL} ../pegasus/contrib/gitian-descriptors/gitian-linux.yml
-./bin/gbuild --commit pegasus=${COMMIT} --url pegasus=${URL} ../pegasus/contrib/gitian-descriptors/gitian-win.yml
-./bin/gbuild --commit pegasus=${COMMIT} --url pegasus=${URL} ../pegasus/contrib/gitian-descriptors/gitian-osx.yml
+./bin/gbuild --commit pegasus=${COMMIT} --url pegasus=${URL} ../Pegasus/contrib/gitian-descriptors/gitian-linux.yml
+./bin/gbuild --commit pegasus=${COMMIT} --url pegasus=${URL} ../Pegasus/contrib/gitian-descriptors/gitian-win.yml
+./bin/gbuild --commit pegasus=${COMMIT} --url pegasus=${URL} ../Pegasus/contrib/gitian-descriptors/gitian-osx.yml
 ```
 
 Signing externally
@@ -408,6 +408,6 @@ Uploading signatures (not yet implemented)
 ---------------------
 
 In the future it will be possible to push your signatures (both the `.assert` and `.assert.sig` files) to the
-[pegasus/gitian.sigs](https://github.com/pegasus/gitian.sigs/) repository, or if that's not possible to create a pull
+[eastcoastcrypto/gitian.sigs](https://github.com/eastcoastcrypto/gitian.sigs/) repository, or if that's not possible to create a pull
 request.
 There will be an official announcement when this repository is online.

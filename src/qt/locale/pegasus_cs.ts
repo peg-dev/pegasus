@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše PEG adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your Pegasus addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše Pegasus adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše PEG adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your Pegasus addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše Pegasus adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -134,6 +134,10 @@
     <message>
         <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
         <translation>Slouží k neumožnění zaslání jednoduché platby, pokud je učet OS kompromitován. Neposkytuje tak reálné zabezpeční.</translation>
+    </message>
+    <message>
+        <source>For anonymization and staking only</source>
+        <translation>Pouze pro anonymizaci a sázení</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -235,16 +239,16 @@
         <translation>&amp;BIP 38 Šifrovat</translation>
     </message>
     <message>
-        <source>Enter a PEG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadejte PEG adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
+        <source>Enter a Pegasus Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadejte Pegasus adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>PEG adresa pro podepsání zprávy</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>Pegasus adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +279,8 @@
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto PEG adresu</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Pegasus adresu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +303,12 @@
         <translation>Vložte BIP 38 šifrovaný privítní klíc. Frázové heslo vložte do prostředního boxu. Kliknětě na Dešifrovat Klíč pro výpočet privátního klíče. Poté co bude klíč dešifrován, kliknutím na 'Importovat Adresu' přidáte privátní klíč do Vaší peněženky.</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>PEG adresa zprávy byla podpsána</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>Pegasus adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou PEG adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Pegasus adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -594,12 +598,12 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     <message>
-        <source>Send coins to a PEG address</source>
-        <translation>Odeslat platbuna PEG adresu</translation>
+        <source>Send coins to a Pegasus address</source>
+        <translation>Odeslat platbuna Pegasus adresu</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pegasus: URIs)</source>
@@ -614,24 +618,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About Pegasus</source>
-        <translation>&amp;O Pegasus</translation>
+        <source>&amp;About Pegasus Core</source>
+        <translation>&amp;O Pegasus Core</translation>
     </message>
     <message>
-        <source>Show information about Pegasus</source>
-        <translation>Zobraz informace o Pegasus</translation>
+        <source>Show information about Pegasus Core</source>
+        <translation>Zobraz informace o Pegasus Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for PEG</source>
-        <translation>Upravit možnosti konfigurace pro PEG</translation>
+        <source>Modify configuration options for Pegasus</source>
+        <translation>Upravit možnosti konfigurace pro Pegasus</translation>
     </message>
     <message>
-        <source>Sign messages with your PEG addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší PEG adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your Pegasus addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší Pegasus adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PEG addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými PEG adresami</translation>
+        <source>Verify messages to ensure they were signed with specified Pegasus addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými Pegasus adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -662,8 +666,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a pegasus: URI or payment request</source>
-        <translation>Otevřít pegasus: URI nebo platební žádost</translation>
+        <source>Open a Pegasus: URI or payment request</source>
+        <translation>Otevřít Pegasus: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -674,12 +678,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the Pegasus help message to get a list with possible Pegasus command-line options</source>
-        <translation>Zobrazit Pegasus pomocnou zpráv pro získání seznamu možných parametrů Pegasus pro příkazy do příkazové řádky</translation>
+        <source>Show the Pegasus Core help message to get a list with possible Pegasus command-line options</source>
+        <translation>Zobrazit Pegasus Core pomocnou zpráv pro získání seznamu možných parametrů Pegasus pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>Pegasus client</source>
-        <translation>Pegasus klient</translation>
+        <source>Pegasus Core client</source>
+        <translation>Pegasus Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -776,6 +780,10 @@ MultiSend: %1</translation>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Peněženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálně je &lt;b&gt;odemčená&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
+        <translation>Peněženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálně je &lt;b&gt;odemčená&lt;/b&gt; pouze pro anonimizace a sázení</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
@@ -1058,8 +1066,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PEG address.</source>
-        <translation>Zadaná adresa "%1" není validní PEG adresa.</translation>
+        <source>The entered address "%1" is not a valid Pegasus address.</source>
+        <translation>Zadaná adresa "%1" není validní Pegasus adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1104,12 +1112,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     <message>
-        <source>About Pegasus</source>
-        <translation>O Pegasus</translation>
+        <source>About Pegasus Core</source>
+        <translation>O Pegasus Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1143,16 +1151,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to Pegasus.</source>
-        <translation>Vítejte v Pegasus.</translation>
+        <source>Welcome to Pegasus Core.</source>
+        <translation>Vítejte v Pegasus Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Pegasus will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Pegasus ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Pegasus Core will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Pegasus Core ukládat svá data.</translation>
     </message>
     <message>
-        <source>Pegasus will download and store a copy of the Pegasus block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Pegasus stáhne a uloží kopii Pegasus blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>Pegasus Core will download and store a copy of the Pegasus block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Pegasus Core stáhne a uloží kopii Pegasus blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1163,8 +1171,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1408,6 +1416,53 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
 </context>
 <context>
+    <name>ObfuscationConfig</name>
+    <message>
+        <source>Configure Obfuscation</source>
+        <translation>Konfigurace obfuskace</translation>
+    </message>
+    <message>
+        <source>Basic Privacy</source>
+        <translation>Základní ochrana soukromí</translation>
+    </message>
+    <message>
+        <source>High Privacy</source>
+        <translation>Vysoká ochrana soukromí</translation>
+    </message>
+    <message>
+        <source>Maximum Privacy</source>
+        <translation>Maximální ochrana soukromí</translation>
+    </message>
+    <message>
+        <source>Please select a privacy level.</source>
+        <translation>Vyberte úrpvěň ochrany soukromí</translation>
+    </message>
+    <message>
+        <source>Use 2 separate masternodes to mix funds up to 10000 PEG</source>
+        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 PEG</translation>
+    </message>
+    <message>
+        <source>Use 16 separate masternodes</source>
+        <translation>Použít 16 oddělených masternodů</translation>
+    </message>
+    <message>
+        <source>This option is the quickest and will cost about ~0.025 PEG to anonymize 10000 PEG</source>
+        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 PEG pro anonymizaci 10000 PEG</translation>
+    </message>
+    <message>
+        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
+        <translation>Toto je nejpomalejší a nejvíce bezpečná volba. Použití maximalní anonymity bude stát</translation>
+    </message>
+    <message>
+        <source>0.1 PEG per 10000 PEG you anonymize.</source>
+        <translation>0.1 PEG za 10000 PEG anonymizujete.</translation>
+    </message>
+    <message>
+        <source>Obfuscation Configuration</source>
+        <translation>Konfigurace obufuskace</translation>
+    </message>
+    </context>
+<context>
     <name>OpenURIDialog</name>
     <message>
         <source>Open URI</source>
@@ -1552,10 +1607,6 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Zpracovávané:</translation>
     </message>
     <message>
-        <source>Balances</source>
-        <translation>Balance</translation>
-    </message>
-    <message>
         <source>Total:</source>
         <translation>Celkem:</translation>
     </message>
@@ -1567,7 +1618,7 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <source>Spendable:</source>
         <translation>Disponibilní:</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -1586,6 +1637,85 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Čas pingnutí</translation>
     </message>
 </context>
+<context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation>Reset</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Množství:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Hodnota:</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Vyberte již dříve použitou adresu</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Vložit adresu z mezipamětí</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>&amp;Label:</source>
+        <translation>&amp;Popis</translation>
+    </message>
+    <message>
+        <source>A&amp;mount:</source>
+        <translation>H&amp;odnota:</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Priorita:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Poplatek:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>ne</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Byty:</translation>
+    </message>
+    <message>
+        <source>Insufficient funds!</source>
+        <translation>Nedostatek prostředků!</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>střední</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Změna:</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Kopíroat množstí</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopírovat hodnotu</translation>
+    </message>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -2056,8 +2186,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>PEG adresa pro podepsání zprávy</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>Pegasus adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2084,16 +2214,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto PEG adresu</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Pegasus adresu</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>PEG adresa zprávy byla podpsána</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>Pegasus adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou PEG adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Pegasus adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2135,8 +2265,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Pegasus</source>
-        <translation>Pegasus</translation>
+        <source>Pegasus Core</source>
+        <translation>Pegasus Core</translation>
     </message>
     </context>
 <context>
@@ -2236,6 +2366,13 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exportovat data z aktulní záložky do souboru</translation>
+    </message>
+    </context>
+<context>
+    <name>ZPhrControlDialog</name>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
     </message>
     </context>
 <context>

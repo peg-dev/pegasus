@@ -62,11 +62,11 @@
         <translation>Modtageradresse</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Pegasus addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Dine adresser til at sende betalinger med. Kontroller altid både beløb og modtageradresse før afsendelse.</translation>
     </message>
     <message>
-        <source>These are your PEG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Pegasus addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dette er dine modtager adresser. Det anbefales at anvende en ny adresse til hver transaktion</translation>
     </message>
     <message>
@@ -134,6 +134,10 @@
     <message>
         <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
         <translation>Slår ligegyldige afsendelser fra, når operativsystemets konto er kompromitteret. Denne funktion giver ikke ægte sikkerhed</translation>
+    </message>
+    <message>
+        <source>For anonymization and staking only</source>
+        <translation>Kun til staking og anononymisering</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -235,16 +239,16 @@
         <translation>BIP 38 kryptografering</translation>
     </message>
     <message>
-        <source>Enter a PEG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Indtast den PEG adresse De ønsker at kryptografere ved hjælp af BIP 38. Indtast et kodeord i den midterste boks. Klik på krypter for at generere den kryptograferede private nøgle.</translation>
+        <source>Enter a Pegasus Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Indtast den Pegasus adresse De ønsker at kryptografere ved hjælp af BIP 38. Indtast et kodeord i den midterste boks. Klik på krypter for at generere den kryptograferede private nøgle.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse</translation>
     </message>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>Den PEG adresse, der skal bruges til at underskrive beskeden med.</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>Den Pegasus adresse, der skal bruges til at underskrive beskeden med.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +279,8 @@
         <translation>Kopier den aktuelle underskrift til udklipsholderen.</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Underskriv beskeden for at bevise, at De ejer denne PEG adresse.</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Underskriv beskeden for at bevise, at De ejer denne Pegasus adresse.</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +303,12 @@
         <translation>Indtast den krypterede BIP 38 nøgle. Indtast kodeordet i den midterste boks. Klik på dekryptér for at generere den private nøgle. Når nøglen er dekrypteret vil klip på "importér adresse" overføre den private nøgle til tegnebogen.</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>Beskeden er underskrevet med denne PEG adresse</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>Beskeden er underskrevet med denne Pegasus adresse</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige PEG adresse.</translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige Pegasus adresse.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -594,12 +598,12 @@
         <translation>Værktøjslinier</translation>
     </message>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>Pegasus kerne</translation>
     </message>
     <message>
-        <source>Send coins to a PEG address</source>
-        <translation>Send mønter til en PEG adresse</translation>
+        <source>Send coins to a Pegasus address</source>
+        <translation>Send mønter til en Pegasus adresse</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pegasus: URIs)</source>
@@ -614,11 +618,11 @@
         <translation>Vis masternoder</translation>
     </message>
     <message>
-        <source>&amp;About Pegasus</source>
+        <source>&amp;About Pegasus Core</source>
         <translation>&amp;Om Pegasus kerne</translation>
     </message>
     <message>
-        <source>Show information about Pegasus</source>
+        <source>Show information about Pegasus Core</source>
         <translation>Vis information om Pegasus kerne</translation>
     </message>
     <message>
@@ -626,12 +630,12 @@
         <translation>Ret konfigurationsindstillinger for Pegasus</translation>
     </message>
     <message>
-        <source>Sign messages with your PEG addresses to prove you own them</source>
-        <translation>Underskriv beskeder med Deres PEG adresser for at bekræfte at De ejer dem.</translation>
+        <source>Sign messages with your Pegasus addresses to prove you own them</source>
+        <translation>Underskriv beskeder med Deres Pegasus adresser for at bekræfte at De ejer dem.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PEG addresses</source>
-        <translation>Verificer besked for at sikre, at den er underskrevet med den opgivne PEG adresse</translation>
+        <source>Verify messages to ensure they were signed with specified Pegasus addresses</source>
+        <translation>Verificer besked for at sikre, at den er underskrevet med den opgivne Pegasus adresse</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -662,8 +666,8 @@
         <translation>ÅbnMasternode konfigurationsfil</translation>
     </message>
     <message>
-        <source>Open a pegasus: URI or payment request</source>
-        <translation>Åbn en pegasus URI eller betalingsanmodning</translation>
+        <source>Open a Pegasus: URI or payment request</source>
+        <translation>Åbn en Pegasus URl eller betalingsanmodning</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -674,11 +678,11 @@
         <translation>Blockexplorer vindue</translation>
     </message>
     <message>
-        <source>Show the Pegasus help message to get a list with possible Pegasus command-line options</source>
+        <source>Show the Pegasus Core help message to get a list with possible Pegasus command-line options</source>
         <translation>Vis hjelpetekster fra Pegasus kernen for at få en liste med mulige Pegasus kommandolinie-startparametre</translation>
     </message>
     <message>
-        <source>Pegasus client</source>
+        <source>Pegasus Core client</source>
         <translation>Pegasus kerneklient</translation>
     </message>
     <message>
@@ -782,6 +786,10 @@ Adresse: %4
         <translation>Tegnebogen &lt;b&gt;er krypteret&lt;/b&gt;men i øjeblikket&lt;b&gt;låst op&lt;/b&gt;</translation>
     </message>
     <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
+        <translation>Tegnebogen &lt;b&gt;er krypteret,&lt;/b&gt;er i øjeblikket&lt;b&gt;låst op,&lt;/b&gt;men kun for anonymisering og indskydning.</translation>
+    </message>
+    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Tegnebogen er &lt;b&gt;krypteret og låst&lt;/b&gt;</translation>
     </message>
@@ -811,10 +819,6 @@ Adresse: %4
 </context>
 <context>
     <name>ClientModel</name>
-    <message>
-        <source>Total: %1 (OBF compatible: %2 / Enabled: %3)</source>
-        <translation>I alt: %1 (OBF kompatible: %2 / Aktiverede: %3)</translation>
-    </message>
     <message>
         <source>Network Alert</source>
         <translation>Netværksalarm!</translation>
@@ -979,8 +983,8 @@ Adresse: %4
         <translation>middelhøj</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 uPEG per input.</source>
-        <translation>kan variere +/- %1 uPEG pr. input</translation>
+        <source>Can vary +/- %1 duff(s) per input.</source>
+        <translation>kan variere +/- %1 duff(s) pr. input</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1094,8 +1098,8 @@ Adresse: %4
         <translation>Ret afsenderadresse</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PEG address.</source>
-        <translation>Den indtastede adresse %1 er ikke en gyldig PEG adresse</translation>
+        <source>The entered address "%1" is not a valid Pegasus address.</source>
+        <translation>Den indtastede adresse %1 er ikke en gyldig Pegasus adresse</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1140,7 +1144,7 @@ Adresse: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>Pegasus kerne</translation>
     </message>
     <message>
@@ -1148,7 +1152,7 @@ Adresse: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Pegasus</source>
+        <source>About Pegasus Core</source>
         <translation>om Pegasus kerne</translation>
     </message>
     <message>
@@ -1195,15 +1199,15 @@ Adresse: %4
         <translation>Velkommen</translation>
     </message>
     <message>
-        <source>Welcome to Pegasus.</source>
+        <source>Welcome to Pegasus Core.</source>
         <translation>Velkommen til Pegasus kerne</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Pegasus will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Pegasus Core will store its data.</source>
         <translation>Da det er første gang programmet startes, kan De vælge hvor Pegasus kernen skal lagre sine data</translation>
     </message>
     <message>
-        <source>Pegasus will download and store a copy of the Pegasus block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Pegasus Core will download and store a copy of the Pegasus block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>Pegasus kernen vil nu hente og gemme en kopi af Pegasus blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
     </message>
     <message>
@@ -1215,7 +1219,7 @@ Adresse: %4
         <translation>Anvend en mappe valgt af brugeren</translation>
     </message>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>Pegasus kerne</translation>
     </message>
     <message>
@@ -1357,13 +1361,13 @@ Adresse: %4
         <translation>Indtast modtageradresse</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PEG addresses after it matures.
-To Add: enter percentage to give and PEG address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Pegasus addresses after it matures.
+To Add: enter percentage to give and Pegasus address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre PEG adressater når den er tilstrækkelig stor.
-For at tilføje: Indtast procentsatsen De ønsker at overføre samt den PEG adresse som skal modtage via Multisendsystemet.
-For at fjerne: Indtast adressen som skal slettes og klik på slet.
+        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre Pegasus adressater når den er tilstrækkelig stor. 
+For at tilføje: Indtast procentsatsen De ønsker at overføre samt den Pegasus adresse som skal modtage via Multisendsystemet. 
+For at fjerne: Indtast adressen som skal slettes og klik på slet. 
 Multisend vil ikke fungere med mindre systemet er aktiveret.</translation>
     </message>
     <message>
@@ -1447,7 +1451,7 @@ Multisend vil ikke fungere med mindre systemet er aktiveret.</translation>
     <message>
         <source> is invalid.
 Please check the address and try again.</source>
-        <translation>er ikke gyldig.
+        <translation>er ikke gyldig. 
 Kontroller adressen og prøv igen.</translation>
     </message>
     <message>
@@ -1475,6 +1479,73 @@ Kontroller adressen og prøv igen.</translation>
 </source>
         <translation>Kunne ikke finde adresse
 </translation>
+    </message>
+</context>
+<context>
+    <name>ObfuscationConfig</name>
+    <message>
+        <source>Configure Obfuscation</source>
+        <translation>Konfigurer tilslørin</translation>
+    </message>
+    <message>
+        <source>Basic Privacy</source>
+        <translation>Grundlæggende tilsløret </translation>
+    </message>
+    <message>
+        <source>High Privacy</source>
+        <translation>Grundigt tilsløret</translation>
+    </message>
+    <message>
+        <source>Maximum Privacy</source>
+        <translation>Meget grundigt tilsløret</translation>
+    </message>
+    <message>
+        <source>Please select a privacy level.</source>
+        <translation>Vælg tilsløringsniveau</translation>
+    </message>
+    <message>
+        <source>Use 2 separate masternodes to mix funds up to 10000 PEG</source>
+        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 10000 PEG</translation>
+    </message>
+    <message>
+        <source>Use 8 separate masternodes to mix funds up to 10000 PEG</source>
+        <translation>Brug 8 separate masternoder for at tilsløre op til 10000 PEG</translation>
+    </message>
+    <message>
+        <source>Use 16 separate masternodes</source>
+        <translation>Brug 16 separate masternoder</translation>
+    </message>
+    <message>
+        <source>This option is the quickest and will cost about ~0.025 PEG to anonymize 10000 PEG</source>
+        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 PEG for at anonymiser 10000 PEG</translation>
+    </message>
+    <message>
+        <source>This option is moderately fast and will cost about 0.05 PEG to anonymize 10000 PEG</source>
+        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 PEG for at anonymiser 10000 PEG</translation>
+    </message>
+    <message>
+        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
+        <translation>Denne mulighed er den langsomste og det mest sikre valg. Valg af maksimal tilsløring vil koste</translation>
+    </message>
+    <message>
+        <source>0.1 PEG per 10000 PEG you anonymize.</source>
+        <translation>0.1 pr 10000 PEG for at tilsløre.</translation>
+    </message>
+    <message>
+        <source>Obfuscation Configuration</source>
+        <translation>Tilsløringskonfiguration</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Pegasus's configuration screen.</source>
+        <translation>Tilsløring blev sat til grundlæggende (%1 og 2 gennemløb) De kan ændre dette hvornår De vil ved at åbne Pegasus konfigurationsbillede.</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Pegasus's configuration screen.</source>
+        <translation>Tilsløring blev sat til høj (%1 og 8 gennemløb) De kan ændre dette hvornår De vil ved at åbne Pegasus konfigurationsbillede.</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Pegasus's configuration screen.</source>
+        <translation>Tilsløring blev sat til maksimum (%1 og 16 gennemløb) De kan ændre dette hvornår De vil ved at åbne Pegasus konfigurationsbillede.</translation>
     </message>
 </context>
 <context>
@@ -1591,6 +1662,12 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Vælg sprog her. Ændringerne træder i kraft næste gang Pegasus klienten startes</translation>
     </message>
     <message>
+        <source>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/pegasus-project/pegasus-project-translations</source>
+        <translation>Det valgte sprog mangler, eller oversættelsen er mangelfuld. Hjælp ved at bidrage med oversættelser her:
+https://www.transifex.com/pegasus-project/pegasus-project-translations</translation>
+    </message>
+    <message>
         <source>Map port using &amp;UPnP</source>
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
@@ -1641,6 +1718,10 @@ Kontroller adressen og prøv igen.</translation>
     <message>
         <source>User Interface &amp;language:</source>
         <translation>Brugerinterface &amp;sprog:</translation>
+    </message>
+    <message>
+        <source>User Interface Theme:</source>
+        <translation>Brugers tema:</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1810,10 +1891,10 @@ Kontroller adressen og prøv igen.</translation>
     </message>
     <message>
         <source>Cannot start pegasus: click-to-pay handler</source>
-        <translation>Kan ikke starte pegasus "klik for at betale" systemet</translation>
+        <translation>Kan ikke starte Pegasus "klik for at betale" systemet</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PEG address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Pegasus address or malformed URI parameters.</source>
         <translation>URl kan ikke fortolkes! Det kan skyldes en ugyldig adresse, eller forkerte URl parametre.</translation>
     </message>
     <message>
@@ -1893,14 +1974,129 @@ Kontroller adressen og prøv igen.</translation>
     </message>
 </context>
 <context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pegasus network after a connection is established, but this process has not completed yet.</source>
+        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med Pegasus netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation>Nulstil</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Antal:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Beløb</translation>
+    </message>
+    <message>
+        <source>Pay &amp;To:</source>
+        <translation>Betal &amp;Til</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Benyt en tidligere anvendt adresse.</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Indsæt adresse fra udklipsholderen.</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>&amp;Label:</source>
+        <translation>&amp;Mærkning</translation>
+    </message>
+    <message>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation>Indtast et mærke til denne adresse for at tilføje den til listen over brugte adresser</translation>
+    </message>
+    <message>
+        <source>A&amp;mount:</source>
+        <translation>A&amp;mount</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Prioritet:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Gebyr:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Affald:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>nej</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>Insufficient funds!</source>
+        <translation>Saldo for lille!</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>Middel</translation>
+    </message>
+    <message>
+        <source>Coin Control Features</source>
+        <translation>Møntkontrol, features</translation>
+    </message>
+    <message>
+        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
+        <translation>Hvis denne er aktiveret, men tilbagebetalingsadressen er tom, eller ugyldig, overskydende beløb vil blive fremsendt til en nyoprettet adresse</translation>
+    </message>
+    <message>
+        <source>Custom change address</source>
+        <translation>Brugerdefineret tilbagebetalingsadresse</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Penge tilbage:</translation>
+    </message>
+    <message>
+        <source>out of sync</source>
+        <translation>Ude af synk</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Kopiér antal</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopiér beløb</translation>
+    </message>
+    <message>
+        <source>Confirm send coins</source>
+        <translation>Bekræft at De vil sende mønter</translation>
+    </message>
+    </context>
+<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
         <translation>Beløb</translation>
     </message>
     <message>
-        <source>Enter a PEG address (e.g. %1)</source>
-        <translation>Indtast en PEG adresse (F.eks. %1)</translation>
+        <source>Enter a Pegasus address (e.g. %1)</source>
+        <translation>Indtast en Pegasus adresse (F.eks. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2653,8 +2849,12 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Anvender</translation>
     </message>
     <message>
-        <source>Warning: Invalid PEG address</source>
-        <translation>Advarsel! Ugyldig PEG adresse</translation>
+        <source>anonymous funds</source>
+        <translation>Anonyme saldi</translation>
+    </message>
+    <message>
+        <source>Warning: Invalid Pegasus address</source>
+        <translation>Advarsel! Ugyldig Pegasus adresse</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2687,10 +2887,6 @@ Kontroller adressen og prøv igen.</translation>
     <message>
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
         <translation>Et gebyr %1 gange højere end %2 pr. kilobyte er vanvittigt højt.</translation>
-    </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Forventer bekræftelse indenfor %n blokke</numerusform><numerusform>Forventer bekræftelse indenfor %n blokke</numerusform></translation>
     </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
@@ -2729,6 +2925,10 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Transaktionen blev afvist! Dette kan ske, hvis nogle af mønterne i tegnebogen allerede er brugt. For eksempel hvis De har brugt en kopi af Wallet.dat filen, og mønterne har været brugt, men ikke markerede som brugte i den. </translation>
     </message>
     <message>
+        <source>Error: The wallet was unlocked only to anonymize coins.</source>
+        <translation>Fejl! Tegnebogen blev kun låst op for at anonymisere mønterne. </translation>
+    </message>
+    <message>
         <source>Pay only the minimum fee of %1</source>
         <translation>Betal kun minimums transaktionsgebyret på %1</translation>
     </message>
@@ -2752,8 +2952,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Betal &amp;Til</translation>
     </message>
     <message>
-        <source>The PEG address to send the payment to</source>
-        <translation>PEG adressen, som betalingen skal sendes til</translation>
+        <source>The Pegasus address to send the payment to</source>
+        <translation>Pegasus adressen, som betalingen skal sendes til</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2792,8 +2992,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Besked</translation>
     </message>
     <message>
-        <source>A message that was attached to the pegasus: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Pegasus network.</source>
-        <translation>En besked, der var vedhæftet til pegasus: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
+        <source>A message that was attached to the Pegasus: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Pegasus network.</source>
+        <translation>En besked, der var vedhæftet til Pegasus: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2819,7 +3019,7 @@ Kontroller adressen og prøv igen.</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Pegasus is shutting down...</source>
+        <source>Pegasus Core is shutting down...</source>
         <translation>Pegasus kernen lukker ned</translation>
     </message>
     <message>
@@ -2842,8 +3042,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>De kan underskrive beskeder med Deres adresser or at bevise ejerskab. Vær forsigtig med at underskrive noget De er usikker på såsom forsøg op at narre Dem til at oplyse Deres identitet. Skriv kun under på noget De kan stå inde for, og som De er enig i. </translation>
     </message>
     <message>
-        <source>The PEG address to sign the message with</source>
-        <translation>Den PEG adresse, der skal bruges til at underskrive beskeden med.</translation>
+        <source>The Pegasus address to sign the message with</source>
+        <translation>Den Pegasus adresse, der skal bruges til at underskrive beskeden med.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2874,16 +3074,16 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Kopier den aktuelle underskrift til udklipsholderen.</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PEG address</source>
-        <translation>Underskriv beskeden for at bevise, at De ejer denne PEG adresse.</translation>
+        <source>Sign the message to prove you own this Pegasus address</source>
+        <translation>Underskriv beskeden for at bevise, at De ejer denne Pegasus adresse.</translation>
     </message>
     <message>
-        <source>The PEG address the message was signed with</source>
-        <translation>Beskeden er underskrevet med denne PEG adresse</translation>
+        <source>The Pegasus address the message was signed with</source>
+        <translation>Beskeden er underskrevet med denne Pegasus adresse</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PEG address</source>
-        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige PEG adresse.</translation>
+        <source>Verify the message to ensure it was signed with the specified Pegasus address</source>
+        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige Pegasus adresse.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2969,7 +3169,7 @@ Kontroller adressen og prøv igen.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Pegasus</source>
+        <source>Pegasus Core</source>
         <translation>Pegasus kerne</translation>
     </message>
     <message>
@@ -2985,11 +3185,7 @@ Kontroller adressen og prøv igen.</translation>
         <translation>DASH "core" udviklerne</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>PIVX "core" udviklerne</translation>
-    </message>
-    <message>
-        <source>The Pegasus developers</source>
+        <source>The Pegasus Core developers</source>
         <translation>Pegasus "core" udviklerne</translation>
     </message>
     <message>
@@ -3040,23 +3236,23 @@ Kontroller adressen og prøv igen.</translation>
     </message>
     <message>
         <source>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (SwiftTX verificering i gang - %2 af %3 signaturer)</translation>
+        <translation>%1/offline (SwifTX verificering i gang - %2 af %3 signaturer)</translation>
     </message>
     <message>
         <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/bekræftet(SwiftTX verificering i gang - %2 af %3 signaturer)</translation>
+        <translation>%1/bekræftet(SwifTX verificering i gang - %2 af %3 signaturer)</translation>
     </message>
     <message>
         <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/bekræftelser (SwiftTX verificering i gang - %2 af %3 signaturer)</translation>
+        <translation>%1/bekræftelser (SwifTX verificering i gang - %2 af %3 signaturer)</translation>
     </message>
     <message>
         <source>%1/offline (SwiftTX verification failed)</source>
-        <translation>%1/offline (SwiftTX verificering mislykkedes)</translation>
+        <translation>%1/offline (SwifTX verificering mislykkedes)</translation>
     </message>
     <message>
         <source>%1/confirmed (SwiftTX verification failed)</source>
-        <translation>%1/bekræftet (SwiftTX verificering mislykkedes)</translation>
+        <translation>%1/bekræftet (SwifTX verificering mislykkedes)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -3249,6 +3445,26 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Modtaget fra</translation>
     </message>
     <message>
+        <source>Received via Obfuscation</source>
+        <translation>Modtaget via tilsløring</translation>
+    </message>
+    <message>
+        <source>Obfuscation Denominate</source>
+        <translation>Tilslør designerede</translation>
+    </message>
+    <message>
+        <source>Obfuscation Collateral Payment</source>
+        <translation>Samlet tilsløret betaling</translation>
+    </message>
+    <message>
+        <source>Obfuscation Make Collateral Inputs</source>
+        <translation>Tilslørede samlede tilføjelser</translation>
+    </message>
+    <message>
+        <source>Obfuscation Create Denominations</source>
+        <translation>Opret tilsløret designering</translation>
+    </message>
+    <message>
         <source>Sent to</source>
         <translation>Sendt til</translation>
     </message>
@@ -3267,6 +3483,10 @@ Kontroller adressen og prøv igen.</translation>
     <message>
         <source>Mined</source>
         <translation>Mineret</translation>
+    </message>
+    <message>
+        <source>Obfuscated</source>
+        <translation>skjult</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3342,6 +3562,26 @@ Kontroller adressen og prøv igen.</translation>
     <message>
         <source>Sent to</source>
         <translation>Sendt til</translation>
+    </message>
+    <message>
+        <source>Obfuscated</source>
+        <translation>skjult</translation>
+    </message>
+    <message>
+        <source>Obfuscation Make Collateral Inputs</source>
+        <translation>Tilslørede samlede tilføjelser</translation>
+    </message>
+    <message>
+        <source>Obfuscation Create Denominations</source>
+        <translation>Opret tilsløret designering</translation>
+    </message>
+    <message>
+        <source>Obfuscation Denominate</source>
+        <translation>Tilslør designerede</translation>
+    </message>
+    <message>
+        <source>Obfuscation Collateral Payment</source>
+        <translation>Samlet tilsløret betaling</translation>
     </message>
     <message>
         <source>To yourself</source>
@@ -3478,7 +3718,7 @@ Kontroller adressen og prøv igen.</translation>
     </message>
     <message>
         <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 PEG.</source>
-        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1 PEG.</translation>
+        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1PEG.</translation>
     </message>
 </context>
 <context>
@@ -3521,6 +3761,13 @@ Kontroller adressen og prøv igen.</translation>
     </message>
 </context>
 <context>
+    <name>ZPhrControlDialog</name>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
+<context>
     <name>pegasus-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
@@ -3547,7 +3794,7 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Forbind til den opgivne adresse og lyt efter JSON-.RPC forbindelser. Brug [host]:port notation for IPv6. Der kan indsættes flere linier (standard: Forbind til alle interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Pegasus is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Pegasus Core is probably already running.</source>
         <translation>Kan ikke låse datamappen %s. Pegasus core kører sandsynligvis allerede.</translation>
     </message>
     <message>
@@ -3567,12 +3814,12 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Slet alle tegnebogens transaktioner og genskab kun fra blokkæden ved at tilføje -rescan i forbindes med opstart.</translation>
     </message>
     <message>
-        <source>Disable all Pegasus specific functionality (Masternodes, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Slå alle Pegasus funktioner fra (Masternoder, SwiftTX, Budgetting)(0-1,default:%u)</translation>
+        <source>Disable all Pegasus specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Slå alle Pegasus funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
-        <translation>Distribueret under MIT software licensen. Se den vedlaget fil COPYING eller
+        <translation>Distribueret under MIT software licensen. Se den vedlaget fil COPYING eller 
 &lt;http://www.opensource.org/licenses/mit-license.php&gt;. </translation>
     </message>
     <message>
@@ -3620,8 +3867,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Opsaml databaseaktiviteterne fra hukommelsespool og gem dem i loggen på disken for hver &lt;n&gt; megabytes (default: %u)</translation>
     </message>
     <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
-        <translation>Hvor grundig er blokkens verificeringer af -checkblocks er (0-4, default %u)</translation>
+        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
+        <translation>Der er fundet ubekræftede designerede outputs. Vent indtil de bekræftes for at fortsætte.</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -3658,6 +3905,10 @@ Kontroller adressen og prøv igen.</translation>
     <message>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
         <translation>Det antal sekunder, som peers, der ikke handler korrekt skal afholdes fra at genforbinde (default: %u)</translation>
+    </message>
+    <message>
+        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <translation>Tilsløring bruger hele det tilslørede designerede beløb til at sende betalinger. De kan blot tilsløre yderligere Pegasus</translation>
     </message>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
@@ -3728,8 +3979,16 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Pegasus is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Pegasus Core is probably already running.</source>
         <translation>Det var ikke muligt at forbinde %s på denne computer. Pegasus kører sandsynligvis allerede.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret designeret indestående for at gennemføre denne transaktion.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PEG.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 PEG.</translation>
     </message>
     <message>
         <source>Unable to locate enough funds for this transaction that are not equal 10000 PEG.</source>
@@ -3748,7 +4007,7 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
         <translation>Advarsel! -paytxfee er sat meget højt. Det er dette gebyr De kommer til at betale for transaktionen, hvis De gennemfører. </translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Pegasus will not work properly.</source>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Pegasus Core will not work properly.</source>
         <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil Pegasus core ikke fungere ordentligt.</translation>
     </message>
     <message>
@@ -3780,8 +4039,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
         <translation>Der skal angives en masternodeprivkey i konfigurationen. For mere information, se i dokumentationen.</translation>
     </message>
     <message>
-        <source>(2171 could be used only on mainnet)</source>
-        <translation>(2171 kunne kun bruges på hovednettet)</translation>
+        <source>(5111 could be used only on mainnet)</source>
+        <translation>(5111 kunne kun bruges på hovednettet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3792,8 +4051,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 2171 for mainnet)</source>
-        <translation>(skal være 2171 for hovednettet)</translation>
+        <source>(must be 5111 for mainnet)</source>
+        <translation>(skal være 5111 for hovednettet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -3836,8 +4095,16 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
         <translation>Bloker optioner for oprettelse:</translation>
     </message>
     <message>
+        <source>Can't denominate: no compatible inputs left.</source>
+        <translation>Kan ikke designere: Ingen kompatible inputs tilbage.</translation>
+    </message>
+    <message>
         <source>Can't find random Masternode.</source>
         <translation>Kan ikke finde en tilfældig masternode.</translation>
+    </message>
+    <message>
+        <source>Can't mix while sync in progress.</source>
+        <translation>Kan ikke usynliggøre så længe der synkroniseres.</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet</source>
@@ -3888,12 +4155,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
         <translation>Copyright (C) 2014-%i The Dash Core Developers </translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2017-%i The Pegasus Developers</source>
-        <translation>Copyright (C) 2017-%i The Pegasus Developers</translation>
+        <source>Copyright (C) 2015-%i The Pegasus Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Pegasus Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -3964,7 +4227,7 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen er beskadiget</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Pegasus</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Pegasus Core</source>
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af Pegasus core</translation>
     </message>
     <message>
@@ -3988,6 +4251,10 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
         <translation>Fejl! En fatal intern fejl opstod. Se debug.log for nærmere detaljer</translation>
     </message>
     <message>
+        <source>Error: Can't select current denominated inputs</source>
+        <translation>Fejl! Kan ikke vælge de aktuelt designerede inputs</translation>
+    </message>
+    <message>
         <source>Error: Disk space is low!</source>
         <translation>Fejl! Der er ikke nok plads på disken.</translation>
     </message>
@@ -3998,6 +4265,10 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
     <message>
         <source>Error: Wallet locked, unable to create transaction!</source>
         <translation>Fejl! Tegnebogen er låst. Det er ikke muligt at oprette transaktionen.</translation>
+    </message>
+    <message>
+        <source>Error: You already have pending entries in the Obfuscation pool</source>
+        <translation>Fejl! De har allerede ventende transaktioner i tilsløringsgruppen</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
@@ -4068,7 +4339,7 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
         <translation>Info:</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Pegasus is shutting down.</source>
+        <source>Initialization sanity check failed. Pegasus Core is shutting down.</source>
         <translation>Initiering af sanitetskontrollen fejlede. Pegasus core lukker ned. </translation>
     </message>
     <message>
@@ -4078,14 +4349,6 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
     <message>
         <source>Insufficient funds.</source>
         <translation>Utilstrækkelige midler</translation>
-    </message>
-    <message>
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Ugyldig -onion adresse: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Ugyldig -proxy adresse: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -4146,6 +4409,14 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation>Behold højest &lt;n&gt; transaktioner i hukommelsen, der ikke kan forbindes (default: %u)</translation>
+    </message>
+    <message>
+        <source>Last Obfuscation was too recent.</source>
+        <translation>Seneste tilsløring var for ny</translation>
+    </message>
+    <message>
+        <source>Last successful Obfuscation action was too recent.</source>
+        <translation>Seneste succesfulde tilsløring var for ny</translation>
     </message>
     <message>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
@@ -4228,6 +4499,10 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
         <translation>Manglende transaktionsinformationsinput</translation>
     </message>
     <message>
+        <source>Mixing in progress...</source>
+        <translation>Usynliggørelse i gang</translation>
+    </message>
+    <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>Der skal specificeres en port med -whitebind: '%s'</translation>
     </message>
@@ -4238,6 +4513,14 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
     <message>
         <source>No compatible Masternode found.</source>
         <translation>Ingen kompatible masternoder fundet.</translation>
+    </message>
+    <message>
+        <source>No funds detected in need of denominating.</source>
+        <translation>Ingen midler fundet til eventuel designering</translation>
+    </message>
+    <message>
+        <source>No matching denominations found for mixing.</source>
+        <translation>ingen matchende designerede midler til usynliggørelse.</translation>
     </message>
     <message>
         <source>Node relay options:</source>
@@ -4262,6 +4545,18 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
     <message>
         <source>Number of automatic wallet backups (default: 10)</source>
         <translation>Antal automatiske sikkerhedskopier af tegnebogen (default: 10)</translation>
+    </message>
+    <message>
+        <source>Obfuscation is idle.</source>
+        <translation>Tilsløringssystem ledigt</translation>
+    </message>
+    <message>
+        <source>Obfuscation request complete:</source>
+        <translation>Tilsløring færdig.</translation>
+    </message>
+    <message>
+        <source>Obfuscation request incomplete:</source>
+        <translation>Tilsløringsanmodning ikke færdiggjort</translation>
     </message>
     <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
@@ -4580,6 +4875,10 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
         <translation>Brugernavn til JSON-RPC forbindelser</translation>
     </message>
     <message>
+        <source>Value more than Obfuscation pool maximum allows.</source>
+        <translation>Værdien er højere end tilsløringsgruppen tillader</translation>
+    </message>
+    <message>
         <source>Verifying blocks...</source>
         <translation>Verificerer blokke</translation>
     </message>
@@ -4596,7 +4895,7 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
         <translation>Tegnebogen er låst</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Pegasus to complete</source>
+        <source>Wallet needed to be rewritten: restart Pegasus Core to complete</source>
         <translation>Tegnebogen måtte genskrives. Genstart Pegasus core for at gøre færdig</translation>
     </message>
     <message>
