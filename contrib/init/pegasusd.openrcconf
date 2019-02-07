@@ -1,0 +1,26 @@
+# /etc/conf.d/pegasusd: config file for /etc/init.d/pegasusd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/pegasus/pegasus.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/pegasusd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/pegasusd.pid"
+
+# Where to write pegasusd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/pegasusd"
+
+# User and group to own pegasusd process
+#BITCOIND_USER="pegasus"
+#BITCOIND_GROUP="pegasus"
+
+# Path to pegasusd executable
+#BITCOIND_BIN="/usr/bin/pegasusd"
+
+# Nice value to run pegasusd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
