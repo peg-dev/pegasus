@@ -8,7 +8,7 @@ Pegasus is a cryptocurrency which offers users a one click solution for masterno
   technology used to secure the network and provide the above features, each Masternode is secured
   with a collateral of 1,000 PEG.
 
-More information at [pegasuscoin.online](https://www.pegasuscoin.online)
+More information at visit [pegasuscoin.online](https://www.pegasuscoin.online)
 
 ### Coin Specs
 | Block Time                  | 60 Seconds      |
