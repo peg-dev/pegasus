@@ -4560,8 +4560,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "Pegasus Alert" admin@foo.com
         <translation>Je moet een masternodeprivkey opgeven in de configuratie. Raadpleeg de documentatie voor hulp.</translation>
     </message>
     <message>
-        <source>(5111 could be used only on mainnet)</source>
-        <translation>(5111 kan alleen op mainnet worden gebruikt)</translation>
+        <source>(5115 could be used only on mainnet)</source>
+        <translation>(5115 kan alleen op mainnet worden gebruikt)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4572,8 +4572,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "Pegasus Alert" admin@foo.com
         <translation>(standaard: 1)</translation>
     </message>
     <message>
-        <source>(must be 5111 for mainnet)</source>
-        <translation>(moet 5111 voor mainnet zijn)</translation>
+        <source>(must be 5115 for mainnet)</source>
+        <translation>(moet 5115 voor mainnet zijn)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

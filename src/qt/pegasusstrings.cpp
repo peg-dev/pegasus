@@ -226,10 +226,10 @@ QT_TRANSLATE_NOOP("pegasus-core", ""
 QT_TRANSLATE_NOOP("pegasus-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("pegasus-core", "(5111 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("pegasus-core", "(5115 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("pegasus-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("pegasus-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("pegasus-core", "(must be 5111 for mainnet)"),
+QT_TRANSLATE_NOOP("pegasus-core", "(must be 5115 for mainnet)"),
 QT_TRANSLATE_NOOP("pegasus-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("pegasus-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("pegasus-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

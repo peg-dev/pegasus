@@ -210,7 +210,7 @@ BOOST_AUTO_TEST_CASE(hmac_sha512_testvectors) {
     TestHMACSHA512("0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b",
                    "4869205468657265",
                    "87aa7cdea5ef619d4ff0b4241a1d6cb02379f4e2ce4ec2787ad0b30545e17cde"
-                   "daa833b7d6b8a611138b274eaea3f4e4be9d914eeb61f1702e696c203a126854");
+                   "daa833b7d6b8a611638b274eaea3f4e4be9d914eeb61f1702e696c203a126854");
     TestHMACSHA512("4a656665",
                    "7768617420646f2079612077616e7420666f72206e6f7468696e673f",
                    "164b7a7bfcf819e2e395fbe73b56e0a387bd64222e831fd610270cd7ea250554"

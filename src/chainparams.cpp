@@ -106,7 +106,7 @@ public:
         pchMessageStart[2] = 0x44;
         pchMessageStart[3] = 0x74;
         vAlertPubKey = ParseHex("040c206a48869ec1028f4e9634547d8138ef849bf36d49a1c75ec3369da77367158d42a2414a83771dc0dde3e3e023d28f6335f138648003260027d930a627fa06");
-        nDefaultPort = 5111;
+        nDefaultPort = 5115;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Pegasus starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
@@ -120,10 +120,10 @@ public:
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 90000000 * COIN;
 
-       
-        nLastPOWBlock = 500;
+      
+        nLastPOWBlock = 200;
         nModifierUpdateBlock = 999999999;
-        nZerocoinStartHeight = 501;
+        nZerocoinStartHeight = 201;
         nAccumulatorStartHeight = 1;
         nZerocoinStartTime = 1518397608; // 
         nBlockEnforceSerialRange = 1; 
@@ -132,7 +132,7 @@ public:
         nBlockLastGoodCheckpoint = ~1;
         
        
-        const char* pszTimestamp = "Pegasus gets new life - PEG";
+        const char* pszTimestamp = "Pegasus gets new life - PEGASUS";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -143,13 +143,13 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1549401294;
+        genesis.nTime = 1549741899;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 374553;
-      
+        genesis.nNonce = 130563;
+
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000003ebfc0867881b22dcb3e26de14c58e2dc9392f940d5b318984166836c5e"));
-        assert(genesis.hashMerkleRoot == uint256("0xffde5aac7c5208a7c2445e23460d238ea5b6367063c4942a02e356c714963668"));
+        assert(hashGenesisBlock == uint256("0x000003541ee256aec8f6e027ca15993433820a49ea63a6e9959abf0a21f476cd"));
+        assert(genesis.hashMerkleRoot == uint256("0xb0a8c35a8cf4002bf2d316c32501e9f1050b1729b5d5dc43e25148afacbf77f5"));
 		
 		vSeeds.push_back(CDNSSeedData("80.211.250.30", "80.211.250.30"));         // Primary DNS Seeder 		
 		vSeeds.push_back(CDNSSeedData("94.177.251.151", "94.177.251.151"));

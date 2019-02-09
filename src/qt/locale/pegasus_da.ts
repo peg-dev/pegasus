@@ -4039,8 +4039,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
         <translation>Der skal angives en masternodeprivkey i konfigurationen. For mere information, se i dokumentationen.</translation>
     </message>
     <message>
-        <source>(5111 could be used only on mainnet)</source>
-        <translation>(5111 kunne kun bruges på hovednettet)</translation>
+        <source>(5115 could be used only on mainnet)</source>
+        <translation>(5115 kunne kun bruges på hovednettet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4051,8 +4051,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Pegasus ALARM!" e-mail@administrat
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 5111 for mainnet)</source>
-        <translation>(skal være 5111 for hovednettet)</translation>
+        <source>(must be 5115 for mainnet)</source>
+        <translation>(skal være 5115 for hovednettet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
