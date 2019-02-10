@@ -22,3 +22,6 @@ More information at visit [pegasuscoin.online](https://www.pegasuscoin.online)
 | 1-10000	       | 90% (0.9 PEG)	  | 10% (0.1 PEG)    |
 | 10001-199999     | 90% (225 PEG)	  | 10% (25 PEG)     | 
 | 200000+  		   | 90% (360 PEG)	  | 10% (40 PEG)     | 
+
+### RPC Port = 6116
+### P2P Port = 5115
