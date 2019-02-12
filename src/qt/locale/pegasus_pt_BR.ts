@@ -3490,8 +3490,8 @@ https://www.transifex.com/pegasus-project/pegasus-project-translations</translat
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(5115 could be used only on mainnet)</source>
-        <translation>(5115 could be used only on mainnet)</translation>
+        <source>(1551 could be used only on mainnet)</source>
+        <translation>(1551 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3502,8 +3502,8 @@ https://www.transifex.com/pegasus-project/pegasus-project-translations</translat
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 5115 for mainnet)</source>
-        <translation>(deve ser 5115 para mainnet)</translation>
+        <source>(must be 1551 for mainnet)</source>
+        <translation>(deve ser 1551 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>

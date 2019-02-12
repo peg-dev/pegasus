@@ -6031,8 +6031,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>(5115 could be used only on mainnet)</source>
-        <translation type="unfinished">(5115 could be used only on mainnet)</translation>
+        <source>(1551 could be used only on mainnet)</source>
+        <translation type="unfinished">(1551 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6046,7 +6046,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 5115 for mainnet)</source>
+        <source>(must be 1551 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

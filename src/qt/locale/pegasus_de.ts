@@ -4527,8 +4527,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Pegasus Alert" admin@foo.com
         <translation>Sie müssen einen privaten Masternode-Schlüssel in der Konfiguration festlegen. Bitte nutzen Sie die Dokumentation zwecks Hilfe.</translation>
     </message>
     <message>
-        <source>(5115 could be used only on mainnet)</source>
-        <translation>(5115 kann nur im Mainnet verwendet werden)</translation>
+        <source>(1551 could be used only on mainnet)</source>
+        <translation>(1551 kann nur im Mainnet verwendet werden)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4539,8 +4539,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Pegasus Alert" admin@foo.com
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 5115 for mainnet)</source>
-        <translation>(muss im Mainnet 5115 sein)</translation>
+        <source>(must be 1551 for mainnet)</source>
+        <translation>(muss im Mainnet 1551 sein)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

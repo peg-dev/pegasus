@@ -106,7 +106,7 @@ public:
         pchMessageStart[2] = 0x44;
         pchMessageStart[3] = 0x74;
         vAlertPubKey = ParseHex("040c206a48869ec1028f4e9634547d8138ef849bf36d49a1c75ec3369da77367158d42a2414a83771dc0dde3e3e023d28f6335f138648003260027d930a627fa06");
-        nDefaultPort = 5115;
+        nDefaultPort = 1551;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Pegasus starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
@@ -132,7 +132,7 @@ public:
         nBlockLastGoodCheckpoint = ~1;
         
        
-        const char* pszTimestamp = "Pegasus gets new life - PEGASUS";
+        const char* pszTimestamp = "Pegasus Project gets new life - PEGASUS";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -143,19 +143,19 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1549741899;
+        genesis.nTime = 1549941454;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 130563;
+        genesis.nNonce = 675570;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000003541ee256aec8f6e027ca15993433820a49ea63a6e9959abf0a21f476cd"));
-        assert(genesis.hashMerkleRoot == uint256("0xb0a8c35a8cf4002bf2d316c32501e9f1050b1729b5d5dc43e25148afacbf77f5"));
+        assert(hashGenesisBlock == uint256("0x0000075a8f5b8aa7ce88a27174e9ae0532018b33fdfca00a8480c9f93087e698"));
+        assert(genesis.hashMerkleRoot == uint256("0xed8c6af0cfdd328aa4d17ee8852d55375d0e37367b93012d60267a1363a1dafa"));
 		
-		vSeeds.push_back(CDNSSeedData("80.211.250.30", "80.211.250.30"));         // Primary DNS Seeder 		
-		vSeeds.push_back(CDNSSeedData("94.177.251.151", "94.177.251.151"));
-		vSeeds.push_back(CDNSSeedData("94.177.229.203", "94.177.229.203"));
-		vSeeds.push_back(CDNSSeedData("94.177.232.35", "94.177.232.35"));
-		vSeeds.push_back(CDNSSeedData("45.76.228.101", "45.76.228.101"));
+		vSeeds.push_back(CDNSSeedData("155.138.194.117", "155.138.194.117"));         // Primary DNS Seeder 		
+		vSeeds.push_back(CDNSSeedData("155.138.194.116", "155.138.194.116"));
+		vSeeds.push_back(CDNSSeedData("199.247.2.51", "199.247.2.51"));
+		vSeeds.push_back(CDNSSeedData("149.28.186.172", "149.28.186.172"));
+		vSeeds.push_back(CDNSSeedData("95.179.138.121", "95.179.138.121"));
 		
 		
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55);
