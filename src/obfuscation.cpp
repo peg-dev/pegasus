@@ -1990,10 +1990,10 @@ int CObfuscationPool::GetDenominations(const std::vector<CTxOut>& vout, bool fSi
 
     // Function returns as follows:
     //
-    // bit 0 - 100PEG+1 ( bit on if present )
-    // bit 1 - 10PEG+1
-    // bit 2 - 1PEG+1
-    // bit 3 - .1PEG+1
+    // bit 0 - 100RUP+1 ( bit on if present )
+    // bit 1 - 10RUP+1
+    // bit 2 - 1RUP+1
+    // bit 3 - .1RUP+1
 
     return denom;
 }
@@ -2111,7 +2111,7 @@ bool CObfuScationSigner::IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey)
     uint256 hash;
     if (GetTransaction(vin.prevout.hash, txVin, hash, true)) {
         BOOST_FOREACH (CTxOut out, txVin.vout) {
-            if (out.nValue == 50000 * COIN) {
+            if (out.nValue == GetMstrNodCollateral(chainActive.Height())*COIN) {
                 if (out.scriptPubKey == payee2) return true;
             }
         }

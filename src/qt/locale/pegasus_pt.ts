@@ -176,8 +176,8 @@
         <translation>Confirmar encriptação da carteira</translation>
     </message>
     <message>
-        <source>Pegasus will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PEGs from being stolen by malware infecting your computer.</source>
-        <translation>Pegasus encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas PEGs contra roubo por malware infectando seu computador.</translation>
+        <source>Pegasus will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RUPs from being stolen by malware infecting your computer.</source>
+        <translation>Pegasus encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas RUPs contra roubo por malware infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -906,7 +906,7 @@
     <name>ZPhrControlDialog</name>
     </context>
 <context>
-    <name>pegasus-core</name>
+    <name>pegasus-network</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes do blockchain através de -rescan na inicialização</translation>

@@ -176,7 +176,7 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Pegasus will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PEGs from being stolen by malware infecting your computer.</source>
+        <source>Pegasus will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RUPs from being stolen by malware infecting your computer.</source>
         <translation>Pegasus sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše PEG pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
@@ -1306,7 +1306,7 @@ MultiSend: %1</translation>
     <name>ZPhrControlDialog</name>
     </context>
 <context>
-    <name>pegasus-core</name>
+    <name>pegasus-network</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

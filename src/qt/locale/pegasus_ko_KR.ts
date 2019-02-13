@@ -176,8 +176,8 @@
         <translation>지갑 암호화 확인</translation>
     </message>
     <message>
-        <source>Pegasus will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PEGs from being stolen by malware infecting your computer.</source>
-        <translation>Pegasus는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 PEGs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <source>Pegasus will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RUPs from being stolen by malware infecting your computer.</source>
+        <translation>Pegasus는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 RUPs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -185,7 +185,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PEG&lt;/b&gt;!</source>
-        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 PEG를 잃게 됩니다&lt;/b&gt;!</translation>
+        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 RUP를 잃게 됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1561,11 +1561,11 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>This option is the quickest and will cost about ~0.025 PEG to anonymize 10000 PEG</source>
-        <translation>이 옵션은 가장 빠르게 전송되며 10000 PEG 익명화에 약 ~0.025 PEG의 비용이 들어갑니다.</translation>
+        <translation>이 옵션은 가장 빠르게 전송되며 10000 PEG 익명화에 약 ~0.025 RUP의 비용이 들어갑니다.</translation>
     </message>
     <message>
         <source>This option is moderately fast and will cost about 0.05 PEG to anonymize 10000 PEG</source>
-        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 PEG 익명화에 약 0.05 PEG의 비용이 들어갑니다.</translation>
+        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 PEG 익명화에 약 0.05 RUP의 비용이 들어갑니다.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1717,7 +1717,7 @@ https://www.transifex.com/pegasus-project/pegasus-project-translations</translat
     </message>
     <message>
         <source>Percentage of incoming PEG which get automatically converted to zPEG via Zerocoin Protocol (min: 10%)</source>
-        <translation>PEG수신시 자동변환 zPEG 퍼센트 (최소값:10%)</translation>
+        <translation>RUP수신시 자동변환 zPEG 퍼센트 (최소값:10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zPEG</source>
@@ -1725,7 +1725,7 @@ https://www.transifex.com/pegasus-project/pegasus-project-translations</translat
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough PEG for this denomination is available</source>
-        <translation>이 디노미네이션의 PEG가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
+        <translation>이 디노미네이션의 RUP가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
     </message>
     <message>
         <source>Preferred Automint zPEG Denomination</source>
@@ -2181,7 +2181,7 @@ https://www.transifex.com/pegasus-project/pegasus-project-translations</translat
     </message>
     <message>
         <source>The Pegasus address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>PEG를 전송할 Pegasus 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
+        <translation>RUP를 전송할 Pegasus 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3184,12 +3184,12 @@ Please be patient...</source>
         <translation>코인 자동으로 선택됨</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPEGs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPEGs in fee,&lt;br /&gt;while "at least" pays 1000 uPEGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uPEGs로 설정되고,&lt;br /&gt;1000 uPEGs 안에는 최소 "킬로바이트당" 250 uPEGs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uRUPs로 설정되고,&lt;br /&gt;1000 uRUPs 안에는 최소 "킬로바이트당" 250 uRUPs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPEGs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPEGs in fee,&lt;br /&gt;while "total at least" pays 1000 uPEGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uPEGs로 설정되고,&lt;br /&gt;1000 uPEGs 안에는 전체에서 최소 "킬로바이트당" 250 uPEGs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uRUPs로 설정되고,&lt;br /&gt;1000 uRUPs 안에는 전체에서 최소 "킬로바이트당" 250 uRUPs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Pegasus transactions than the network can process.</source>
@@ -4234,7 +4234,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 PEG.</source>
-        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 PEG로 제한됩니다.</translation>
+        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 RUP로 제한됩니다.</translation>
     </message>
 </context>
 <context>
@@ -4304,7 +4304,7 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>pegasus-core</name>
+    <name>pegasus-network</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = tx 메타 데이터 유지 예 : 계정 소유자 및 지불 요청 정보, 2 = tx 메타 데이터 삭제)</translation>
@@ -4527,11 +4527,11 @@ rpcpassword=%s
     </message>
     <message>
         <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PEG.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 PEG과 일치하지 않음.</translation>
+        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 RUP과 일치하지 않음.</translation>
     </message>
     <message>
         <source>Unable to locate enough funds for this transaction that are not equal 10000 PEG.</source>
-        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 PEG와 같지 않음</translation>
+        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 RUP와 같지 않음</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4578,8 +4578,8 @@ rpcpassword=%s
         <translation>환경설정에서 masternodeprivkey를 지정해야 합니다. 도움말을 참조하십시오.</translation>
     </message>
     <message>
-        <source>(1551 could be used only on mainnet)</source>
-        <translation>(1551 은 메인넷에서만 사용될 수 있습니다)</translation>
+        <source>(1515 could be used only on mainnet)</source>
+        <translation>(1515 은 메인넷에서만 사용될 수 있습니다)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4590,8 +4590,8 @@ rpcpassword=%s
         <translation>(기본값: 1)</translation>
     </message>
     <message>
-        <source>(must be 1551 for mainnet)</source>
-        <translation>(메인넷 일경우 1551)</translation>
+        <source>(must be 1515 for mainnet)</source>
+        <translation>(메인넷 일경우 1515)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

@@ -176,8 +176,8 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>Pegasus will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PEGs from being stolen by malware infecting your computer.</source>
-        <translation>Pegasus zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw PEGs stelen.</translation>
+        <source>Pegasus will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RUPs from being stolen by malware infecting your computer.</source>
+        <translation>Pegasus zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw RUPs stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -3167,12 +3167,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Munten automatisch geselecteerd</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPEGs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPEGs in fee,&lt;br /&gt;while "at least" pays 1000 uPEGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uPEGs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uPEG's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uPEG's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uRUPs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uRUP's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uRUP's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPEGs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPEGs in fee,&lt;br /&gt;while "total at least" pays 1000 uPEGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uPEGs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uPEG's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uPEG's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uRUPs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uRUP's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uRUP's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Pegasus transactions than the network can process.</source>
@@ -4282,7 +4282,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
 </context>
 <context>
-    <name>pegasus-core</name>
+    <name>pegasus-network</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = houd tx meta data, bijvoorbeeld account eigenaar en betalingsverzoek informatie, 2 = drop tx meta data)</translation>
@@ -4560,8 +4560,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "Pegasus Alert" admin@foo.com
         <translation>Je moet een masternodeprivkey opgeven in de configuratie. Raadpleeg de documentatie voor hulp.</translation>
     </message>
     <message>
-        <source>(1551 could be used only on mainnet)</source>
-        <translation>(1551 kan alleen op mainnet worden gebruikt)</translation>
+        <source>(1515 could be used only on mainnet)</source>
+        <translation>(1515 kan alleen op mainnet worden gebruikt)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4572,8 +4572,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "Pegasus Alert" admin@foo.com
         <translation>(standaard: 1)</translation>
     </message>
     <message>
-        <source>(must be 1551 for mainnet)</source>
-        <translation>(moet 1551 voor mainnet zijn)</translation>
+        <source>(must be 1515 for mainnet)</source>
+        <translation>(moet 1515 voor mainnet zijn)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

@@ -145,7 +145,7 @@
                   </size>
                  </property>
                  <property name="toolTip">
-                  <string>Enter an amount of Rup to convert (mint) to zPEG</string>
+                  <string>Enter an amount of Rup to convert (mint) to zPeg</string>
                  </property>
                  <property name="text">
                   <string>Mint PEG to zPEG</string>
@@ -191,7 +191,7 @@
                <item>
                 <widget class="QLabel" name="labelzPEGAmountValue">
                  <property name="toolTip">
-                  <string>Enter an amount of Rup to convert to zPEG</string>
+                  <string>Enter an amount of Rup to convert to zPeg</string>
                  </property>
                  <property name="text">
                   <string>0.000 000 00 PEG</string>
@@ -223,7 +223,7 @@
                   </size>
                  </property>
                  <property name="toolTip">
-                  <string>Reset Zerocoin (zPEG) Wallet DB. Deletes transactions that did not make it into the blockchain.</string>
+                  <string>Reset Zerocoin (zPeg) Wallet DB. Deletes transactions that did not make it into the blockchain.</string>
                  </property>
                  <property name="text">
                   <string>Reset</string>
@@ -474,21 +474,21 @@
                 <number>0</number>
                </property>
                <item>
-                <widget class="QPushButton" name="pushButtonZPEGControl">
+                <widget class="QPushButton" name="pushButtonZPegControl">
                  <property name="text">
-                  <string>zPEG Control</string>
+                  <string>zPeg Control</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzPEGSelected">
+                <widget class="QLabel" name="labelzPegSelected">
                  <property name="text">
-                  <string>zPEG Selected:</string>
+                  <string>zPeg Selected:</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzPEGSelected_int">
+                <widget class="QLabel" name="labelzPegSelected_int">
                  <property name="text">
                   <string>0</string>
                  </property>
@@ -607,7 +607,7 @@ zPEG are mature when they have more than 20 confirmations AND more than 1 mints 
                <item>
                 <widget class="QLabel" name="labelSecurityLevel">
                  <property name="toolTip">
-                  <string>Security Level for Zerocoin (zPEG) Transactions. More is better, but needs more time and resources.</string>
+                  <string>Security Level for Zerocoin (zPeg) Transactions. More is better, but needs more time and resources.</string>
                  </property>
                  <property name="frameShape">
                   <enum>QFrame::Box</enum>
@@ -895,7 +895,7 @@ zPEG are mature when they have more than 20 confirmations AND more than 1 mints 
                   </font>
                  </property>
                  <property name="toolTip">
-                  <string>Information about the available zPEG funds.</string>
+                  <string>Information about the available zPeg funds.</string>
                  </property>
                  <property name="text">
                   <string>zPEG Stats:</string>

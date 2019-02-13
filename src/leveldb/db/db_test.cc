@@ -346,7 +346,7 @@ class DBTest {
       while (iter->Valid()) {
         ParsedInternalKey ikey;
         if (!ParseInternalKey(iter->key(), &ikey)) {
-          result += "CORPEGTED";
+          result += "CORRUPTED";
         } else {
           if (last_options_.comparator->Compare(ikey.user_key, user_key) != 0) {
             break;

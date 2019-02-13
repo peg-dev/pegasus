@@ -60,8 +60,7 @@ before_deploy:
       - "./pre-deploy.sh"
 deploy:
   provider: releases
-  api_key:
-    secure: NGE60l7Lbs74ihAOqqiiD18vkVcYI0SDc3fIt3NBKfHiprvHTnldDNNrOIOuIDsg0LII65JJo1NKf7JJB86bfhqSrLyDnkeCmJRXjjSYjzKaAcLbRvixTSx9bVkHwOTTYXEhFpp9dZKjcqinPxnuO6FQf7bH0xiF6WtVQeK8oMjY3JcQZwOssbof5XSBbPaQLCFSWDyhJ7jdOqMprTd9Agq5RdxjRaaT9bYiykbqLbI6KgH5kNbkLcu734iYdWCZr+tfngUYc2teGwCkF7LYl6o2OPoW0byyitfDqjlBKIBCxPQwsFXL1QphyNiYWMlpU5yA9XqgSz5+WHhhPzO1GAOKTRiE+8Cpv7Pf55F1Z39N36howhhKS9c0mvAdxDrEkk5T2tLkdHOwrja7sgn374uXgI2u8ucb7W7iBfQO3tZ1tNBihj5+ks3Rv5nup8TgmJGcu4MadFqzGZH6uaj7cFRMZZWRVaKgQGdox0snk/Wmh0hcaTfIJv9Fg4ioEOhH/ecOOGdJIgLCL0ccmp/ynIRMF4Q3jGeAsch0MImTK6WkP9VJwOOSuM2daB/MVCJISyHa945BbP6fou9CneqH/X/3G5EbXes+8Itcdg/SabWIW7PGvTdWn7T1g5DYAn4MN1UgRiI+hQqL3oVRqmVyOu2a+Q97HxzF1lbhHfQCfus=
+  api_key: $GITHUB_OAUTH_TOKEN
   file: out/**/zip/*
   skip_cleanup: true
   on:
@@ -70,10 +69,9 @@ deploy:
     tags: true  
 deploy:
   provider: s3
-  access_key_id: AKIAIKPTCZAG4GFH5EPQ
-  secret_access_key:
-    secure: sNmtJ8YcKrKo+MXYWRDfbSsHlTnGP1DQPMmUmDR/zE89toduGP9A4u4+xEM3jnK1bUj/dBPtF05zeQynKva9CHmD6/+pz5sX14rgXYDPPE0YB0b1qhgCp7TKa77bEU2B50291puR+XhftFvvWiPg0PMWup7ZZYfySmJF6WIU/dwyT0Pw8I+piapNjOT38xzvYp/OGJSltX5K+ME8W6s/sMsWCok4evvZx5zQ+Bh3I1A5q0QyirjM1JCxz06p1jC0BENgqNHGRXaxgXzrUx24lqB/AoOl9qrvtTfiKxfB1lJLMt59RLUnJ4ol4CvIbd7AQBD8lg8aVraUCs5jgqE5Vaccvn+9CNe5BCSDioiNzv7JVu6yLuPkMnwSagvUeItZIEhWqvcP6FpnJAC/J3Gn2LhN8zJWadYAhvicaUUhKEY+vFdc7HncYpqfiJlNWl90FZ73k8hMM3JayDebhjSpQ29KMfYMVUpjnrnpKxCASFz5d4vpxPlOlZFqwAPBnEPInVGi2IoyWR3+2Cfhi7tQNOZ7TgTUFo3Q6eLfl48F92JEMQQPACytBeTrI7Kdtk5FHxSnKAF5E3o2wR72iym9YedfLjQSCISkcqbozzTB9cY5JLSvZUgmD26wXK63ApPf+LHKe5Q0VJCh/daPSD6K22t25FXeSr8lYkAHPsLpew4=
-  bucket: pegasus
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: pegwallets
   skip_cleanup: true
   local_dir:  $TRAVIS_BUILD_DIR/out/$TRAVIS_PULL_REQUEST/$TRAVIS_JOB_NUMBER-$HOST
   upload-dir: $TRAVIS_JOB_NUMBER

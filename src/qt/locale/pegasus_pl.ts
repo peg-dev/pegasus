@@ -583,7 +583,7 @@
     </message>
     <message>
         <source>Open a Pegasus: URI or payment request</source>
-        <translation>OtwórzPEG: URI i żądanie zapłaty</translation>
+        <translation>OtwórzPEGX: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -2034,7 +2034,7 @@ https://www.transifex.com/pegasus-project/pegasus-project-translations </transla
     </message>
     </context>
 <context>
-    <name>pegasus-core</name>
+    <name>pegasus-network</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

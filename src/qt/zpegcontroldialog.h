@@ -1,10 +1,10 @@
 // Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2017-2018 The Rupaya developers
+// Copyright (c) 2017-2018 The Pegasus developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZBITCONTROLDIALOG_H
-#define ZBITCONTROLDIALOG_H
+#ifndef ZPEGCONTROLDIALOG_H
+#define ZPEGCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -15,16 +15,16 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZPEGControlDialog;
+class ZPegControlDialog;
 }
 
-class ZPEGControlDialog : public QDialog
+class ZPegControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZPEGControlDialog(QWidget *parent);
-    ~ZPEGControlDialog();
+    explicit ZPegControlDialog(QWidget *parent);
+    ~ZPegControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -33,7 +33,7 @@ public:
     static std::vector<CZerocoinMint> GetSelectedMints();
 
 private:
-    Ui::ZPEGControlDialog *ui;
+    Ui::ZPegControlDialog *ui;
     WalletModel* model;
     PrivacyDialog* privacyDialog;
 
@@ -53,4 +53,4 @@ private slots:
     void ButtonAllClicked();
 };
 
-#endif // ZBITCONTROLDIALOG_H
+#endif // ZPEGCONTROLDIALOG_H

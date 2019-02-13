@@ -790,7 +790,7 @@
     </message>
     </context>
 <context>
-    <name>pegasus-core</name>
+    <name>pegasus-network</name>
     <message>
         <source>Error</source>
         <translation>Greška</translation>

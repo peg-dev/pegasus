@@ -1,5 +1,5 @@
 // Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2017-2018 The Rupaya developers
+// Copyright (c) 2017-2018 The Pegasus developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,12 +11,12 @@
 
 using namespace std;
 
-std::list<std::string> ZPEGControlDialog::listSelectedMints;
-std::list<CZerocoinMint> ZPEGControlDialog::listMints;
+std::list<std::string> ZPegControlDialog::listSelectedMints;
+std::list<CZerocoinMint> ZPegControlDialog::listMints;
 
-ZPEGControlDialog::ZPEGControlDialog(QWidget *parent) :
+ZPegControlDialog::ZPegControlDialog(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::ZPEGControlDialog),
+    ui(new Ui::ZPegControlDialog),
     model(0)
 {
     ui->setupUi(this);
@@ -30,19 +30,19 @@ ZPEGControlDialog::ZPEGControlDialog(QWidget *parent) :
     connect(ui->pushButtonAll, SIGNAL(clicked()), this, SLOT(ButtonAllClicked()));
 }
 
-ZPEGControlDialog::~ZPEGControlDialog()
+ZPegControlDialog::~ZPegControlDialog()
 {
     delete ui;
 }
 
-void ZPEGControlDialog::setModel(WalletModel *model)
+void ZPegControlDialog::setModel(WalletModel *model)
 {
     this->model = model;
     updateList();
 }
 
 //Update the tree widget
-void ZPEGControlDialog::updateList()
+void ZPegControlDialog::updateList()
 {
     // need to prevent the slot from being called each time something is changed
     ui->treeWidget->blockSignals(true);
@@ -134,7 +134,7 @@ void ZPEGControlDialog::updateList()
 }
 
 // Update the list when a checkbox is clicked
-void ZPEGControlDialog::updateSelection(QTreeWidgetItem* item, int column)
+void ZPegControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 {
     // only want updates from non top level items that are available to spend
     if (item->parent() && column == COLUMN_CHECKBOX && !item->isDisabled()){
@@ -157,7 +157,7 @@ void ZPEGControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 }
 
 // Update the Quantity and Amount display
-void ZPEGControlDialog::updateLabels()
+void ZPegControlDialog::updateLabels()
 {
     int64_t nAmount = 0;
     for (const CZerocoinMint mint : listMints) {
@@ -167,14 +167,14 @@ void ZPEGControlDialog::updateLabels()
     }
 
     //update this dialog's labels
-    ui->labelZPEG_int->setText(QString::number(nAmount));
+    ui->labelZPeg_int->setText(QString::number(nAmount));
     ui->labelQuantity_int->setText(QString::number(listSelectedMints.size()));
 
     //update PrivacyDialog labels
-    privacyDialog->setZPEGControlLabels(nAmount, listSelectedMints.size());
+    privacyDialog->setZPegControlLabels(nAmount, listSelectedMints.size());
 }
 
-std::vector<CZerocoinMint> ZPEGControlDialog::GetSelectedMints()
+std::vector<CZerocoinMint> ZPegControlDialog::GetSelectedMints()
 {
     std::vector<CZerocoinMint> listReturn;
     for (const CZerocoinMint mint : listMints) {
@@ -187,7 +187,7 @@ std::vector<CZerocoinMint> ZPEGControlDialog::GetSelectedMints()
 }
 
 // select or deselect all of the mints
-void ZPEGControlDialog::ButtonAllClicked()
+void ZPegControlDialog::ButtonAllClicked()
 {
     ui->treeWidget->blockSignals(true);
     Qt::CheckState state = Qt::Checked;

@@ -176,8 +176,8 @@
         <translation>Confirme el cifrado del monedero</translation>
     </message>
     <message>
-        <source>Pegasus will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PEGs from being stolen by malware infecting your computer.</source>
-        <translation>Pegasus se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus PEGs no sean robados mediante malware de su ordenador.</translation>
+        <source>Pegasus will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RUPs from being stolen by malware infecting your computer.</source>
+        <translation>Pegasus se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus RUPs no sean robados mediante malware de su ordenador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -1717,7 +1717,7 @@ https://www.transifex.com/pegasus-project/pegasus-project-translations</translat
     </message>
     <message>
         <source>Percentage of incoming PEG which get automatically converted to zPEG via Zerocoin Protocol (min: 10%)</source>
-        <translation>Porcentaje de PEGs entrantes que serán automáticamente convertidos a zPEG a través del Protocolo Zerocoin (mín: 10%)</translation>
+        <translation>Porcentaje de RUPs entrantes que serán automáticamente convertidos a zPEG a través del Protocolo Zerocoin (mín: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zPEG</source>
@@ -3183,12 +3183,12 @@ Por favor tenga paciencia...</translation>
         <translation>Monedas seleccionadas automáticamente</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPEGs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPEGs in fee,&lt;br /&gt;while "at least" pays 1000 uPEGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uPEGs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uPEGs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uPEGs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si la comisión personalizada se fija en 1000 uRUPs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uRUPs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uRUPs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPEGs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPEGs in fee,&lt;br /&gt;while "total at least" pays 1000 uPEGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uPEGs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uPEGs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uPEGs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si la comisión personalizada se fija en 1000 uRUPs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uRUPs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uRUPs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Pegasus transactions than the network can process.</source>
@@ -4302,7 +4302,7 @@ Por favor tenga paciencia...</translation>
     </message>
 </context>
 <context>
-    <name>pegasus-core</name>
+    <name>pegasus-network</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1= mantener los metadatos tx p.e. dueño de la cuenta e información de la solicitud de pago, 2 = ignorar metadatos tx)</translation>
@@ -4580,8 +4580,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Pegasus Alert" admin@foo.com
         <translation>Debes especificar un masternodeprivkey en la configuración. Por favor mira la documentación por ayuda.</translation>
     </message>
     <message>
-        <source>(1551 could be used only on mainnet)</source>
-        <translation>(1551 puede ser utilizado solo en mainnet)</translation>
+        <source>(1515 could be used only on mainnet)</source>
+        <translation>(1515 puede ser utilizado solo en mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4592,8 +4592,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Pegasus Alert" admin@foo.com
         <translation>(predeterminado: 1)</translation>
     </message>
     <message>
-        <source>(must be 1551 for mainnet)</source>
-        <translation>(debe ser 1551 para un mainnet)</translation>
+        <source>(must be 1515 for mainnet)</source>
+        <translation>(debe ser 1515 para un mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

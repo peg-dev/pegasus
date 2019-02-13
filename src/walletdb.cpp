@@ -690,7 +690,7 @@ DBErrors CWalletDB::LoadWallet(CWallet* pwallet)
         Dbc* pcursor = GetCursor();
         if (!pcursor) {
             LogPrintf("Error getting wallet database cursor\n");
-            return DB_CORPEGT;
+            return DB_CORRUPT;
         }
 
         while (true) {
@@ -702,7 +702,7 @@ DBErrors CWalletDB::LoadWallet(CWallet* pwallet)
                 break;
             else if (ret != 0) {
                 LogPrintf("Error reading next record from wallet database\n");
-                return DB_CORPEGT;
+                return DB_CORRUPT;
             }
 
             // Try to be tolerant of single corrupt records:
@@ -711,7 +711,7 @@ DBErrors CWalletDB::LoadWallet(CWallet* pwallet)
                 // losing keys is considered a catastrophic error, anything else
                 // we assume the user can live with:
                 if (IsKeyType(strType))
-                    result = DB_CORPEGT;
+                    result = DB_CORRUPT;
                 else {
                     // Leave other errors alone, if we try to fix them we might make things worse.
                     fNoncriticalErrors = true; // ... but do warn the user there is something wrong.
@@ -727,7 +727,7 @@ DBErrors CWalletDB::LoadWallet(CWallet* pwallet)
     } catch (boost::thread_interrupted) {
         throw;
     } catch (...) {
-        result = DB_CORPEGT;
+        result = DB_CORRUPT;
     }
 
     if (fNoncriticalErrors && result == DB_LOAD_OK)
@@ -782,7 +782,7 @@ DBErrors CWalletDB::FindWalletTx(CWallet* pwallet, vector<uint256>& vTxHash, vec
         Dbc* pcursor = GetCursor();
         if (!pcursor) {
             LogPrintf("Error getting wallet database cursor\n");
-            return DB_CORPEGT;
+            return DB_CORRUPT;
         }
 
         while (true) {
@@ -794,7 +794,7 @@ DBErrors CWalletDB::FindWalletTx(CWallet* pwallet, vector<uint256>& vTxHash, vec
                 break;
             else if (ret != 0) {
                 LogPrintf("Error reading next record from wallet database\n");
-                return DB_CORPEGT;
+                return DB_CORRUPT;
             }
 
             string strType;
@@ -814,7 +814,7 @@ DBErrors CWalletDB::FindWalletTx(CWallet* pwallet, vector<uint256>& vTxHash, vec
     } catch (boost::thread_interrupted) {
         throw;
     } catch (...) {
-        result = DB_CORPEGT;
+        result = DB_CORRUPT;
     }
 
     if (fNoncriticalErrors && result == DB_LOAD_OK)
@@ -834,7 +834,7 @@ DBErrors CWalletDB::ZapWalletTx(CWallet* pwallet, vector<CWalletTx>& vWtx)
     // erase each wallet TX
     BOOST_FOREACH (uint256& hash, vTxHash) {
         if (!EraseTx(hash))
-            return DB_CORPEGT;
+            return DB_CORRUPT;
     }
 
     return DB_LOAD_OK;

@@ -186,6 +186,6 @@
     <name>ZPhrControlDialog</name>
     </context>
 <context>
-    <name>pegasus-core</name>
+    <name>pegasus-network</name>
     </context>
 </TS>

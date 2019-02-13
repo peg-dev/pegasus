@@ -38,7 +38,7 @@ class uint256;
 /** Error statuses for the wallet database */
 enum DBErrors {
     DB_LOAD_OK,
-    DB_CORPEGT,
+    DB_CORRUPT,
     DB_NONCRITICAL_ERROR,
     DB_TOO_NEW,
     DB_LOAD_FAIL,

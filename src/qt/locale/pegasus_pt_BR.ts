@@ -172,8 +172,8 @@
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>Pegasus will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PEGs from being stolen by malware infecting your computer.</source>
-        <translation>Pegasus vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas PEGs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>Pegasus will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RUPs from being stolen by malware infecting your computer.</source>
+        <translation>Pegasus vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas RUPs de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -2465,8 +2465,8 @@ https://www.transifex.com/pegasus-project/pegasus-project-translations</translat
         <translation>Tempo de confirmação:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPEGs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPEGs in fee,&lt;br /&gt;while "at least" pays 1000 uPEGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Se a taxa padrão estiver definida para 1000 uPEGs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uPEGs em taxa,&lt;br /&gt; pagará pelo menos 1000 uPEGs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Se a taxa padrão estiver definida para 1000 uRUPs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uRUPs em taxa,&lt;br /&gt; pagará pelo menos 1000 uRUPs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Pegasus transactions than the network can process.</source>
@@ -3408,7 +3408,7 @@ https://www.transifex.com/pegasus-project/pegasus-project-translations</translat
     </message>
     </context>
 <context>
-    <name>pegasus-core</name>
+    <name>pegasus-network</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes da blockchain através de -rescan na inicialização</translation>
@@ -3490,8 +3490,8 @@ https://www.transifex.com/pegasus-project/pegasus-project-translations</translat
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(1551 could be used only on mainnet)</source>
-        <translation>(1551 could be used only on mainnet)</translation>
+        <source>(1515 could be used only on mainnet)</source>
+        <translation>(1515 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3502,8 +3502,8 @@ https://www.transifex.com/pegasus-project/pegasus-project-translations</translat
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 1551 for mainnet)</source>
-        <translation>(deve ser 1551 para mainnet)</translation>
+        <source>(must be 1515 for mainnet)</source>
+        <translation>(deve ser 1515 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>

@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/eastcoastcrypto/Pegasus"
+- "url": "https://github.com/pegasus-project/pegasus"
   "dir": "pegasus"
 files: []
 script: |

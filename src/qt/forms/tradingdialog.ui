@@ -213,7 +213,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="BtcDemand">
+    <widget class="QLabel" name="PEGDemand">
      <property name="geometry">
       <rect>
        <x>200</x>
@@ -1707,7 +1707,7 @@
       <string>PEG</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputPEG">
+    <widget class="QLineEdit" name="UnitsInputRUP">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellPEGBTN">
+    <widget class="QPushButton" name="SellRUPBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -2835,7 +2835,7 @@
       <string>PEG Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="PEGPendingLabel">
+    <widget class="QLabel" name="RUPPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>

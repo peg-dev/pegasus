@@ -78,6 +78,6 @@ f.write('static const char UNUSED *pegasus_strings[] = {\n')
 messages.sort(key=operator.itemgetter(0))
 for (msgid, msgstr) in messages:
     if msgid != EMPTY:
-        f.write('QT_TRANSLATE_NOOP("pegasus-core", %s),\n' % ('\n'.join(msgid)))
+        f.write('QT_TRANSLATE_NOOP("pegasus-network", %s),\n' % ('\n'.join(msgid)))
 f.write('};\n')
 f.close()

@@ -13,7 +13,7 @@
  * for both pegasusd and pegasus-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Pegasus Core");
+const std::string CLIENT_NAME("Pegasus [PEG]");
 
 /**
  * Client version number

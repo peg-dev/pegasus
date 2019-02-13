@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>Pegasus will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PEGs from being stolen by malware infecting your computer.</source>
+        <source>Pegasus will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RUPs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2492,7 +2492,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     <message>
         <location line="+7"/>
         <location line="+10"/>
-        <source>Unlocked PEGs. These can be used for zPEG minting.</source>
+        <source>Unlocked RUPs. These can be used for zPEG minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4253,12 +4253,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+772"/>
-        <source>If the custom fee is set to 1000 uPEGs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uPEGs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uPEGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uRUPs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uPEGs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uPEGs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uPEGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uRUPs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5698,7 +5698,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>pegasus-core</name>
+    <name>pegasus-network</name>
     <message>
         <location filename="../pegasusstrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
@@ -6031,8 +6031,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>(1551 could be used only on mainnet)</source>
-        <translation type="unfinished">(1551 could be used only on mainnet)</translation>
+        <source>(1515 could be used only on mainnet)</source>
+        <translation type="unfinished">(1515 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6046,7 +6046,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Pegasus Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 1551 for mainnet)</source>
+        <source>(must be 1515 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

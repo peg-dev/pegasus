@@ -281,16 +281,16 @@ void PrivacyDialog::on_pushButtonSpendzPEG_clicked()
     sendzPEG();
 }
 
-void PrivacyDialog::on_pushButtonZPEGControl_clicked()
+void PrivacyDialog::on_pushButtonZPegControl_clicked()
 {
-    ZPEGControlDialog* zPEGControl = new ZPEGControlDialog(this);
-    zPEGControl->setModel(walletModel);
-    zPEGControl->exec();
+    ZPegControlDialog* zPegControl = new ZPegControlDialog(this);
+    zPegControl->setModel(walletModel);
+    zPegControl->exec();
 }
 
-void PrivacyDialog::setZPEGControlLabels(int64_t nAmount, int nQuantity)
+void PrivacyDialog::setZPegControlLabels(int64_t nAmount, int nQuantity)
 {
-    ui->labelzPEGSelected_int->setText(QString::number(nAmount));
+    ui->labelzPegSelected_int->setText(QString::number(nAmount));
     ui->labelQuantitySelected_int->setText(QString::number(nQuantity));
 }
 
@@ -396,10 +396,10 @@ void PrivacyDialog::sendzPEG()
     ui->TEMintStatus->setPlainText(tr("Spending Zerocoin.\nComputationally expensive, might need several minutes depending on the selected Security Level and your hardware. \nPlease be patient..."));
     ui->TEMintStatus->repaint();
 
-    // use mints from zPEG selector if applicable
+    // use mints from zPeg selector if applicable
     vector<CZerocoinMint> vMintsSelected;
-    if (!ZPEGControlDialog::listSelectedMints.empty()) {
-        vMintsSelected = ZPEGControlDialog::GetSelectedMints();
+    if (!ZPegControlDialog::listSelectedMints.empty()) {
+        vMintsSelected = ZPegControlDialog::GetSelectedMints();
     }
 
     // Spend zPEG
@@ -435,14 +435,14 @@ void PrivacyDialog::sendzPEG()
     }
 
     // Clear zpeg selector in case it was used
-    ZPEGControlDialog::listSelectedMints.clear();
+    ZPegControlDialog::listSelectedMints.clear();
 
     // Some statistics for entertainment
     QString strStats = "";
     CAmount nValueIn = 0;
     int nCount = 0;
     for (CZerocoinSpend spend : receipt.GetSpends()) {
-        strStats += tr("zPEG Spend #: ") + QString::number(nCount) + ", ";
+        strStats += tr("zPeg Spend #: ") + QString::number(nCount) + ", ";
         strStats += tr("denomination: ") + QString::number(spend.GetDenomination()) + ", ";
         strStats += tr("serial: ") + spend.GetSerial().ToString().c_str() + "\n";
         strStats += tr("Spend is 1 of : ") + QString::number(spend.GetMintCount()) + " mints in the accumulator\n";
@@ -451,13 +451,13 @@ void PrivacyDialog::sendzPEG()
 
     CAmount nValueOut = 0;
     for (const CTxOut& txout: wtxNew.vout) {
-        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " PEG, ";
+        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " Rup, ";
         nValueOut += txout.nValue;
 
         strStats += tr("address: ");
         CTxDestination dest;
         if(txout.scriptPubKey.IsZerocoinMint())
-            strStats += tr("zPEG Mint");
+            strStats += tr("zPeg Mint");
         else if(ExtractDestination(txout.scriptPubKey, dest))
             strStats += tr(CBitcoinAddress(dest).ToString().c_str());
         strStats += "\n";
